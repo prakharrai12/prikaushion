@@ -103,7 +103,7 @@ export const Education: React.FC = () => {
 
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mt-8" style={{ perspective: 1000 }}>
         {/* Card 1: Academics (Cols 1-6) */}
-        <div className="edu-card lg:col-span-6 rounded-lg border border-bone-faint bg-obsidian p-8 md:p-12 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-bone/35 hover:shadow-[0_20px_60px_-15px_rgba(224,27,36,0.25)] transition-all duration-400">
+        <div className="edu-card lg:col-span-6 rounded-lg border border-bone-faint bg-obsidian p-6 sm:p-8 md:p-12 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-bone/35 hover:shadow-[0_20px_60px_-15px_rgba(224,27,36,0.25)] transition-all duration-400">
           <div>
             <span className="font-mono text-xs uppercase tracking-widest text-crimson font-medium">
               ACADEMIC DEGREE
@@ -125,7 +125,7 @@ export const Education: React.FC = () => {
           </div>
 
           {/* CGPA Progress Ring */}
-          <div className="flex items-center gap-6 mt-8 pt-6 border-t border-bone-faint">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center gap-5 sm:gap-6 mt-8 pt-6 border-t border-bone-faint">
             <div className="relative w-28 h-28 shrink-0 flex items-center justify-center">
               <svg className="w-full h-full -rotate-90" viewBox="0 0 110 110">
                 <circle
@@ -165,7 +165,7 @@ export const Education: React.FC = () => {
         </div>
 
         {/* Card 2: Clubs & Leadership Roles (Cols 7-12) */}
-        <div className="edu-card lg:col-span-6 rounded-lg border border-bone-faint bg-obsidian p-8 md:p-12 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-bone/35 hover:shadow-[0_20px_60px_-15px_rgba(224,27,36,0.25)] transition-all duration-400">
+        <div className="edu-card lg:col-span-6 rounded-lg border border-bone-faint bg-obsidian p-6 sm:p-8 md:p-12 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-bone/35 hover:shadow-[0_20px_60px_-15px_rgba(224,27,36,0.25)] transition-all duration-400">
           <div>
             <span className="font-mono text-xs uppercase tracking-widest text-crimson font-medium">
               CAMPUS &amp; COMMUNITY
@@ -231,7 +231,7 @@ export const Education: React.FC = () => {
         </div>
 
         {/* Card 3: Courses & Certificates (Wide, Cols 1-12) */}
-        <div className="edu-card lg:col-span-12 rounded-lg border border-bone-faint bg-obsidian p-8 md:p-12 shadow-2xl hover:-translate-y-2 hover:border-bone/35 hover:shadow-[0_20px_60px_-15px_rgba(224,27,36,0.25)] transition-all duration-400">
+        <div className="edu-card lg:col-span-12 rounded-lg border border-bone-faint bg-obsidian p-6 sm:p-8 md:p-12 shadow-2xl hover:-translate-y-2 hover:border-bone/35 hover:shadow-[0_20px_60px_-15px_rgba(224,27,36,0.25)] transition-all duration-400">
           <div className="flex items-center justify-between mb-6">
             <span className="font-mono text-xs uppercase tracking-widest text-crimson font-medium">
               VERIFIED CREDENTIALS

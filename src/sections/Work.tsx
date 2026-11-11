@@ -97,9 +97,9 @@ export const Work: React.FC = () => {
       />
 
       {/* Vertical Interactive Timeline */}
-      <div className="relative pl-6 md:pl-12 mt-12 flex flex-col gap-14 md:gap-20">
+      <div className="relative pl-8 md:pl-14 mt-12 flex flex-col gap-14 md:gap-20">
         {/* Full-Height Vertical Guide Line */}
-        <div className="absolute left-2 md:left-4 top-2 bottom-6 w-[1px] bg-bone-faint origin-top">
+        <div className="absolute left-[15px] md:left-[23px] top-2 bottom-6 w-[2px] bg-bone-faint origin-top">
           {/* Crimson fill growing with scroll */}
           <div
             ref={timelineLineRef}
@@ -126,9 +126,9 @@ export const Work: React.FC = () => {
                   : undefined,
               }}
             >
-              {/* Timeline Node on Left Line */}
+              {/* Timeline Node on Left Line (centered on the 2px guide line) */}
               <div
-                className="timeline-node absolute -left-[27px] md:-left-[51px] top-9 w-3 h-3 rounded-full border border-bone-faint bg-ink transition-all duration-300 z-10"
+                className="timeline-node absolute -left-[22px] md:-left-[38px] top-9 w-3 h-3 rounded-full border border-bone-faint bg-ink transition-all duration-300 z-10"
               />
 
               {/* Left Column (Cols 1-3): Date & Location */}

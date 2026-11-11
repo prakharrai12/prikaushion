@@ -30,7 +30,7 @@ export const Footer: React.FC = () => {
   }, []);
 
   // Piano letter hover on giant wordmark
-  const handleLetterHover = (e: React.MouseEvent<HTMLSpanElement>) => {
+  const handleLetterHover = (e: React.SyntheticEvent<HTMLSpanElement>) => {
     gsap.to(e.currentTarget, {
       y: '-2vw',
       duration: 0.35,
@@ -41,7 +41,7 @@ export const Footer: React.FC = () => {
   };
 
   // Easter egg: K-click sparkle burst
-  const handleKClick = (e: React.MouseEvent) => {
+  const handleKClick = (e: React.SyntheticEvent<HTMLElement>) => {
     setShowToast(true);
     setTimeout(() => setShowToast(false), 3200);
 
@@ -136,13 +136,14 @@ export const Footer: React.FC = () => {
           ref={wordmarkRef}
           className="my-10 md:my-14 flex items-center justify-between w-full overflow-hidden text-center cursor-default"
         >
-          <div className="flex w-full items-baseline justify-between font-display font-extrabold text-[clamp(2.2rem,16vw,22rem)] leading-none tracking-[-0.05em] text-bone flex-nowrap">
+          <div className="flex w-full items-baseline justify-between font-display font-extrabold text-[clamp(1.5rem,8.5vw,18rem)] leading-none tracking-[-0.04em] text-bone flex-nowrap">
             {letters.map((char, idx) => {
               const isK = idx === 3;
               return (
                 <span
                   key={idx}
                   onMouseEnter={handleLetterHover}
+                  onTouchStart={isK ? handleKClick : handleLetterHover}
                   onClick={isK ? handleKClick : undefined}
                   className={`inline-block transition-transform duration-200 will-change-transform ${
                     isK

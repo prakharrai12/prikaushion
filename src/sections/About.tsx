@@ -305,14 +305,16 @@ export const About: React.FC = () => {
           {/* Quick Facts List */}
           <div className="mt-6 pt-6 border-t border-bone-faint font-mono text-xs uppercase tracking-widest">
             <div className="text-crimson font-medium mb-4">QUICK FACTS</div>
-            <div className="flex flex-col gap-3 text-bone-dim">
+            <div className="flex flex-col gap-3.5 text-bone-dim">
               {site.quickFacts.map((fact, idx) => (
-                <div key={idx} className="flex items-baseline justify-between group">
-                  <span className="text-bone group-hover:text-crimson transition-colors whitespace-nowrap">
-                    {fact.label}
-                  </span>
-                  <span className="mx-2 grow border-b border-dotted border-bone-faint group-hover:border-crimson/50 transition-colors" />
-                  <span className="text-bone/80 text-right whitespace-normal">
+                <div key={idx} className="flex flex-col sm:flex-row sm:items-baseline justify-between gap-1 sm:gap-2 group">
+                  <div className="flex items-baseline grow">
+                    <span className="text-bone group-hover:text-crimson transition-colors whitespace-nowrap">
+                      {fact.label}
+                    </span>
+                    <span className="hidden sm:inline-block mx-2 grow border-b border-dotted border-bone-faint group-hover:border-crimson/50 transition-colors" />
+                  </div>
+                  <span className="text-bone/80 text-left sm:text-right whitespace-normal">
                     {fact.value}
                   </span>
                 </div>

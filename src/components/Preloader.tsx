@@ -198,12 +198,12 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
         </div>
 
         {/* Bottom Bar: Loading Count + EST Meta */}
-        <div className="absolute bottom-10 left-8 right-8 flex items-center justify-between font-mono text-xs uppercase tracking-widest text-[#0A0A0B]/80 z-20">
-          <div className="flex items-center gap-3">
+        <div className="absolute bottom-10 left-6 right-6 flex flex-col sm:flex-row items-center justify-between gap-2 font-mono text-[10px] sm:text-xs uppercase tracking-widest text-[#0A0A0B]/80 z-20 text-center sm:text-left">
+          <div className="flex items-center gap-2 sm:gap-3">
             <span className="tabular-nums font-semibold text-crimson">
               {String(counter).padStart(3, '0')}
             </span>
-            <span className="hidden sm:inline text-[#0A0A0B]/50">—</span>
+            <span className="text-[#0A0A0B]/50">—</span>
             <span>LOADING THE EXPERIENCE</span>
           </div>
           <div>

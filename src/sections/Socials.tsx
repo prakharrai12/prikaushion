@@ -207,12 +207,12 @@ export const Socials: React.FC = () => {
               />
 
               {/* Row Left: Mono Index + Giant Fraunces Platform Name */}
-              <div className="relative z-10 flex items-baseline gap-6 md:gap-12">
+              <div className="relative z-10 flex items-baseline gap-4 md:gap-12">
                 <span className="font-mono text-xs md:text-sm text-crimson font-medium">
                   {item.index}
                 </span>
                 <span
-                  className="font-display font-extrabold text-[clamp(2.8rem,9vw,9rem)] leading-none tracking-[-0.04em] transition-colors duration-400"
+                  className="font-display font-extrabold text-[clamp(1.75rem,8vw,8.5rem)] leading-none tracking-[-0.04em] transition-colors duration-400"
                   style={{
                     color: isHovered ? item.textColor : 'var(--bone)',
                   }}
@@ -282,7 +282,7 @@ export const Socials: React.FC = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-2.5 sm:gap-4 flex-wrap justify-center">
           {SOCIAL_LIST.map((item) => {
             const valid = isUrlValid(item.url);
             return (
@@ -296,11 +296,13 @@ export const Socials: React.FC = () => {
                 data-cursor="link"
                 disabled={!valid}
                 aria-label={`Open ${item.name}`}
-                className={`w-14 h-14 md:w-16 md:h-16 rounded-full border border-bone-faint flex items-center justify-center text-bone transition-all duration-300 hover:border-crimson hover:bg-crimson hover:text-ink ${
+                className={`w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 rounded-full border border-bone-faint flex items-center justify-center text-bone transition-all duration-300 hover:border-crimson hover:bg-crimson hover:text-ink ${
                   !valid ? 'opacity-40 cursor-not-allowed' : ''
                 }`}
               >
-                {item.icon}
+                <div className="scale-75 sm:scale-90 md:scale-100 flex items-center justify-center">
+                  {item.icon}
+                </div>
               </MagneticButton>
             );
           })}

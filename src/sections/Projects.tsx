@@ -181,60 +181,62 @@ export const Projects: React.FC = () => {
                 </div>
 
                 {/* Bottom Row: Mandatory Live and Code buttons */}
-                <div className="flex flex-wrap items-center gap-4 pt-6 border-t border-bone-faint">
-                  {/* Live Button */}
-                  <div className="relative group">
-                    <MagneticButton
-                      as="a"
-                      href={liveValid ? p.liveUrl : undefined}
-                      target={liveValid ? '_blank' : undefined}
-                      rel={liveValid ? 'noopener noreferrer' : undefined}
-                      strength={0.3}
-                      disabled={!liveValid}
-                      data-cursor={liveValid ? 'view' : undefined}
-                      className={`h-12 px-7 rounded-pill font-mono text-xs uppercase tracking-widest font-semibold flex items-center gap-2 transition-all duration-300 ${
-                        liveValid
-                          ? 'bg-crimson text-ink hover:bg-bone shadow-[0_8px_25px_rgba(224,27,36,0.3)]'
-                          : 'bg-bone/20 text-bone/40 cursor-not-allowed opacity-60'
-                      }`}
-                    >
-                      <span>Live</span>
-                      <ExternalLink className="w-3.5 h-3.5" />
-                    </MagneticButton>
-                    {!liveValid && (
-                      <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 px-2 py-0.5 bg-charcoal border border-bone-faint text-bone-dim text-[10px] font-mono tracking-widest uppercase rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
-                        Link coming soon
-                      </span>
-                    )}
+                <div className="flex flex-wrap items-center justify-between gap-4 pt-6 border-t border-bone-faint w-full">
+                  <div className="flex items-center gap-3 sm:gap-4 flex-wrap">
+                    {/* Live Button */}
+                    <div className="relative group">
+                      <MagneticButton
+                        as="a"
+                        href={liveValid ? p.liveUrl : undefined}
+                        target={liveValid ? '_blank' : undefined}
+                        rel={liveValid ? 'noopener noreferrer' : undefined}
+                        strength={0.3}
+                        disabled={!liveValid}
+                        data-cursor={liveValid ? 'view' : undefined}
+                        className={`h-12 px-7 rounded-pill font-mono text-xs uppercase tracking-widest font-semibold flex items-center gap-2 transition-all duration-300 ${
+                          liveValid
+                            ? 'bg-crimson text-ink hover:bg-bone shadow-[0_8px_25px_rgba(224,27,36,0.3)]'
+                            : 'bg-bone/20 text-bone/40 cursor-not-allowed opacity-60'
+                        }`}
+                      >
+                        <span>Live</span>
+                        <ExternalLink className="w-3.5 h-3.5" />
+                      </MagneticButton>
+                      {!liveValid && (
+                        <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 px-2 py-0.5 bg-charcoal border border-bone-faint text-bone-dim text-[10px] font-mono tracking-widest uppercase rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+                          Link coming soon
+                        </span>
+                      )}
+                    </div>
+
+                    {/* Code Button */}
+                    <div className="relative group">
+                      <MagneticButton
+                        as="a"
+                        href={repoValid ? p.repoUrl : undefined}
+                        target={repoValid ? '_blank' : undefined}
+                        rel={repoValid ? 'noopener noreferrer' : undefined}
+                        strength={0.3}
+                        disabled={!repoValid}
+                        data-cursor={repoValid ? 'link' : undefined}
+                        className={`h-12 px-6 rounded-pill border font-mono text-xs uppercase tracking-widest flex items-center gap-2 transition-all duration-300 ${
+                          repoValid
+                            ? 'border-bone-faint text-bone hover:border-crimson hover:text-crimson'
+                            : 'border-bone/20 text-bone/40 cursor-not-allowed opacity-60'
+                        }`}
+                      >
+                        <Github className="w-3.5 h-3.5" />
+                        <span>Code</span>
+                      </MagneticButton>
+                      {!repoValid && (
+                        <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 px-2 py-0.5 bg-charcoal border border-bone-faint text-bone-dim text-[10px] font-mono tracking-widest uppercase rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
+                          Link coming soon
+                        </span>
+                      )}
+                    </div>
                   </div>
 
-                  {/* Code Button */}
-                  <div className="relative group">
-                    <MagneticButton
-                      as="a"
-                      href={repoValid ? p.repoUrl : undefined}
-                      target={repoValid ? '_blank' : undefined}
-                      rel={repoValid ? 'noopener noreferrer' : undefined}
-                      strength={0.3}
-                      disabled={!repoValid}
-                      data-cursor={repoValid ? 'link' : undefined}
-                      className={`h-12 px-6 rounded-pill border font-mono text-xs uppercase tracking-widest flex items-center gap-2 transition-all duration-300 ${
-                        repoValid
-                          ? 'border-bone-faint text-bone hover:border-crimson hover:text-crimson'
-                          : 'border-bone/20 text-bone/40 cursor-not-allowed opacity-60'
-                      }`}
-                    >
-                      <Github className="w-3.5 h-3.5" />
-                      <span>Code</span>
-                    </MagneticButton>
-                    {!repoValid && (
-                      <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 px-2 py-0.5 bg-charcoal border border-bone-faint text-bone-dim text-[10px] font-mono tracking-widest uppercase rounded opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none whitespace-nowrap">
-                        Link coming soon
-                      </span>
-                    )}
-                  </div>
-
-                  <span className="font-mono text-[11px] uppercase tracking-widest text-bone-dim ml-auto">
+                  <span className="font-mono text-[11px] uppercase tracking-widest text-bone-dim">
                     YEAR — {p.year}
                   </span>
                 </div>
@@ -291,7 +293,7 @@ export const Projects: React.FC = () => {
           </div>
 
           {/* Filter Bar with Sliding Crimson Underline Indicator */}
-          <div className="relative flex flex-wrap items-center gap-1 p-1 rounded-pill border border-bone-faint bg-obsidian/80 font-mono text-xs uppercase tracking-widest">
+          <div className="relative flex items-center gap-1 p-1 rounded-2xl sm:rounded-pill border border-bone-faint bg-obsidian/80 font-mono text-xs uppercase tracking-widest overflow-x-auto max-w-full">
             {FILTER_CATEGORIES.map((cat) => {
               const isActive = activeFilter === cat;
               return (
@@ -299,7 +301,7 @@ export const Projects: React.FC = () => {
                   key={cat}
                   type="button"
                   onClick={() => setActiveFilter(cat)}
-                  className={`relative px-4 py-1.5 rounded-pill transition-colors duration-300 z-10 ${
+                  className={`relative px-4 py-1.5 rounded-pill transition-colors duration-300 z-10 shrink-0 ${
                     isActive ? 'text-ink font-semibold' : 'text-bone-dim hover:text-bone'
                   }`}
                 >

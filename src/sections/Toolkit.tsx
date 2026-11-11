@@ -232,7 +232,8 @@ export const Toolkit: React.FC = () => {
                       key={iIdx}
                       onMouseEnter={() => setHoveredSkill(item.name)}
                       onMouseLeave={() => setHoveredSkill(null)}
-                      className={`flex flex-col md:flex-row md:items-center justify-between gap-2 p-2 rounded transition-colors duration-200 ${
+                      onClick={() => setHoveredSkill(hoveredSkill === item.name ? null : item.name)}
+                      className={`flex flex-col md:flex-row md:items-center justify-between gap-2 p-2 rounded transition-colors duration-200 cursor-pointer ${
                         isHovered ? 'bg-charcoal/60' : ''
                       }`}
                     >
