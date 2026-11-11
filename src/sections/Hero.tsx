@@ -73,6 +73,21 @@ export const Hero: React.FC = () => {
       );
     }
 
+    // Touch device: gentle auto-oscillation weight wave (4s loop)
+    if (isTouch && containerRef.current) {
+      const allChars = containerRef.current.querySelectorAll<HTMLElement>('.hero-name-char');
+      allChars.forEach((ch, idx) => {
+        gsap.to(ch, {
+          fontVariationSettings: "'opsz' 144, 'SOFT' 30, 'WONK' 1, 'wght' 800",
+          duration: 2,
+          ease: 'sine.inOut',
+          yoyo: true,
+          repeat: -1,
+          delay: idx * 0.18,
+        });
+      });
+    }
+
     // 2. The K idle sway
     if (theKRef.current) {
       gsap.to(theKRef.current, {

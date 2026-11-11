@@ -290,22 +290,28 @@ export const Projects: React.FC = () => {
             </p>
           </div>
 
-          {/* Filter Bar with Sliding Indicator */}
-          <div className="flex flex-wrap items-center gap-2 font-mono text-xs uppercase tracking-widest">
-            {FILTER_CATEGORIES.map((cat) => (
-              <button
-                key={cat}
-                type="button"
-                onClick={() => setActiveFilter(cat)}
-                className={`px-3.5 py-1.5 rounded-pill transition-colors ${
-                  activeFilter === cat
-                    ? 'bg-crimson text-ink font-semibold'
-                    : 'text-bone-dim hover:text-bone'
-                }`}
-              >
-                {cat}
-              </button>
-            ))}
+          {/* Filter Bar with Sliding Crimson Underline Indicator */}
+          <div className="relative flex flex-wrap items-center gap-1 p-1 rounded-pill border border-bone-faint bg-obsidian/80 font-mono text-xs uppercase tracking-widest">
+            {FILTER_CATEGORIES.map((cat) => {
+              const isActive = activeFilter === cat;
+              return (
+                <button
+                  key={cat}
+                  type="button"
+                  onClick={() => setActiveFilter(cat)}
+                  className={`relative px-4 py-1.5 rounded-pill transition-colors duration-300 z-10 ${
+                    isActive ? 'text-ink font-semibold' : 'text-bone-dim hover:text-bone'
+                  }`}
+                >
+                  {isActive && (
+                    <span
+                      className="absolute inset-0 bg-crimson rounded-pill -z-10 shadow-[0_2px_12px_rgba(224,27,36,0.4)] transition-all duration-500 ease-out"
+                    />
+                  )}
+                  {cat}
+                </button>
+              );
+            })}
           </div>
         </div>
 
