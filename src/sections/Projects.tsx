@@ -257,8 +257,10 @@ export const Projects: React.FC = () => {
                     <div className="w-2.5 h-2.5 rounded-full bg-bone-faint" />
                     <div className="w-2.5 h-2.5 rounded-full bg-bone-faint" />
                   </div>
-                  <div className="px-4 py-1 rounded-pill bg-obsidian border border-bone-faint/60 font-mono text-[10px] text-bone-dim tracking-wider">
-                    {p.liveUrl.replace('https://', '')}
+                  <div className="px-4 py-1 rounded-pill bg-obsidian border border-bone-faint/60 font-mono text-[10px] text-bone-dim tracking-wider max-w-[240px] sm:max-w-none truncate">
+                    {liveValid
+                      ? p.liveUrl.replace(/^https?:\/\//, '').replace(/\/$/, '')
+                      : `${p.slug}.prikaushion.dev`}
                   </div>
                   <div className="w-8" />
                 </div>
