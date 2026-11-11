@@ -3,6 +3,7 @@ import { SectionHeader } from '../components/SectionHeader';
 import { MagneticButton } from '../components/MagneticButton';
 import { site } from '../config/site';
 import { isTouchDevice } from '../lib/utils';
+import { ScrollTrigger } from '../lib/gsap';
 import { Github, Linkedin, Instagram, Mail, ArrowUpRight } from 'lucide-react';
 
 interface SocialItem {
@@ -99,6 +100,38 @@ export const Socials: React.FC = () => {
     };
   }, []);
 
+  // Touch devices: auto-flood rows as they scroll past viewport center
+  useEffect(() => {
+    if (!isTouchDevice() || !containerRef.current) return;
+
+    const rows = containerRef.current.querySelectorAll<HTMLElement>('.social-row-link');
+    rows.forEach((row, idx) => {
+      ScrollTrigger.create({
+        trigger: row,
+        start: 'top 60%',
+        end: 'bottom 40%',
+        onEnter: () => {
+          setActiveItem(SOCIAL_LIST[idx]);
+          const flood = row.querySelector<HTMLElement>('.social-flood-layer');
+          if (flood) flood.style.clipPath = 'circle(150% at 50% 50%)';
+        },
+        onLeave: () => {
+          const flood = row.querySelector<HTMLElement>('.social-flood-layer');
+          if (flood) flood.style.clipPath = 'circle(0% at 50% 50%)';
+        },
+        onEnterBack: () => {
+          setActiveItem(SOCIAL_LIST[idx]);
+          const flood = row.querySelector<HTMLElement>('.social-flood-layer');
+          if (flood) flood.style.clipPath = 'circle(150% at 50% 50%)';
+        },
+        onLeaveBack: () => {
+          const flood = row.querySelector<HTMLElement>('.social-flood-layer');
+          if (flood) flood.style.clipPath = 'circle(0% at 50% 50%)';
+        },
+      });
+    });
+  }, []);
+
   const handlePointerEnter = (e: React.PointerEvent<HTMLAnchorElement>, item: SocialItem) => {
     setActiveItem(item);
     const rect = e.currentTarget.getBoundingClientRect();
@@ -160,7 +193,7 @@ export const Socials: React.FC = () => {
               onPointerLeave={handlePointerLeave}
               data-cursor="open"
               aria-disabled={!valid}
-              className={`group relative min-h-[140px] md:h-[22vh] flex items-center justify-between px-6 md:px-12 border-b border-bone-faint overflow-hidden transition-all duration-300 focus:outline-none ${
+              className={`social-row-link group relative min-h-[140px] md:h-[22vh] flex items-center justify-between px-6 md:px-12 border-b border-bone-faint overflow-hidden transition-all duration-300 focus:outline-none ${
                 valid ? 'cursor-pointer' : 'cursor-not-allowed opacity-60'
               }`}
             >

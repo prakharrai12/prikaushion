@@ -136,7 +136,7 @@ export const Footer: React.FC = () => {
           ref={wordmarkRef}
           className="my-10 md:my-14 flex items-center justify-between w-full overflow-hidden text-center cursor-default"
         >
-          <div className="flex w-full items-baseline justify-between font-display font-extrabold text-[clamp(4.2rem,19vw,22rem)] leading-none tracking-[-0.05em] text-bone">
+          <div className="flex w-full items-baseline justify-between font-display font-extrabold text-[clamp(2.2rem,16vw,22rem)] leading-none tracking-[-0.05em] text-bone flex-nowrap">
             {letters.map((char, idx) => {
               const isK = idx === 3;
               return (

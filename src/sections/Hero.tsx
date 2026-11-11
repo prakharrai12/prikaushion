@@ -306,7 +306,7 @@ export const Hero: React.FC = () => {
         {/* Stacked Name (Fraunces Fluid Mega) */}
         <div className="font-display leading-[0.88] tracking-[-0.035em] mb-4">
           {/* Line 1: PRAKHAR (Fraunces 300) */}
-          <div ref={line1Ref} className="title-line-mask font-light text-[clamp(4.5rem,14vw,14rem)] text-bone">
+          <div ref={line1Ref} className="title-line-mask font-light text-[clamp(2.8rem,11.5vw,14rem)] text-bone">
             {'PRAKHAR'.split('').map((char, i) => (
               <span key={i} className="char hero-name-char inline-block will-change-transform">
                 {char}
@@ -315,7 +315,7 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Line 2: KAUSHIK (Fraunces 800 with red K) */}
-          <div ref={line2Ref} className="title-line-mask font-extrabold text-[clamp(4.5rem,14vw,14rem)] text-bone mt-1">
+          <div ref={line2Ref} className="title-line-mask font-extrabold text-[clamp(2.8rem,11.5vw,14rem)] text-bone mt-1">
             <span className="char hero-name-char inline-block text-crimson will-change-transform">K</span>
             {'AUSHIK'.split('').map((char, i) => (
               <span key={i} className="char hero-name-char inline-block will-change-transform">
@@ -327,7 +327,7 @@ export const Hero: React.FC = () => {
           {/* Line 3: a.k.a. VishRim (Instrument Serif italic crimson) */}
           <div
             ref={line3Ref}
-            className="font-whisper text-[clamp(2.2rem,5vw,4.5rem)] text-crimson mt-2 tracking-tight"
+            className="font-whisper text-[clamp(1.8rem,4.5vw,4.5rem)] text-crimson mt-2 tracking-tight"
           >
             a.k.a. VishRim
           </div>
