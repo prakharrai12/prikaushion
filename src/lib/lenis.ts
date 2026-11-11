@@ -44,3 +44,4 @@ export function scrollToTarget(target: string | HTMLElement, offset: number = -8
     }
   }
 }
+

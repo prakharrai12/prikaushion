@@ -324,3 +324,4 @@ export const About: React.FC = () => {
     </section>
   );
 };
+

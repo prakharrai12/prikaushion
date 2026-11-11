@@ -64,3 +64,4 @@ export const experiences: Experience[] = [
     tags: ["Python", "AI"],
   },
 ];
+

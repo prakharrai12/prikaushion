@@ -220,3 +220,4 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
     </div>
   );
 };
+

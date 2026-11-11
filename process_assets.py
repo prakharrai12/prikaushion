@@ -64,46 +64,31 @@ with open('public/assets/images/portrait-blur.txt', 'w') as f:
 print("Portrait processed successfully")
 
 # 3. Create logo-bone-on-transparent.png
+# Pure Pillow implementation without numpy dependency
 # Logo has cream background (~#F4EFE4 or #f6f1e8), black lettering, red K
-# We want to remove cream background (make transparent), and turn dark text into bone (#F4EFE4) while preserving red K.
-# Let's inspect RGB values of logo:
-import numpy as np
-arr = np.array(logo_img)
-# Shape: (H, W, 4)
-# Red channel high, Green and Blue low for crimson K
-# Black lettering: R, G, B all low (< 90)
-# Cream background: R, G, B all high (> 210, R~245, G~240, B~230)
-r = arr[:, :, 0].astype(float)
-g = arr[:, :, 1].astype(float)
-b = arr[:, :, 2].astype(float)
+# We remove cream background and turn dark text into bone (#F4EFE4) while preserving red K.
+lw, lh = logo_img.size
+src_pixels = logo_img.load()
+bone_logo = Image.new('RGBA', (lw, lh))
+dst_pixels = bone_logo.load()
 
-# Detect red: r significantly higher than g and b
-is_red = (r > 130) & (r - g > 50) & (r - b > 50)
-# Detect cream background
-# brightness
-brightness = (r + g + b) / 3.0
-is_bg = (brightness > 215) & ~is_red
+for y in range(lh):
+    for x in range(lw):
+        p = src_pixels[x, y]
+        r, g, b = p[0], p[1], p[2]
+        is_red = (r > 130) and (r - g > 50) and (r - b > 50)
+        brightness = (r + g + b) / 3.0
 
-# Create transparent image with bone text
-new_arr = np.zeros_like(arr)
-# Where it's bg, alpha = 0 (or smooth falloff)
-# Where it's dark text: color = Bone #F4EFE4 (244, 239, 228), alpha proportional to darkness
-is_text = (brightness <= 215) & ~is_red
+        if is_red:
+            dst_pixels[x, y] = (r, g, b, 255)
+        elif brightness <= 215:
+            # Dark text pixel -> bone #F4EFE4 (244, 239, 228) with proportional alpha
+            alpha = int(max(0, min(255, (220 - brightness) / 140.0 * 255.0)))
+            dst_pixels[x, y] = (244, 239, 228, alpha)
+        else:
+            # Cream background -> transparent
+            dst_pixels[x, y] = (0, 0, 0, 0)
 
-# For red pixels, keep original RGB with alpha 255
-new_arr[is_red, 0] = arr[is_red, 0]
-new_arr[is_red, 1] = arr[is_red, 1]
-new_arr[is_red, 2] = arr[is_red, 2]
-new_arr[is_red, 3] = 255
-
-# For text pixels, interpolate to bone #F4EFE4
-alpha_text = np.clip((220 - brightness) / 140.0 * 255.0, 0, 255).astype(np.uint8)
-new_arr[is_text, 0] = 244
-new_arr[is_text, 1] = 239
-new_arr[is_text, 2] = 228
-new_arr[is_text, 3] = alpha_text[is_text]
-
-bone_logo = Image.fromarray(new_arr, 'RGBA')
 bone_logo.save('public/assets/brand/logo-bone-on-transparent.png', 'PNG')
 print("logo-bone-on-transparent.png created")
 
@@ -137,3 +122,4 @@ draw_fav.line([(9, 16), (22, 7)], fill=(224, 27, 36, 255), width=3)
 draw_fav.line([(12, 14), (23, 25)], fill=(224, 27, 36, 255), width=3)
 fav.save('public/favicon-32.png', 'PNG')
 print("favicon-32.png created")
+

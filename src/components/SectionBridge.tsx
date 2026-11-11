@@ -90,3 +90,4 @@ export const SectionBridge: React.FC<SectionBridgeProps> = ({ nextSection }) => 
     </div>
   );
 };
+

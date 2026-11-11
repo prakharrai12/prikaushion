@@ -8,3 +8,4 @@ export const Grain: React.FC = () => {
     />
   );
 };
+

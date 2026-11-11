@@ -105,3 +105,4 @@ export const constellationNodes: ConstellationNode[] = [
   { id: "ollama", name: "Ollama", x: 12, y: 92, core: false, connections: ["prompt", "esp32"] },
   { id: "esp32", name: "ESP32-S3", x: 54, y: 92, core: true, connections: ["python", "ollama"] },
 ];
+

@@ -136,3 +136,4 @@ export const BackgroundJourney: React.FC = () => {
     </div>
   );
 };
+

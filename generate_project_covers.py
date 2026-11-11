@@ -1,5 +1,5 @@
 import os
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw
 
 os.makedirs('public/assets/projects', exist_ok=True)
 
@@ -165,3 +165,4 @@ for p in projects:
     img.save(f'public/assets/projects/{p["slug"]}.webp', 'WEBP', quality=88)
 
 print("All 11 project covers generated successfully!")
+

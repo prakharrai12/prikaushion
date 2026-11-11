@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { initLenis, getLenis } from './lib/lenis';
 import { Grain } from './components/Grain';
 import { CustomCursor } from './components/CustomCursor';
+import { InkTrail } from './components/InkTrail';
 import { ScrollProgress } from './components/ScrollProgress';
 import { BackgroundJourney } from './components/BackgroundJourney';
 import { Preloader } from './components/Preloader';
@@ -50,6 +51,9 @@ export const App: React.FC = () => {
 
       {/* Custom Desktop Cursor */}
       <CustomCursor />
+
+      {/* Atmospheric Tactile Ink Trail (Section 10.7) */}
+      <InkTrail />
 
       {/* Fixed Progress Top Bar & Right Edge Indicator */}
       <ScrollProgress />
@@ -124,3 +128,4 @@ export const App: React.FC = () => {
 };
 
 export default App;
+

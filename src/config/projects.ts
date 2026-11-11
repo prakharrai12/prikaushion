@@ -169,3 +169,4 @@ export const projects: Project[] = [
     accent: "#FF3B3B",
   },
 ];
+
