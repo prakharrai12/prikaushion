@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 360" fill="none">
+  <!-- Red K Starburst recreating the prikaushion emblem -->
+  <!-- Left upright trunk with brush taper -->
+  <path d="M72 50 L98 42 L88 280 L62 295 Z" fill="#E01B24" />
+  
+  <!-- Upper-right aggressive spike/burst -->
+  <polygon points="86,170 120,150 280,24 135,188 88,205" fill="#E01B24" />
+  
+  <!-- Lower-right long needle spike extending down-right -->
+  <polygon points="102,175 140,205 295,345 110,230 85,215" fill="#E01B24" />
+  
+  <!-- Inner junction starburst facets and secondary thorn -->
+  <polygon points="40,155 86,135 118,175 60,195" fill="#E01B24" />
+  <polygon points="86,105 106,75 125,120 90,145" fill="#FF3B3B" opacity="0.85" />
+</svg>
