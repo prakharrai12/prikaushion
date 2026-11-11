@@ -416,16 +416,32 @@ export const Projects: React.FC = () => {
       {/* Floating Preview Card for Tier B (Desktop) */}
       <div
         ref={floatingPreviewRef}
-        className={`fixed top-0 left-0 w-64 h-40 rounded-t-[40px] rounded-b-md border border-bone-faint bg-obsidian overflow-hidden pointer-events-none z-[90] shadow-2xl transition-opacity duration-300 hidden md:block ${
+        className={`fixed top-0 left-0 w-80 h-48 rounded-lg border border-bone/25 bg-obsidian overflow-hidden pointer-events-none z-[90] shadow-[0_25px_60px_-15px_rgba(0,0,0,0.9),0_0_25px_rgba(224,27,36,0.18)] transition-all duration-300 hidden md:block ${
           hoveredTierB ? 'opacity-100 scale-100' : 'opacity-0 scale-90'
         }`}
       >
         {hoveredTierB && (
-          <img
-            src={`./assets/projects/${hoveredTierB.slug}.webp`}
-            alt=""
-            className="w-full h-full object-cover"
-          />
+          <div className="relative w-full h-full flex flex-col bg-charcoal">
+            {/* Miniature Browser Header */}
+            <div className="h-6 bg-graphite/90 border-b border-bone/15 px-3 flex items-center justify-between shrink-0">
+              <div className="flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-crimson" />
+                <span className="w-2 h-2 rounded-full bg-bone/35" />
+                <span className="w-2 h-2 rounded-full bg-bone/20" />
+              </div>
+              <span className="font-mono text-[9px] uppercase tracking-wider text-bone-dim truncate max-w-[170px]">
+                {hoveredTierB.title}
+              </span>
+            </div>
+            {/* Project Cover Image */}
+            <div className="relative w-full grow overflow-hidden bg-ink">
+              <img
+                src={`./assets/projects/${hoveredTierB.slug}.webp`}
+                alt={hoveredTierB.title}
+                className="w-full h-full object-cover object-top"
+              />
+            </div>
+          </div>
         )}
       </div>
 

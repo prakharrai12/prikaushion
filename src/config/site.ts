@@ -9,8 +9,8 @@ export const site = {
   // phone intentionally NOT displayed publicly. Do not render a phone number anywhere.
   socials: {
     github: { label: "GitHub", handle: "@prakharrai12", url: "https://github.com/prakharrai12" },
-    linkedin: { label: "LinkedIn", handle: "Prakhar Kaushik", url: "TODO_LINKEDIN_URL" },
-    instagram: { label: "Instagram", handle: "@your_handle", url: "TODO_INSTAGRAM_URL" },
+    linkedin: { label: "LinkedIn", handle: "Prakhar Kaushik", url: "https://www.linkedin.com/in/prakhar-kaushik-38731828b/" },
+    instagram: { label: "Instagram", handle: "@prakhareverie", url: "https://www.instagram.com/prakhareverie/" },
     email: { label: "Email", handle: "prakhar1532006@gmail.com", url: "mailto:prakhar1532006@gmail.com" },
   },
   resumeUrl: "TODO_RESUME_PDF",

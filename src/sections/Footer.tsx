@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react';
 import { MagneticButton } from '../components/MagneticButton';
 import { scrollToTarget } from '../lib/lenis';
 import { gsap } from '../lib/gsap';
+import { site } from '../config/site';
 
 export const Footer: React.FC = () => {
   const [istTime, setIstTime] = useState('');
@@ -119,6 +120,10 @@ export const Footer: React.FC = () => {
             <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToTarget('#projects'); }} className="hover:text-bone">Projects</a>
             <a href="#services" onClick={(e) => { e.preventDefault(); scrollToTarget('#services'); }} className="hover:text-bone">Services</a>
             <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToTarget('#contact'); }} className="hover:text-bone">Contact</a>
+            <span className="text-bone/20 hidden sm:inline">|</span>
+            <a href={site.socials.github.url} target="_blank" rel="noopener noreferrer" className="hover:text-crimson">GitHub ↗</a>
+            <a href={site.socials.linkedin.url} target="_blank" rel="noopener noreferrer" className="hover:text-crimson">LinkedIn ↗</a>
+            <a href={site.socials.instagram.url} target="_blank" rel="noopener noreferrer" className="hover:text-crimson">Instagram ↗</a>
           </div>
 
           <MagneticButton

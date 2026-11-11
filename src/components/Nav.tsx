@@ -212,6 +212,12 @@ export const Nav: React.FC = () => {
             <a href={site.socials.github.url} target="_blank" rel="noopener noreferrer" className="hover:text-crimson">
               GitHub ↗
             </a>
+            <a href={site.socials.linkedin.url} target="_blank" rel="noopener noreferrer" className="hover:text-crimson">
+              LinkedIn ↗
+            </a>
+            <a href={site.socials.instagram.url} target="_blank" rel="noopener noreferrer" className="hover:text-crimson">
+              Instagram ↗
+            </a>
             <a href={site.socials.email.url} className="hover:text-crimson">
               {site.email}
             </a>
