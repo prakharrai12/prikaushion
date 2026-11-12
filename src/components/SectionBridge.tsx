@@ -41,7 +41,7 @@ export const SectionBridge: React.FC<SectionBridgeProps> = ({ nextSection }) => 
   return (
     <div
       ref={bridgeRef}
-      className="relative w-full h-[18vh] min-h-[120px] flex items-center overflow-hidden pointer-events-none select-none my-8 md:my-16"
+      className="relative w-full h-[18vh] min-h-[120px] flex items-center overflow-hidden pointer-events-none select-none my-space-6 md:my-space-8"
       aria-hidden="true"
     >
       {/* Self-drawing Thin Crimson Orbit Arc echoing logo swoosh */}

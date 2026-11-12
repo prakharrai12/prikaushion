@@ -23,4 +23,25 @@
 
 ---
 
-*(Future phase metrics will be recorded below upon phase execution)*
+## PHASE 2 — GRID, LAYOUT & SPACING SYSTEM
+**Date:** 2026-11-12  
+**Commit Target:** `v2(phase-2): standardize 12-column grid and fluid spacing scale`
+
+### Improvements & Changes Applied
+- **Layout Primitives:**
+  - Created `<Container>` component with engineered `max-w-[1440px] mx-auto px-[clamp(20px,5vw,80px)]`.
+  - Created `<Grid>` component with 12 cols (≥1024px), 8 cols (768–1023px), 4 cols (<768px), and `clamp(16px,2vw,32px)` column gap.
+  - Replaced ad-hoc wrapper widths and margins in `Hero`, `About`, `Work`, `Projects`, `Services`, `Toolkit`, `Education`, `Socials`, `Contact`, and `Footer` with `<Container>`.
+- **Spacing Scale:**
+  - Defined CSS variables `--space-1` (4px) through `--space-11` (192px) and `--section-y: clamp(96px, 14vw, 220px)`.
+  - Exposed scale in `tailwind.config.js`.
+  - Unified section vertical rhythm to `py-[var(--section-y)]`.
+- **Typography & Text Blocks:**
+  - Promoted hero title to semantic `<h1>` with `.font-display` (resolving issue `A-03`).
+  - Added global `text-wrap: balance` on headings and `text-wrap: pretty` with `max-w-[54ch]` / `prose-editorial` on paragraphs.
+- **Mobile & Touch Optimization:**
+  - Added `touch-expand` pseudo-element padding and `min-h-[44px]` touch target sizing to filter buttons, project action pills, contact chips, and mobile navigation items (resolving issue `A-05`).
+  - Added `viewport-fit=cover` in `index.html` and safe-area inset handling on navigation.
+  - Set `100svh` / `100dvh` for hero and mobile menu to eliminate iOS Safari toolbar jumps.
+
+---

@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
+import { Container } from '../components/Container';
 import { MagneticButton } from '../components/MagneticButton';
 import { scrollToTarget } from '../lib/lenis';
 import { gsap } from '../lib/gsap';
@@ -95,7 +96,7 @@ export const Footer: React.FC = () => {
     <footer
       id="footer"
       data-bg="ink"
-      className="relative w-full pt-20 pb-12 px-[var(--gutter)] bg-ink border-t border-bone-faint text-bone overflow-hidden select-none"
+      className="relative w-full pt-20 pb-12 bg-ink border-t border-bone-faint text-bone overflow-hidden select-none"
     >
       <div ref={burstContainerRef} />
 
@@ -111,25 +112,25 @@ export const Footer: React.FC = () => {
         <span>YOU FOUND THE K. BUILT WITH TASTE.</span>
       </div>
 
-      <div className="max-w-[1440px] mx-auto flex flex-col justify-between">
+      <Container className="flex flex-col justify-between">
         {/* Top Row: Links & Back to Top */}
         <div className="flex flex-wrap items-center justify-between gap-6 pb-12 border-b border-bone-faint font-mono text-xs uppercase tracking-widest">
           <div className="flex flex-wrap items-center gap-6 text-bone-dim">
-            <a href="#about" onClick={(e) => { e.preventDefault(); scrollToTarget('#about'); }} className="hover:text-bone">About</a>
-            <a href="#work" onClick={(e) => { e.preventDefault(); scrollToTarget('#work'); }} className="hover:text-bone">Work</a>
-            <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToTarget('#projects'); }} className="hover:text-bone">Projects</a>
-            <a href="#services" onClick={(e) => { e.preventDefault(); scrollToTarget('#services'); }} className="hover:text-bone">Services</a>
-            <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToTarget('#contact'); }} className="hover:text-bone">Contact</a>
+            <a href="#about" onClick={(e) => { e.preventDefault(); scrollToTarget('#about'); }} className="hover:text-bone py-2 touch-expand">About</a>
+            <a href="#work" onClick={(e) => { e.preventDefault(); scrollToTarget('#work'); }} className="hover:text-bone py-2 touch-expand">Work</a>
+            <a href="#projects" onClick={(e) => { e.preventDefault(); scrollToTarget('#projects'); }} className="hover:text-bone py-2 touch-expand">Projects</a>
+            <a href="#services" onClick={(e) => { e.preventDefault(); scrollToTarget('#services'); }} className="hover:text-bone py-2 touch-expand">Services</a>
+            <a href="#contact" onClick={(e) => { e.preventDefault(); scrollToTarget('#contact'); }} className="hover:text-bone py-2 touch-expand">Contact</a>
             <span className="text-bone/20 hidden sm:inline">|</span>
-            <a href={site.socials.github.url} target="_blank" rel="noopener noreferrer" className="hover:text-crimson">GitHub ↗</a>
-            <a href={site.socials.linkedin.url} target="_blank" rel="noopener noreferrer" className="hover:text-crimson">LinkedIn ↗</a>
-            <a href={site.socials.instagram.url} target="_blank" rel="noopener noreferrer" className="hover:text-crimson">Instagram ↗</a>
+            <a href={site.socials.github.url} target="_blank" rel="noopener noreferrer" className="hover:text-crimson py-2 touch-expand">GitHub ↗</a>
+            <a href={site.socials.linkedin.url} target="_blank" rel="noopener noreferrer" className="hover:text-crimson py-2 touch-expand">LinkedIn ↗</a>
+            <a href={site.socials.instagram.url} target="_blank" rel="noopener noreferrer" className="hover:text-crimson py-2 touch-expand">Instagram ↗</a>
           </div>
 
           <MagneticButton
             strength={0.4}
             onClick={() => scrollToTarget('#home', 0)}
-            className="flex items-center gap-2 text-crimson hover:text-crimson-glow py-1 px-3 border border-bone-faint hover:border-crimson rounded-pill transition-colors"
+            className="flex items-center gap-2 text-crimson hover:text-crimson-glow py-2 px-4 border border-bone-faint hover:border-crimson rounded-pill transition-colors min-h-[44px] touch-expand"
           >
             <span>BACK TO TOP</span>
             <span className="text-sm">↑</span>
@@ -185,7 +186,7 @@ export const Footer: React.FC = () => {
             <span className="tabular-nums">LOCAL TIME — {istTime || '10:30:00 PM IST'}</span>
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 };

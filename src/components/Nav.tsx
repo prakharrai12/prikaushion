@@ -126,7 +126,7 @@ export const Nav: React.FC = () => {
                 key={link.id}
                 href={link.href}
                 onClick={(e) => handleNavClick(e, link.href)}
-                className={`relative flex items-center py-2 transition-colors duration-300 group ${
+                className={`relative flex items-center py-3 min-h-[44px] touch-expand transition-colors duration-300 group ${
                   isActive
                     ? isOverPaper ? 'text-ink font-semibold' : 'text-bone font-semibold'
                     : isOverPaper ? 'text-ink/60 hover:text-ink' : 'text-bone-dim hover:text-bone'
@@ -138,7 +138,7 @@ export const Nav: React.FC = () => {
                 )}
                 <span>{link.label}</span>
                 {/* Hairline underline on hover */}
-                <span className="absolute bottom-0 left-0 right-0 h-[1px] bg-crimson origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
+                <span className="absolute bottom-1 left-0 right-0 h-[1px] bg-crimson origin-left scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out" />
               </a>
             );
           })}
@@ -152,7 +152,7 @@ export const Nav: React.FC = () => {
             onClick={(e) => handleNavClick(e, '#contact')}
             strength={0.3}
             data-cursor="link"
-            className="hidden sm:inline-flex px-5 py-2.5 rounded-pill border border-crimson text-crimson hover:bg-crimson hover:text-ink font-mono text-xs uppercase tracking-widest transition-all duration-300 group"
+            className="hidden sm:inline-flex px-5 py-2.5 min-h-[44px] items-center rounded-pill border border-crimson text-crimson hover:bg-crimson hover:text-ink font-mono text-xs uppercase tracking-widest transition-all duration-300 group"
           >
             <span>Hire me</span>
             <span className="ml-1.5 inline-block group-hover:rotate-45 transition-transform duration-300">↗</span>
@@ -162,7 +162,7 @@ export const Nav: React.FC = () => {
           <button
             type="button"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-            className="lg:hidden p-3 text-bone focus:outline-none z-50 flex flex-col justify-center items-center gap-1.5"
+            className="lg:hidden p-3 min-w-[44px] min-h-[44px] text-bone focus:outline-none z-50 flex flex-col justify-center items-center gap-1.5 touch-expand"
             aria-label={isMobileMenuOpen ? 'Close menu' : 'Open menu'}
             aria-expanded={isMobileMenuOpen}
           >
@@ -182,7 +182,7 @@ export const Nav: React.FC = () => {
 
       {/* Full-screen Mobile Menu Overlay */}
       <div
-        className={`fixed inset-0 z-[75] bg-ink flex flex-col justify-between p-8 pt-28 lg:hidden transition-all duration-500 ease-in-out ${
+        className={`fixed inset-0 h-[100dvh] z-[75] bg-ink flex flex-col justify-between p-8 pt-28 lg:hidden transition-all duration-500 ease-in-out ${
           isMobileMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none -translate-y-4'
         }`}
       >
@@ -190,13 +190,13 @@ export const Nav: React.FC = () => {
         <div className="absolute -bottom-20 -left-20 w-80 h-80 rounded-full bg-crimson/15 blur-3xl pointer-events-none" />
 
         {/* Links Stack */}
-        <div className="flex flex-col gap-4 z-10 overflow-y-auto max-h-[60vh] py-2">
+        <div className="flex flex-col gap-3 z-10 overflow-y-auto max-h-[60vh] py-2">
           {NAV_LINKS.map((link, idx) => (
             <a
               key={link.id}
               href={link.href}
               onClick={(e) => handleNavClick(e, link.href)}
-              className="group flex items-baseline gap-4 font-display font-extrabold text-[clamp(2.5rem,8vw,4.5rem)] text-bone hover:text-crimson transition-colors leading-none"
+              className="group flex items-baseline gap-4 py-2 min-h-[44px] touch-expand font-display font-extrabold text-[clamp(2.2rem,7vw,4rem)] text-bone hover:text-crimson transition-colors leading-none"
             >
               <span className="font-mono text-xs tracking-widest text-crimson">
                 {String(idx + 1).padStart(2, '0')}

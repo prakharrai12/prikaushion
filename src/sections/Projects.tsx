@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Container } from '../components/Container';
 import { SectionHeader } from '../components/SectionHeader';
 import { MagneticButton } from '../components/MagneticButton';
 import { projects, Project } from '../config/projects';
@@ -115,17 +116,18 @@ export const Projects: React.FC = () => {
       data-bg="grad-oxblood-deep"
       data-accent-x="50%"
       data-accent-y="100%"
-      className="relative w-full py-[clamp(96px,14vw,220px)] px-[var(--gutter)] max-w-[1440px] mx-auto select-none"
+      className="relative w-full py-[var(--section-y)] select-none"
       aria-label="Selected Projects"
     >
-      <SectionHeader
-        index="03"
-        metaName="SELECTED WORK"
-        ghostWord="PROJECTS"
-        line1="Selected"
-        line2="*work*, shipped"
-        intro="Every project below is live. Open it, click around, break it — then tell me what you'd improve."
-      />
+      <Container>
+        <SectionHeader
+          index="03"
+          metaName="SELECTED WORK"
+          ghostWord="PROJECTS"
+          line1="Selected"
+          line2="*work*, shipped"
+          intro="Every project below is live. Open it, click around, break it — then tell me what you'd improve."
+        />
 
       {/* TIER A: Featured Projects (Sticky Stack on Desktop) */}
       <div ref={stickyStackRef} className="relative flex flex-col gap-12 md:gap-24 mb-28">
@@ -303,7 +305,7 @@ export const Projects: React.FC = () => {
                   key={cat}
                   type="button"
                   onClick={() => setActiveFilter(cat)}
-                  className={`relative px-4 py-1.5 rounded-pill transition-colors duration-300 z-10 shrink-0 ${
+                  className={`relative px-4 py-2 min-h-[44px] touch-expand flex items-center justify-center rounded-pill transition-colors duration-300 z-10 shrink-0 ${
                     isActive ? 'text-ink font-semibold' : 'text-bone-dim hover:text-bone'
                   }`}
                 >
@@ -368,7 +370,7 @@ export const Projects: React.FC = () => {
                         target={liveValid ? '_blank' : undefined}
                         rel={liveValid ? 'noopener noreferrer' : undefined}
                         aria-disabled={!liveValid}
-                        className={`h-9 px-4 rounded-pill font-mono text-[11px] uppercase tracking-wider flex items-center gap-1.5 transition-colors ${
+                        className={`h-9 min-h-[44px] px-4 rounded-pill font-mono text-[11px] uppercase tracking-wider flex items-center gap-1.5 transition-colors touch-expand ${
                           liveValid
                             ? 'bg-bone text-ink hover:bg-crimson hover:text-ink font-semibold'
                             : 'bg-bone/15 text-bone/40 cursor-not-allowed opacity-50'
@@ -390,7 +392,7 @@ export const Projects: React.FC = () => {
                         target={repoValid ? '_blank' : undefined}
                         rel={repoValid ? 'noopener noreferrer' : undefined}
                         aria-disabled={!repoValid}
-                        className={`h-9 px-3.5 rounded-pill border font-mono text-[11px] uppercase tracking-wider flex items-center gap-1.5 transition-colors ${
+                        className={`h-9 min-h-[44px] px-3.5 rounded-pill border font-mono text-[11px] uppercase tracking-wider flex items-center gap-1.5 transition-colors touch-expand ${
                           repoValid
                             ? 'border-bone-faint text-bone hover:border-crimson hover:text-crimson'
                             : 'border-bone/20 text-bone/40 cursor-not-allowed opacity-50'
@@ -460,6 +462,7 @@ export const Projects: React.FC = () => {
           </span>
         </a>
       </div>
+      </Container>
     </section>
   );
 };

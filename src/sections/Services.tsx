@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Container } from '../components/Container';
 import { SectionHeader } from '../components/SectionHeader';
 import { MagneticButton } from '../components/MagneticButton';
 import { scrollToTarget } from '../lib/lenis';
@@ -90,21 +91,28 @@ export const Services: React.FC = () => {
       data-bg="grad-wine-spot"
       data-accent-x="85%"
       data-accent-y="40%"
-      className="relative w-full py-[clamp(96px,14vw,220px)] px-[var(--gutter)] max-w-[1440px] mx-auto select-none"
+      className="relative w-full py-[var(--section-y)] select-none"
       aria-label="Prikaushion Studio Services"
     >
-      <SectionHeader
-        index="04"
-        metaName="PRIKAUSHION STUDIO"
-        ghostWord="SERVICES"
-        line1="What prikaushion"
-        line2="can *build* for you"
-        intro="prikaushion is my umbrella — web, apps, and finance tools — built for businesses that deserve better than a template."
-      />
+      <Container>
+        <SectionHeader
+          index="04"
+          metaName="PRIKAUSHION STUDIO"
+          ghostWord="SERVICES"
+          line1="What prikaushion"
+          line2="can *build* for you"
+          intro="prikaushion is my umbrella — web, apps, and finance tools — built for businesses that deserve better than a template."
+        />
 
-      {/* Pinning Area for Desktop Track */}
-      <div ref={pinWrapperRef} className="relative w-full overflow-hidden mt-8">
-        {/* Track Progress Indicator Bar (Desktop) */}
+        {/* Pinning Area for Desktop Track */}
+        <div ref={pinWrapperRef} className="relative w-full overflow-hidden mt-8">
+          {/* Mobile Swipe Cue */}
+          <div className="lg:hidden flex items-center justify-between font-mono text-[11px] uppercase tracking-widest text-bone-dim mb-4 px-1">
+            <span className="text-crimson font-medium">0{currentPanelIdx} / 04 PANELS</span>
+            <span>SWIPE TO EXPLORE →</span>
+          </div>
+
+          {/* Track Progress Indicator Bar (Desktop) */}
         <div className="hidden lg:flex items-center justify-between font-mono text-xs uppercase tracking-widest text-bone-dim mb-6">
           <div className="flex items-center gap-3">
             <span className="text-crimson font-semibold">
@@ -207,6 +215,7 @@ export const Services: React.FC = () => {
           </div>
         </div>
       </div>
+      </Container>
     </section>
   );
 };

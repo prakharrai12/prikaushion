@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Container } from '../components/Container';
 import { SectionHeader } from '../components/SectionHeader';
 import { experiences } from '../config/experience';
 import { gsap } from '../lib/gsap';
@@ -85,19 +86,20 @@ export const Work: React.FC = () => {
       data-bg="grad-smoke"
       data-accent-x="50%"
       data-accent-y="50%"
-      className="relative w-full py-[clamp(96px,14vw,220px)] px-[var(--gutter)] max-w-[1440px] mx-auto select-none"
+      className="relative w-full py-[var(--section-y)] select-none"
       aria-label="Work & Experience"
     >
-      <SectionHeader
-        index="02"
-        metaName="WORK &amp; EXPERIENCE"
-        ghostWord="WORK"
-        line1="Where I've"
-        line2="put in the *hours*"
-      />
+      <Container>
+        <SectionHeader
+          index="02"
+          metaName="WORK &amp; EXPERIENCE"
+          ghostWord="WORK"
+          line1="Where I've"
+          line2="put in the *hours*"
+        />
 
-      {/* Vertical Interactive Timeline */}
-      <div className="relative pl-8 md:pl-14 mt-12 flex flex-col gap-14 md:gap-20">
+        {/* Vertical Interactive Timeline */}
+        <div className="relative pl-8 md:pl-14 mt-12 flex flex-col gap-14 md:gap-20">
         {/* Full-Height Vertical Guide Line */}
         <div className="absolute left-[15px] md:left-[23px] top-2 bottom-6 w-[2px] bg-bone-faint origin-top">
           {/* Crimson fill growing with scroll */}
@@ -168,7 +170,7 @@ export const Work: React.FC = () => {
                   {exp.tags.map((tag, tIdx) => (
                     <span
                       key={tIdx}
-                      className="row-tag px-3 py-1 rounded-pill border border-bone-faint bg-obsidian/60 font-mono text-[11px] uppercase tracking-wider text-bone-dim hover:border-crimson hover:text-crimson transition-colors"
+                      className="row-tag touch-expand px-3 py-1 rounded-pill border border-bone-faint bg-obsidian/60 font-mono text-[11px] uppercase tracking-wider text-bone-dim hover:border-crimson hover:text-crimson transition-colors"
                     >
                       {tag}
                     </span>
@@ -178,7 +180,8 @@ export const Work: React.FC = () => {
             </div>
           );
         })}
-      </div>
+        </div>
+      </Container>
     </section>
   );
 };

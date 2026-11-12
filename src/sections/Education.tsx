@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Container } from '../components/Container';
 import { SectionHeader } from '../components/SectionHeader';
 import { gsap } from '../lib/gsap';
 
@@ -90,18 +91,19 @@ export const Education: React.FC = () => {
       data-bg="grad-smoke"
       data-accent-x="80%"
       data-accent-y="80%"
-      className="relative w-full py-[clamp(96px,14vw,220px)] px-[var(--gutter)] max-w-[1440px] mx-auto select-none"
+      className="relative w-full py-[var(--section-y)] select-none"
       aria-label="Education, Clubs and Certifications"
     >
-      <SectionHeader
-        index="06"
-        metaName="EDUCATION"
-        ghostWord="LEARN"
-        line1="Always"
-        line2="*learning*"
-      />
+      <Container>
+        <SectionHeader
+          index="06"
+          metaName="EDUCATION"
+          ghostWord="LEARN"
+          line1="Always"
+          line2="*learning*"
+        />
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mt-8" style={{ perspective: 1000 }}>
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mt-8" style={{ perspective: 1000 }}>
         {/* Card 1: Academics (Cols 1-6) */}
         <div className="edu-card lg:col-span-6 rounded-lg border border-bone-faint bg-obsidian p-6 sm:p-8 md:p-12 shadow-2xl flex flex-col justify-between hover:-translate-y-2 hover:border-bone/35 hover:shadow-[0_20px_60px_-15px_rgba(224,27,36,0.25)] transition-all duration-400">
           <div>
@@ -274,6 +276,7 @@ export const Education: React.FC = () => {
           </div>
         </div>
       </div>
+      </Container>
     </section>
   );
 };

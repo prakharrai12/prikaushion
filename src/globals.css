@@ -32,8 +32,22 @@
   --r-lg: 28px;
   --r-pill: 999px;
 
-  /* Fluid Spacing & Typography */
+  /* Fluid Spacing Scale (Engineered) */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+  --space-10: 128px;
+  --space-11: 192px;
+  --section-y: clamp(96px, 14vw, 220px);
   --gutter: clamp(20px, 5vw, 80px);
+
+  /* Fluid Typography Scale */
   --fs-mega: clamp(5.5rem, 17vw, 17rem);
   --fs-title: clamp(3.5rem, 11vw, 11rem);
   --fs-h2: clamp(2.2rem, 5vw, 4.5rem);
@@ -42,6 +56,11 @@
   --fs-body: 1.0625rem;
   --fs-small: 0.875rem;
   --fs-mono: 0.75rem;
+
+  /* Line Heights */
+  --lh-heading: 1.05;
+  --lh-body: 1.7;
+  --lh-mono: 1.4;
 
   /* Radial glow drift coordinates */
   --glow-x: 50%;
@@ -81,10 +100,65 @@ html, body {
   background-color: var(--ink);
   color: var(--bone);
   font-family: 'Manrope', -apple-system, BlinkMacSystemFont, sans-serif;
-  overflow-x: hidden;
+  overflow-x: clip;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Headings text-wrap balance & line height */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+  line-height: var(--lh-heading, 1.05);
+  letter-spacing: -0.02em;
+}
+
+/* Paragraphs text-wrap pretty & line height */
+p {
+  text-wrap: pretty;
+  line-height: var(--lh-body, 1.7);
+}
+
+/* Prose max width */
+.prose-editorial {
+  max-width: 65ch;
+}
+
+/* Monospace line height */
+.font-mono {
+  line-height: var(--lh-mono, 1.4);
+}
+
+/* Section vertical padding */
+.section-py {
+  padding-block: var(--section-y);
+}
+
+/* Accessible tap target expansion for touch devices */
+.tap-target {
+  position: relative;
+  min-height: 44px;
+  min-width: 44px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* For inline chips/tags with visual size < 44px, use pseudo-element touch expansion */
+.touch-expand {
+  position: relative;
+}
+.touch-expand::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 44px;
+  min-height: 44px;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
 }
 
 /* Display Font Class */

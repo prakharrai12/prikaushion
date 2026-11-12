@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Container } from '../components/Container';
 import { SectionHeader } from '../components/SectionHeader';
 import { MagneticButton } from '../components/MagneticButton';
 import { site } from '../config/site';
@@ -165,19 +166,20 @@ export const Socials: React.FC = () => {
       id="socials"
       ref={containerRef}
       data-bg="grad-void"
-      className="relative w-full py-[clamp(96px,14vw,220px)] px-[var(--gutter)] max-w-[1440px] mx-auto select-none"
+      className="relative w-full py-[var(--section-y)] select-none"
       aria-label="Social Profiles and Links"
     >
-      <SectionHeader
-        index="07"
-        metaName="SOCIALS"
-        ghostWord="SOCIAL"
-        line1="Find me"
-        line2="*elsewhere*"
-        intro="Four places I actually show up. Pick one."
-      />
+      <Container>
+        <SectionHeader
+          index="07"
+          metaName="SOCIALS"
+          ghostWord="SOCIAL"
+          line1="Find me"
+          line2="*elsewhere*"
+          intro="Four places I actually show up. Pick one."
+        />
 
-      {/* Giant Interactive Social Rows */}
+        {/* Giant Interactive Social Rows */}
       <div className="flex flex-col border-y border-bone-faint mt-10">
         {SOCIAL_LIST.map((item) => {
           const valid = isUrlValid(item.url);
@@ -308,6 +310,7 @@ export const Socials: React.FC = () => {
           })}
         </div>
       </div>
+      </Container>
     </section>
   );
 };

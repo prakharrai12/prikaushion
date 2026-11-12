@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Container } from '../components/Container';
 import { SectionHeader } from '../components/SectionHeader';
 import { skillGroups, constellationNodes } from '../config/skills';
 import { gsap } from '../lib/gsap';
@@ -95,18 +96,19 @@ export const Toolkit: React.FC = () => {
       data-bg="grad-void"
       data-accent-x="30%"
       data-accent-y="20%"
-      className="relative w-full py-[clamp(96px,14vw,220px)] px-[var(--gutter)] max-w-[1440px] mx-auto select-none"
+      className="relative w-full py-[var(--section-y)] select-none"
       aria-label="Toolkit and Technical Skills"
     >
-      <SectionHeader
-        index="05"
-        metaName="TOOLKIT"
-        ghostWord="TOOLKIT"
-        line1="The tools"
-        line2="of the *trade*"
-      />
+      <Container>
+        <SectionHeader
+          index="05"
+          metaName="TOOLKIT"
+          ghostWord="TOOLKIT"
+          line1="The tools"
+          line2="of the *trade*"
+        />
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mt-8">
         {/* Left Column: Interactive Constellation Star-Map (Desktop >= 900px) */}
         <div className="hidden lg:flex lg:col-span-5 sticky top-[14vh] flex-col items-center justify-center p-6 border border-bone-faint rounded-lg bg-obsidian/60 shadow-2xl">
           <div className="w-full flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-bone-dim mb-4">
@@ -275,6 +277,7 @@ export const Toolkit: React.FC = () => {
           ))}
         </div>
       </div>
+      </Container>
     </section>
   );
 };

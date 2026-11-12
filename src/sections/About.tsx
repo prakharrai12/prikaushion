@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Container } from '../components/Container';
 import { SectionHeader } from '../components/SectionHeader';
 import { site } from '../config/site';
 import { gsap, ScrollTrigger } from '../lib/gsap';
@@ -133,18 +134,19 @@ export const About: React.FC = () => {
       data-bg="grad-ember-haze"
       data-accent-x="20%"
       data-accent-y="0%"
-      className="relative w-full py-[clamp(96px,14vw,220px)] px-[var(--gutter)] max-w-[1440px] mx-auto select-none"
+      className="relative w-full py-[var(--section-y)] select-none"
       aria-label="About Prakhar Kaushik"
     >
-      <SectionHeader
-        index="01"
-        metaName="ABOUT ME"
-        ghostWord="ABOUT"
-        line1="The person"
-        line2="behind the *pixels*"
-      />
+      <Container>
+        <SectionHeader
+          index="01"
+          metaName="ABOUT ME"
+          ghostWord="ABOUT"
+          line1="The person"
+          line2="behind the *pixels*"
+        />
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mt-8">
         {/* Left Column (Cols 1-5): Sticky Arched Portrait */}
         <div className="lg:col-span-5 lg:sticky lg:top-[12vh]">
           <div className="relative mx-auto max-w-[420px] lg:max-w-none">
@@ -323,6 +325,7 @@ export const About: React.FC = () => {
           </div>
         </div>
       </div>
+      </Container>
     </section>
   );
 };

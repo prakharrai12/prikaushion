@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
+import { Container } from '../components/Container';
 import { MagneticButton } from '../components/MagneticButton';
 import { scrollToTarget } from '../lib/lenis';
 import { site } from '../config/site';
@@ -234,7 +235,7 @@ export const Hero: React.FC = () => {
       data-bg="grad-void"
       data-accent-x="70%"
       data-accent-y="10%"
-      className="relative min-h-[100svh] w-full flex flex-col justify-end pt-32 pb-16 md:pb-24 px-[var(--gutter)] overflow-hidden select-none"
+      className="relative min-h-[100svh] w-full flex flex-col justify-end pt-32 pb-16 md:pb-24 overflow-hidden select-none"
       aria-label="Introduction and Hero"
     >
       {/* Laggy Atmospheric Crimson Glow */}
@@ -289,8 +290,8 @@ export const Hero: React.FC = () => {
         />
       </div>
 
-      {/* Hero Content Block Anchored Bottom-Left */}
-      <div className="relative z-20 max-w-[1440px] w-full mx-auto flex flex-col items-start">
+      {/* Hero Content Block Anchored Bottom-Left inside Engineered Container */}
+      <Container className="relative z-20 flex flex-col items-start">
         {/* Top-Left Mono Kicker with Pulsing Crimson Indicator */}
         <div
           ref={kickerRef}
@@ -303,8 +304,8 @@ export const Hero: React.FC = () => {
           <span className="text-bone font-medium">AVAILABLE FOR FREELANCE — 2026</span>
         </div>
 
-        {/* Stacked Name (Fraunces Fluid Mega) */}
-        <div className="font-display leading-[0.88] tracking-[-0.035em] mb-4">
+        {/* Semantic H1: Stacked Name (Fraunces Fluid Mega) */}
+        <h1 className="font-display leading-[0.88] tracking-[-0.035em] mb-4">
           {/* Line 1: PRAKHAR (Fraunces 300) */}
           <div ref={line1Ref} className="title-line-mask font-light text-[clamp(2.8rem,11.5vw,14rem)] text-bone">
             {'PRAKHAR'.split('').map((char, i) => (
@@ -325,18 +326,18 @@ export const Hero: React.FC = () => {
           </div>
 
           {/* Line 3: a.k.a. VishRim (Instrument Serif italic crimson) */}
-          <div
+          <span
             ref={line3Ref}
-            className="font-whisper text-[clamp(1.8rem,4.5vw,4.5rem)] text-crimson mt-2 tracking-tight"
+            className="font-whisper block text-[clamp(1.8rem,4.5vw,4.5rem)] text-crimson mt-2 tracking-tight"
           >
             a.k.a. VishRim
-          </div>
-        </div>
+          </span>
+        </h1>
 
         {/* Role Statement */}
         <p
           ref={roleRef}
-          className="font-sans text-[clamp(1.15rem,1.6vw,1.6rem)] text-bone-dim max-w-[38ch] leading-relaxed mb-6"
+          className="font-sans text-[clamp(1.15rem,1.6vw,1.6rem)] text-bone-dim max-w-[54ch] leading-relaxed mb-6"
         >
           I design and build frontends that feel expensive — and teach the next generation to code.
         </p>
@@ -401,7 +402,7 @@ export const Hero: React.FC = () => {
             )}
           </div>
         </div>
-      </div>
+      </Container>
 
       {/* Bottom-Right Scroll Cue */}
       <div className="hidden md:flex absolute right-8 bottom-12 flex-col items-center gap-3 font-mono text-[10px] tracking-widest text-bone-dim select-none pointer-events-none">

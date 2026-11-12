@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Container } from '../components/Container';
 import { SectionHeader } from '../components/SectionHeader';
 import { MagneticButton } from '../components/MagneticButton';
 import { site } from '../config/site';
@@ -65,19 +66,20 @@ export const Contact: React.FC = () => {
     <section
       id="contact"
       data-bg="grad-paper"
-      className="theme-paper relative w-full py-[clamp(96px,14vw,220px)] px-[var(--gutter)] max-w-[1440px] mx-auto select-none bg-[#F4EFE4] text-[#0A0A0B] rounded-2xl md:rounded-3xl shadow-2xl transition-colors duration-1000"
+      className="theme-paper relative w-full py-[var(--section-y)] select-none bg-[#F4EFE4] text-[#0A0A0B] rounded-2xl md:rounded-3xl shadow-2xl transition-colors duration-1000"
       aria-label="Contact Prakhar Kaushik"
     >
-      <SectionHeader
-        index="08"
-        metaName="CONTACT"
-        ghostWord="HELLO"
-        line1="Let's make"
-        line2="something *iconic*"
-        theme="paper"
-      />
+      <Container>
+        <SectionHeader
+          index="08"
+          metaName="CONTACT"
+          ghostWord="HELLO"
+          line1="Let's make"
+          line2="something *iconic*"
+          theme="paper"
+        />
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mt-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mt-12">
         {/* Left Column (Cols 1-5): Pitch, Details & Giant Say Hello Button */}
         <div className="lg:col-span-5 flex flex-col justify-between h-full">
           <div>
@@ -255,7 +257,7 @@ export const Contact: React.FC = () => {
                         key={chip}
                         type="button"
                         onClick={() => toggleChip(chip)}
-                        className={`px-4 py-2 rounded-pill font-mono text-xs uppercase tracking-wider transition-all duration-200 border ${
+                        className={`px-4 py-2 min-h-[44px] touch-expand rounded-pill font-mono text-xs uppercase tracking-wider transition-all duration-200 border flex items-center justify-center ${
                           isSelected
                             ? 'bg-[#0A0A0B] text-[#F4EFE4] border-[#0A0A0B] font-semibold shadow-md'
                             : 'bg-transparent text-[#0A0A0B]/80 border-[#0A0A0B]/20 hover:border-[#0A0A0B]'
@@ -293,7 +295,7 @@ export const Contact: React.FC = () => {
               <div className="pt-4">
                 <button
                   type="submit"
-                  className="h-14 px-8 rounded-pill bg-[#0A0A0B] text-[#F4EFE4] font-mono text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-2 hover:bg-crimson hover:text-[#0A0A0B] transition-all duration-300 shadow-xl group"
+                  className="h-14 min-h-[44px] px-8 rounded-pill bg-[#0A0A0B] text-[#F4EFE4] font-mono text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-2 hover:bg-crimson hover:text-[#0A0A0B] transition-all duration-300 shadow-xl group"
                 >
                   <span>Send it</span>
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
@@ -303,6 +305,7 @@ export const Contact: React.FC = () => {
           )}
         </div>
       </div>
+      </Container>
     </section>
   );
 };
