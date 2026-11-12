@@ -1,0 +1,4582 @@
+{
+  "url": "https://prikaushion.vercel.app",
+  "timestamp": "2026-11-12T05:51:02.399Z",
+  "navTime": 2705,
+  "consoleLogs": [],
+  "networkFailures": [],
+  "headings": [
+    {
+      "level": "h2",
+      "text": "The person behind the pixels"
+    },
+    {
+      "level": "h2",
+      "text": "Where I've put in the hours"
+    },
+    {
+      "level": "h3",
+      "text": "Website Developer & Core Organiser"
+    },
+    {
+      "level": "h3",
+      "text": "Internship — Web & AI Projects"
+    },
+    {
+      "level": "h3",
+      "text": "STEM Educator (AI & Coding)"
+    },
+    {
+      "level": "h3",
+      "text": "Freelance Web Developer"
+    },
+    {
+      "level": "h3",
+      "text": "Head Volunteer"
+    },
+    {
+      "level": "h3",
+      "text": "Python & AI Summer Camp"
+    },
+    {
+      "level": "h2",
+      "text": "Selected work, shipped"
+    },
+    {
+      "level": "h3",
+      "text": "Hacks 2026 — NARI Hackathon"
+    },
+    {
+      "level": "h3",
+      "text": "VipraPulse"
+    },
+    {
+      "level": "h3",
+      "text": "Finculator"
+    },
+    {
+      "level": "h3",
+      "text": "Radix Aroma"
+    },
+    {
+      "level": "h3",
+      "text": "More Shipped Projects"
+    },
+    {
+      "level": "h2",
+      "text": "What prikaushion can build for you"
+    },
+    {
+      "level": "h3",
+      "text": "Websites for local business"
+    },
+    {
+      "level": "h3",
+      "text": "Web apps & dashboards"
+    },
+    {
+      "level": "h3",
+      "text": "AI-powered products"
+    },
+    {
+      "level": "h3",
+      "text": "Workshops & teaching"
+    },
+    {
+      "level": "h3",
+      "text": "Have a business that needs a better front door?"
+    },
+    {
+      "level": "h2",
+      "text": "The tools of the trade"
+    },
+    {
+      "level": "h2",
+      "text": "Always learning"
+    },
+    {
+      "level": "h3",
+      "text": "Diploma in Computer Science Engineering"
+    },
+    {
+      "level": "h3",
+      "text": "Clubs & Student Coordination"
+    },
+    {
+      "level": "h4",
+      "text": "Python & AI Summer Camp"
+    },
+    {
+      "level": "h4",
+      "text": "STEM Educator Internship Certificate"
+    },
+    {
+      "level": "h4",
+      "text": "NTCC Internship-I (PTCHIN101)"
+    },
+    {
+      "level": "h2",
+      "text": "Find me elsewhere"
+    },
+    {
+      "level": "h2",
+      "text": "Let's make something iconic"
+    }
+  ],
+  "images": [
+    {
+      "src": "./assets/brand/logo-mark-k.svg",
+      "alt": "prikaushion red K starburst",
+      "loading": "",
+      "naturalWidth": 125,
+      "naturalHeight": 150,
+      "renderedWidth": 620,
+      "renderedHeight": 744
+    },
+    {
+      "src": "./assets/images/prakhar-portrait.webp",
+      "alt": "Prakhar Kaushik at Faraway International Hackathon",
+      "loading": "lazy",
+      "naturalWidth": 420,
+      "naturalHeight": 525,
+      "renderedWidth": 501,
+      "renderedHeight": 626
+    },
+    {
+      "src": "./assets/projects/hacks-2026.webp",
+      "alt": "Hacks 2026 — NARI Hackathon Preview",
+      "loading": "lazy",
+      "naturalWidth": 0,
+      "naturalHeight": 0,
+      "renderedWidth": 665,
+      "renderedHeight": 418
+    },
+    {
+      "src": "./assets/projects/vipra-pulse.webp",
+      "alt": "VipraPulse Preview",
+      "loading": "lazy",
+      "naturalWidth": 0,
+      "naturalHeight": 0,
+      "renderedWidth": 665,
+      "renderedHeight": 418
+    },
+    {
+      "src": "./assets/projects/finculator.webp",
+      "alt": "Finculator Preview",
+      "loading": "lazy",
+      "naturalWidth": 0,
+      "naturalHeight": 0,
+      "renderedWidth": 665,
+      "renderedHeight": 418
+    },
+    {
+      "src": "./assets/projects/radix-aroma.webp",
+      "alt": "Radix Aroma Preview",
+      "loading": "lazy",
+      "naturalWidth": 0,
+      "naturalHeight": 0,
+      "renderedWidth": 665,
+      "renderedHeight": 418
+    }
+  ],
+  "linkAudit": [
+    {
+      "element": "a",
+      "text": "pri k aushion",
+      "href": "#home",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "HOME",
+      "href": "#home",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "ABOUT",
+      "href": "#about",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "WORK",
+      "href": "#work",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "PROJECTS",
+      "href": "#projects",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "SERVICES",
+      "href": "#services",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "TOOLKIT",
+      "href": "#toolkit",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "SOCIALS",
+      "href": "#socials",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "CONTACT",
+      "href": "#contact",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "HIRE ME ↗",
+      "href": "#contact",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "01Home",
+      "href": "#home",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "02About",
+      "href": "#about",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "03Work",
+      "href": "#work",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "04Projects",
+      "href": "#projects",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "05Services",
+      "href": "#services",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "06Toolkit",
+      "href": "#toolkit",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "07Socials",
+      "href": "#socials",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "08Contact",
+      "href": "#contact",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "GitHub ↗",
+      "href": "https://github.com/prakharrai12",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "LinkedIn ↗",
+      "href": "https://www.linkedin.com/in/prakhar-kaushik-38731828b/",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 405,
+      "verdict": "WARN 405"
+    },
+    {
+      "element": "a",
+      "text": "Instagram ↗",
+      "href": "https://www.instagram.com/prakhareverie/",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "prakhar1532006@gmail.com",
+      "href": "mailto:prakhar1532006@gmail.com",
+      "target": "",
+      "rel": "",
+      "status": "MAILTO",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "SEE MY WORK ↓",
+      "href": "#projects",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "DOWNLOAD CV",
+      "href": "",
+      "target": "",
+      "rel": "",
+      "status": "INTERNAL / HASH",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "LIVE",
+      "href": "https://thehacks.in",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "CODE",
+      "href": "https://github.com/prakharrai12",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "LIVE",
+      "href": "https://frontend-gamma-nine-70.vercel.app",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "CODE",
+      "href": "https://github.com/prakharrai12",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "LIVE",
+      "href": "https://finculator-black.vercel.app",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "CODE",
+      "href": "https://github.com/prakharrai12",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "LIVE",
+      "href": "",
+      "target": "",
+      "rel": "",
+      "status": "INTERNAL / HASH",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "CODE",
+      "href": "https://github.com/prakharrai12",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "LIVE ↗",
+      "href": "",
+      "target": "",
+      "rel": "",
+      "status": "INTERNAL / HASH",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "CODE",
+      "href": "https://github.com/prakharrai12",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "LIVE ↗",
+      "href": "https://amisphere-cyan.vercel.app",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "CODE",
+      "href": "https://github.com/prakharrai12",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "LIVE ↗",
+      "href": "",
+      "target": "",
+      "rel": "",
+      "status": "INTERNAL / HASH",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "CODE",
+      "href": "",
+      "target": "",
+      "rel": "",
+      "status": "INTERNAL / HASH",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "LIVE ↗",
+      "href": "",
+      "target": "",
+      "rel": "",
+      "status": "INTERNAL / HASH",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "CODE",
+      "href": "",
+      "target": "",
+      "rel": "",
+      "status": "INTERNAL / HASH",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "LIVE ↗",
+      "href": "",
+      "target": "",
+      "rel": "",
+      "status": "INTERNAL / HASH",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "CODE",
+      "href": "",
+      "target": "",
+      "rel": "",
+      "status": "INTERNAL / HASH",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "LIVE ↗",
+      "href": "",
+      "target": "",
+      "rel": "",
+      "status": "INTERNAL / HASH",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "CODE",
+      "href": "",
+      "target": "",
+      "rel": "",
+      "status": "INTERNAL / HASH",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "LIVE ↗",
+      "href": "",
+      "target": "",
+      "rel": "",
+      "status": "INTERNAL / HASH",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "CODE",
+      "href": "",
+      "target": "",
+      "rel": "",
+      "status": "INTERNAL / HASH",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "See every repository on GitHub ↗",
+      "href": "https://github.com/prakharrai12",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "LET'S TALK →",
+      "href": "#contact",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "01 GitHub @PRAKHARRAI12",
+      "href": "https://github.com/prakharrai12",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "02 LinkedIn PRAKHAR KAUSHIK",
+      "href": "https://www.linkedin.com/in/prakhar-kaushik-38731828b/",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 999,
+      "verdict": "WARN 999"
+    },
+    {
+      "element": "a",
+      "text": "03 Instagram @PRAKHAREVERIE",
+      "href": "https://www.instagram.com/prakhareverie/",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "04 Email PRAKHAR1532006@GMAIL.COM",
+      "href": "mailto:prakhar1532006@gmail.com",
+      "target": "",
+      "rel": "noopener noreferrer",
+      "status": "MAILTO",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "Open GitHub",
+      "href": "https://github.com/prakharrai12",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "Open LinkedIn",
+      "href": "https://www.linkedin.com/in/prakhar-kaushik-38731828b/",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 405,
+      "verdict": "WARN 405"
+    },
+    {
+      "element": "a",
+      "text": "Open Instagram",
+      "href": "https://www.instagram.com/prakhareverie/",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "Open Email",
+      "href": "mailto:prakhar1532006@gmail.com",
+      "target": "",
+      "rel": "noopener noreferrer",
+      "status": "MAILTO",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "Say hello MAILTO ↗",
+      "href": "mailto:prakhar1532006@gmail.com",
+      "target": "",
+      "rel": "",
+      "status": "MAILTO",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "ABOUT",
+      "href": "#about",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "WORK",
+      "href": "#work",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "PROJECTS",
+      "href": "#projects",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "SERVICES",
+      "href": "#services",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "CONTACT",
+      "href": "#contact",
+      "target": "",
+      "rel": "",
+      "status": "ANCHOR_EXISTS",
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "GITHUB ↗",
+      "href": "https://github.com/prakharrai12",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    },
+    {
+      "element": "a",
+      "text": "LINKEDIN ↗",
+      "href": "https://www.linkedin.com/in/prakhar-kaushik-38731828b/",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 405,
+      "verdict": "WARN 405"
+    },
+    {
+      "element": "a",
+      "text": "INSTAGRAM ↗",
+      "href": "https://www.instagram.com/prakhareverie/",
+      "target": "_blank",
+      "rel": "noopener noreferrer",
+      "status": 200,
+      "verdict": "PASS"
+    }
+  ],
+  "layoutMetrics": {
+    "360": {
+      "clientWidth": 360,
+      "scrollWidth": 360,
+      "hasOverflow": false,
+      "sections": [
+        {
+          "id": "home",
+          "paddingTop": "128px",
+          "paddingBottom": "64px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "(no-id)",
+          "paddingTop": "32px",
+          "paddingBottom": "32px",
+          "paddingLeft": "0px",
+          "paddingRight": "0px"
+        },
+        {
+          "id": "about",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "work",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "projects",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "services",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "toolkit",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "education",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "socials",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "contact",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        }
+      ],
+      "interactives": [
+        {
+          "tag": "button",
+          "text": "Jump to section HOME",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section ABOUT ME",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section WORK",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section PROJECTS",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section SERVICES",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section TOOLKIT",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section EDUCATION",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section SOCIALS",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section CONTACT",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section FOOTER",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "pri\nk\naushion",
+          "width": 135,
+          "height": 38,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Home",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "About",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Work",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Projects",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Services",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Toolkit",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Socials",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Contact",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Hire me↗",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Open menu",
+          "width": 48,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "01\nHome",
+          "width": 296,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "02\nAbout",
+          "width": 296,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "03\nWork",
+          "width": 296,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "04\nProjects",
+          "width": 296,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "05\nServices",
+          "width": 296,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "06\nToolkit",
+          "width": 296,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "07\nSocials",
+          "width": 296,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "08\nContact",
+          "width": 296,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "GITHUB ↗",
+          "width": 76,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LINKEDIN ↗",
+          "width": 95,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "INSTAGRAM ↗",
+          "width": 105,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "PRAKHAR1532006@GMAIL.COM",
+          "width": 225,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "ALL",
+          "width": 60,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEB",
+          "width": 60,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "AI",
+          "width": 51,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "HARDWARE",
+          "width": 107,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "CLIENT",
+          "width": 88,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEBSITE",
+          "width": 89,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEB APP",
+          "width": 89,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "AI PRODUCT",
+          "width": 112,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WORKSHOP",
+          "width": 96,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "SOMETHING ELSE",
+          "width": 143,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "ABOUT",
+          "width": 47,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "WORK",
+          "width": 37,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "PROJECTS",
+          "width": 75,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "SERVICES",
+          "width": 75,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CONTACT",
+          "width": 66,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "GITHUB ↗",
+          "width": 76,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LINKEDIN ↗",
+          "width": 95,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "INSTAGRAM ↗",
+          "width": 105,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "BACK TO TOP\n↑",
+          "width": 148,
+          "height": 30,
+          "isSmall": true
+        }
+      ]
+    },
+    "390": {
+      "clientWidth": 390,
+      "scrollWidth": 390,
+      "hasOverflow": false,
+      "sections": [
+        {
+          "id": "home",
+          "paddingTop": "128px",
+          "paddingBottom": "64px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "(no-id)",
+          "paddingTop": "32px",
+          "paddingBottom": "32px",
+          "paddingLeft": "0px",
+          "paddingRight": "0px"
+        },
+        {
+          "id": "about",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "work",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "projects",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "services",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "toolkit",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "education",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "socials",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        },
+        {
+          "id": "contact",
+          "paddingTop": "96px",
+          "paddingBottom": "96px",
+          "paddingLeft": "20px",
+          "paddingRight": "20px"
+        }
+      ],
+      "interactives": [
+        {
+          "tag": "button",
+          "text": "Jump to section HOME",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section ABOUT ME",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section WORK",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section PROJECTS",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section SERVICES",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section TOOLKIT",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section EDUCATION",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section SOCIALS",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section CONTACT",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section FOOTER",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "pri\nk\naushion",
+          "width": 135,
+          "height": 38,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Home",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "About",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Work",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Projects",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Services",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Toolkit",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Socials",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Contact",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Hire me↗",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Open menu",
+          "width": 48,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "01\nHome",
+          "width": 326,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "02\nAbout",
+          "width": 326,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "03\nWork",
+          "width": 326,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "04\nProjects",
+          "width": 326,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "05\nServices",
+          "width": 326,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "06\nToolkit",
+          "width": 326,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "07\nSocials",
+          "width": 326,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "08\nContact",
+          "width": 326,
+          "height": 40,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "GITHUB ↗",
+          "width": 76,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LINKEDIN ↗",
+          "width": 95,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "INSTAGRAM ↗",
+          "width": 105,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "PRAKHAR1532006@GMAIL.COM",
+          "width": 225,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "ALL",
+          "width": 60,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEB",
+          "width": 60,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "AI",
+          "width": 51,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "HARDWARE",
+          "width": 107,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "CLIENT",
+          "width": 88,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEBSITE",
+          "width": 89,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEB APP",
+          "width": 89,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "AI PRODUCT",
+          "width": 112,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WORKSHOP",
+          "width": 96,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "SOMETHING ELSE",
+          "width": 143,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "ABOUT",
+          "width": 47,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "WORK",
+          "width": 37,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "PROJECTS",
+          "width": 75,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "SERVICES",
+          "width": 75,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CONTACT",
+          "width": 66,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "GITHUB ↗",
+          "width": 76,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LINKEDIN ↗",
+          "width": 95,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "INSTAGRAM ↗",
+          "width": 105,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "BACK TO TOP\n↑",
+          "width": 148,
+          "height": 30,
+          "isSmall": true
+        }
+      ]
+    },
+    "768": {
+      "clientWidth": 768,
+      "scrollWidth": 768,
+      "hasOverflow": false,
+      "sections": [
+        {
+          "id": "home",
+          "paddingTop": "128px",
+          "paddingBottom": "96px",
+          "paddingLeft": "38.4px",
+          "paddingRight": "38.4px"
+        },
+        {
+          "id": "(no-id)",
+          "paddingTop": "40px",
+          "paddingBottom": "40px",
+          "paddingLeft": "0px",
+          "paddingRight": "0px"
+        },
+        {
+          "id": "about",
+          "paddingTop": "107.52px",
+          "paddingBottom": "107.52px",
+          "paddingLeft": "38.4px",
+          "paddingRight": "38.4px"
+        },
+        {
+          "id": "work",
+          "paddingTop": "107.52px",
+          "paddingBottom": "107.52px",
+          "paddingLeft": "38.4px",
+          "paddingRight": "38.4px"
+        },
+        {
+          "id": "projects",
+          "paddingTop": "107.52px",
+          "paddingBottom": "107.52px",
+          "paddingLeft": "38.4px",
+          "paddingRight": "38.4px"
+        },
+        {
+          "id": "services",
+          "paddingTop": "107.52px",
+          "paddingBottom": "107.52px",
+          "paddingLeft": "38.4px",
+          "paddingRight": "38.4px"
+        },
+        {
+          "id": "toolkit",
+          "paddingTop": "107.52px",
+          "paddingBottom": "107.52px",
+          "paddingLeft": "38.4px",
+          "paddingRight": "38.4px"
+        },
+        {
+          "id": "education",
+          "paddingTop": "107.52px",
+          "paddingBottom": "107.52px",
+          "paddingLeft": "38.4px",
+          "paddingRight": "38.4px"
+        },
+        {
+          "id": "socials",
+          "paddingTop": "107.52px",
+          "paddingBottom": "107.52px",
+          "paddingLeft": "38.4px",
+          "paddingRight": "38.4px"
+        },
+        {
+          "id": "contact",
+          "paddingTop": "107.52px",
+          "paddingBottom": "107.52px",
+          "paddingLeft": "38.4px",
+          "paddingRight": "38.4px"
+        }
+      ],
+      "interactives": [
+        {
+          "tag": "button",
+          "text": "Jump to section HOME",
+          "width": 28,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section ABOUT ME",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section WORK",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section PROJECTS",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section SERVICES",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section TOOLKIT",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section EDUCATION",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section SOCIALS",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section CONTACT",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section FOOTER",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "pri\nk\naushion",
+          "width": 135,
+          "height": 38,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Home",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "About",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Work",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Projects",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Services",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Toolkit",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Socials",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Contact",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "HIRE ME\n↗",
+          "width": 124,
+          "height": 38,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Open menu",
+          "width": 48,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "GITHUB ↗",
+          "width": 76,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LINKEDIN ↗",
+          "width": 95,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "INSTAGRAM ↗",
+          "width": 105,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "PRAKHAR1532006@GMAIL.COM",
+          "width": 225,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "ALL",
+          "width": 60,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEB",
+          "width": 60,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "AI",
+          "width": 51,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "HARDWARE",
+          "width": 107,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "CLIENT",
+          "width": 88,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEBSITE",
+          "width": 89,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEB APP",
+          "width": 89,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "AI PRODUCT",
+          "width": 112,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WORKSHOP",
+          "width": 96,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "SOMETHING ELSE",
+          "width": 143,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "ABOUT",
+          "width": 47,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "WORK",
+          "width": 37,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "PROJECTS",
+          "width": 75,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "SERVICES",
+          "width": 75,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CONTACT",
+          "width": 66,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "GITHUB ↗",
+          "width": 76,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LINKEDIN ↗",
+          "width": 95,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "INSTAGRAM ↗",
+          "width": 105,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "BACK TO TOP\n↑",
+          "width": 148,
+          "height": 30,
+          "isSmall": true
+        }
+      ]
+    },
+    "1024": {
+      "clientWidth": 1024,
+      "scrollWidth": 1024,
+      "hasOverflow": false,
+      "sections": [
+        {
+          "id": "home",
+          "paddingTop": "128px",
+          "paddingBottom": "96px",
+          "paddingLeft": "51.2px",
+          "paddingRight": "51.2px"
+        },
+        {
+          "id": "(no-id)",
+          "paddingTop": "40px",
+          "paddingBottom": "40px",
+          "paddingLeft": "0px",
+          "paddingRight": "0px"
+        },
+        {
+          "id": "about",
+          "paddingTop": "143.36px",
+          "paddingBottom": "143.36px",
+          "paddingLeft": "51.2px",
+          "paddingRight": "51.2px"
+        },
+        {
+          "id": "work",
+          "paddingTop": "143.36px",
+          "paddingBottom": "143.36px",
+          "paddingLeft": "51.2px",
+          "paddingRight": "51.2px"
+        },
+        {
+          "id": "projects",
+          "paddingTop": "143.36px",
+          "paddingBottom": "143.36px",
+          "paddingLeft": "51.2px",
+          "paddingRight": "51.2px"
+        },
+        {
+          "id": "services",
+          "paddingTop": "143.36px",
+          "paddingBottom": "143.36px",
+          "paddingLeft": "51.2px",
+          "paddingRight": "51.2px"
+        },
+        {
+          "id": "toolkit",
+          "paddingTop": "143.36px",
+          "paddingBottom": "143.36px",
+          "paddingLeft": "51.2px",
+          "paddingRight": "51.2px"
+        },
+        {
+          "id": "education",
+          "paddingTop": "143.36px",
+          "paddingBottom": "143.36px",
+          "paddingLeft": "51.2px",
+          "paddingRight": "51.2px"
+        },
+        {
+          "id": "socials",
+          "paddingTop": "143.36px",
+          "paddingBottom": "143.36px",
+          "paddingLeft": "51.2px",
+          "paddingRight": "51.2px"
+        },
+        {
+          "id": "contact",
+          "paddingTop": "143.36px",
+          "paddingBottom": "143.36px",
+          "paddingLeft": "51.2px",
+          "paddingRight": "51.2px"
+        }
+      ],
+      "interactives": [
+        {
+          "tag": "button",
+          "text": "Jump to section HOME",
+          "width": 28,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section ABOUT ME",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section WORK",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section PROJECTS",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section SERVICES",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section TOOLKIT",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section EDUCATION",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section SOCIALS",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section CONTACT",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section FOOTER",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "pri\nk\naushion",
+          "width": 135,
+          "height": 38,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "HOME",
+          "width": 34,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "ABOUT",
+          "width": 43,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "WORK",
+          "width": 34,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "PROJECTS",
+          "width": 69,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "SERVICES",
+          "width": 69,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "TOOLKIT",
+          "width": 60,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "SOCIALS",
+          "width": 60,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CONTACT",
+          "width": 60,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "HIRE ME\n↗",
+          "width": 124,
+          "height": 38,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Open menu",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "01Home",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "02About",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "03Work",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "04Projects",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "05Services",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "06Toolkit",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "07Socials",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "08Contact",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "GitHub ↗",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LinkedIn ↗",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Instagram ↗",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "prakhar1532006@gmail.com",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "ALL",
+          "width": 60,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEB",
+          "width": 60,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "AI",
+          "width": 51,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "HARDWARE",
+          "width": 107,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "CLIENT",
+          "width": 88,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEBSITE",
+          "width": 89,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEB APP",
+          "width": 89,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "AI PRODUCT",
+          "width": 112,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WORKSHOP",
+          "width": 96,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "SOMETHING ELSE",
+          "width": 143,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "ABOUT",
+          "width": 47,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "WORK",
+          "width": 37,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "PROJECTS",
+          "width": 75,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "SERVICES",
+          "width": 75,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CONTACT",
+          "width": 66,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "GITHUB ↗",
+          "width": 76,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LINKEDIN ↗",
+          "width": 95,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "INSTAGRAM ↗",
+          "width": 105,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "BACK TO TOP\n↑",
+          "width": 148,
+          "height": 30,
+          "isSmall": true
+        }
+      ]
+    },
+    "1280": {
+      "clientWidth": 1280,
+      "scrollWidth": 1280,
+      "hasOverflow": false,
+      "sections": [
+        {
+          "id": "home",
+          "paddingTop": "128px",
+          "paddingBottom": "96px",
+          "paddingLeft": "64px",
+          "paddingRight": "64px"
+        },
+        {
+          "id": "(no-id)",
+          "paddingTop": "40px",
+          "paddingBottom": "40px",
+          "paddingLeft": "0px",
+          "paddingRight": "0px"
+        },
+        {
+          "id": "about",
+          "paddingTop": "179.2px",
+          "paddingBottom": "179.2px",
+          "paddingLeft": "64px",
+          "paddingRight": "64px"
+        },
+        {
+          "id": "work",
+          "paddingTop": "179.2px",
+          "paddingBottom": "179.2px",
+          "paddingLeft": "64px",
+          "paddingRight": "64px"
+        },
+        {
+          "id": "projects",
+          "paddingTop": "179.2px",
+          "paddingBottom": "179.2px",
+          "paddingLeft": "64px",
+          "paddingRight": "64px"
+        },
+        {
+          "id": "services",
+          "paddingTop": "179.2px",
+          "paddingBottom": "179.2px",
+          "paddingLeft": "64px",
+          "paddingRight": "64px"
+        },
+        {
+          "id": "toolkit",
+          "paddingTop": "179.2px",
+          "paddingBottom": "179.2px",
+          "paddingLeft": "64px",
+          "paddingRight": "64px"
+        },
+        {
+          "id": "education",
+          "paddingTop": "179.2px",
+          "paddingBottom": "179.2px",
+          "paddingLeft": "64px",
+          "paddingRight": "64px"
+        },
+        {
+          "id": "socials",
+          "paddingTop": "179.2px",
+          "paddingBottom": "179.2px",
+          "paddingLeft": "64px",
+          "paddingRight": "64px"
+        },
+        {
+          "id": "contact",
+          "paddingTop": "179.2px",
+          "paddingBottom": "179.2px",
+          "paddingLeft": "64px",
+          "paddingRight": "64px"
+        }
+      ],
+      "interactives": [
+        {
+          "tag": "button",
+          "text": "Jump to section HOME",
+          "width": 28,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section ABOUT ME",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section WORK",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section PROJECTS",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section SERVICES",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section TOOLKIT",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section EDUCATION",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section SOCIALS",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section CONTACT",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section FOOTER",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "pri\nk\naushion",
+          "width": 135,
+          "height": 38,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "HOME",
+          "width": 34,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "ABOUT",
+          "width": 43,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "WORK",
+          "width": 34,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "PROJECTS",
+          "width": 69,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "SERVICES",
+          "width": 69,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "TOOLKIT",
+          "width": 60,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "SOCIALS",
+          "width": 60,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CONTACT",
+          "width": 60,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "HIRE ME\n↗",
+          "width": 124,
+          "height": 38,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Open menu",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "01Home",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "02About",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "03Work",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "04Projects",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "05Services",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "06Toolkit",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "07Socials",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "08Contact",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "GitHub ↗",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LinkedIn ↗",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Instagram ↗",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "prakhar1532006@gmail.com",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "ALL",
+          "width": 60,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEB",
+          "width": 60,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "AI",
+          "width": 51,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "HARDWARE",
+          "width": 107,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "CLIENT",
+          "width": 88,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEBSITE",
+          "width": 89,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEB APP",
+          "width": 89,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "AI PRODUCT",
+          "width": 112,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WORKSHOP",
+          "width": 96,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "SOMETHING ELSE",
+          "width": 143,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "ABOUT",
+          "width": 47,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "WORK",
+          "width": 37,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "PROJECTS",
+          "width": 75,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "SERVICES",
+          "width": 75,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CONTACT",
+          "width": 66,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "GITHUB ↗",
+          "width": 76,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LINKEDIN ↗",
+          "width": 95,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "INSTAGRAM ↗",
+          "width": 105,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "BACK TO TOP\n↑",
+          "width": 148,
+          "height": 30,
+          "isSmall": true
+        }
+      ]
+    },
+    "1440": {
+      "clientWidth": 1440,
+      "scrollWidth": 1440,
+      "hasOverflow": false,
+      "sections": [
+        {
+          "id": "home",
+          "paddingTop": "128px",
+          "paddingBottom": "96px",
+          "paddingLeft": "72px",
+          "paddingRight": "72px"
+        },
+        {
+          "id": "(no-id)",
+          "paddingTop": "40px",
+          "paddingBottom": "40px",
+          "paddingLeft": "0px",
+          "paddingRight": "0px"
+        },
+        {
+          "id": "about",
+          "paddingTop": "201.6px",
+          "paddingBottom": "201.6px",
+          "paddingLeft": "72px",
+          "paddingRight": "72px"
+        },
+        {
+          "id": "work",
+          "paddingTop": "201.6px",
+          "paddingBottom": "201.6px",
+          "paddingLeft": "72px",
+          "paddingRight": "72px"
+        },
+        {
+          "id": "projects",
+          "paddingTop": "201.6px",
+          "paddingBottom": "201.6px",
+          "paddingLeft": "72px",
+          "paddingRight": "72px"
+        },
+        {
+          "id": "services",
+          "paddingTop": "201.6px",
+          "paddingBottom": "201.6px",
+          "paddingLeft": "72px",
+          "paddingRight": "72px"
+        },
+        {
+          "id": "toolkit",
+          "paddingTop": "201.6px",
+          "paddingBottom": "201.6px",
+          "paddingLeft": "72px",
+          "paddingRight": "72px"
+        },
+        {
+          "id": "education",
+          "paddingTop": "201.6px",
+          "paddingBottom": "201.6px",
+          "paddingLeft": "72px",
+          "paddingRight": "72px"
+        },
+        {
+          "id": "socials",
+          "paddingTop": "201.6px",
+          "paddingBottom": "201.6px",
+          "paddingLeft": "72px",
+          "paddingRight": "72px"
+        },
+        {
+          "id": "contact",
+          "paddingTop": "201.6px",
+          "paddingBottom": "201.6px",
+          "paddingLeft": "72px",
+          "paddingRight": "72px"
+        }
+      ],
+      "interactives": [
+        {
+          "tag": "button",
+          "text": "Jump to section HOME",
+          "width": 28,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section ABOUT ME",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section WORK",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section PROJECTS",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section SERVICES",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section TOOLKIT",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section EDUCATION",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section SOCIALS",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section CONTACT",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section FOOTER",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "pri\nk\naushion",
+          "width": 135,
+          "height": 38,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "HOME",
+          "width": 34,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "ABOUT",
+          "width": 43,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "WORK",
+          "width": 34,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "PROJECTS",
+          "width": 69,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "SERVICES",
+          "width": 69,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "TOOLKIT",
+          "width": 60,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "SOCIALS",
+          "width": 60,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CONTACT",
+          "width": 60,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "HIRE ME\n↗",
+          "width": 124,
+          "height": 38,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Open menu",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "01Home",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "02About",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "03Work",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "04Projects",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "05Services",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "06Toolkit",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "07Socials",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "08Contact",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "GitHub ↗",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LinkedIn ↗",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Instagram ↗",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "prakhar1532006@gmail.com",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "ALL",
+          "width": 60,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEB",
+          "width": 60,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "AI",
+          "width": 51,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "HARDWARE",
+          "width": 107,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "CLIENT",
+          "width": 88,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEBSITE",
+          "width": 89,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEB APP",
+          "width": 89,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "AI PRODUCT",
+          "width": 112,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WORKSHOP",
+          "width": 96,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "SOMETHING ELSE",
+          "width": 143,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "ABOUT",
+          "width": 47,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "WORK",
+          "width": 37,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "PROJECTS",
+          "width": 75,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "SERVICES",
+          "width": 75,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CONTACT",
+          "width": 66,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "GITHUB ↗",
+          "width": 76,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LINKEDIN ↗",
+          "width": 95,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "INSTAGRAM ↗",
+          "width": 105,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "BACK TO TOP\n↑",
+          "width": 148,
+          "height": 30,
+          "isSmall": true
+        }
+      ]
+    },
+    "1920": {
+      "clientWidth": 1920,
+      "scrollWidth": 1920,
+      "hasOverflow": false,
+      "sections": [
+        {
+          "id": "home",
+          "paddingTop": "128px",
+          "paddingBottom": "96px",
+          "paddingLeft": "80px",
+          "paddingRight": "80px"
+        },
+        {
+          "id": "(no-id)",
+          "paddingTop": "40px",
+          "paddingBottom": "40px",
+          "paddingLeft": "0px",
+          "paddingRight": "0px"
+        },
+        {
+          "id": "about",
+          "paddingTop": "220px",
+          "paddingBottom": "220px",
+          "paddingLeft": "80px",
+          "paddingRight": "80px"
+        },
+        {
+          "id": "work",
+          "paddingTop": "220px",
+          "paddingBottom": "220px",
+          "paddingLeft": "80px",
+          "paddingRight": "80px"
+        },
+        {
+          "id": "projects",
+          "paddingTop": "220px",
+          "paddingBottom": "220px",
+          "paddingLeft": "80px",
+          "paddingRight": "80px"
+        },
+        {
+          "id": "services",
+          "paddingTop": "220px",
+          "paddingBottom": "220px",
+          "paddingLeft": "80px",
+          "paddingRight": "80px"
+        },
+        {
+          "id": "toolkit",
+          "paddingTop": "220px",
+          "paddingBottom": "220px",
+          "paddingLeft": "80px",
+          "paddingRight": "80px"
+        },
+        {
+          "id": "education",
+          "paddingTop": "220px",
+          "paddingBottom": "220px",
+          "paddingLeft": "80px",
+          "paddingRight": "80px"
+        },
+        {
+          "id": "socials",
+          "paddingTop": "220px",
+          "paddingBottom": "220px",
+          "paddingLeft": "80px",
+          "paddingRight": "80px"
+        },
+        {
+          "id": "contact",
+          "paddingTop": "220px",
+          "paddingBottom": "220px",
+          "paddingLeft": "80px",
+          "paddingRight": "80px"
+        }
+      ],
+      "interactives": [
+        {
+          "tag": "button",
+          "text": "Jump to section HOME",
+          "width": 28,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section ABOUT ME",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section WORK",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section PROJECTS",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section SERVICES",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section TOOLKIT",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section EDUCATION",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section SOCIALS",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section CONTACT",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Jump to section FOOTER",
+          "width": 22,
+          "height": 22,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "pri\nk\naushion",
+          "width": 135,
+          "height": 38,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "HOME",
+          "width": 34,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "ABOUT",
+          "width": 43,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "WORK",
+          "width": 34,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "PROJECTS",
+          "width": 69,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "SERVICES",
+          "width": 69,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "TOOLKIT",
+          "width": 60,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "SOCIALS",
+          "width": 60,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CONTACT",
+          "width": 60,
+          "height": 33,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "HIRE ME\n↗",
+          "width": 124,
+          "height": 38,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "Open menu",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "01Home",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "02About",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "03Work",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "04Projects",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "05Services",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "06Toolkit",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "07Socials",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "08Contact",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "GitHub ↗",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LinkedIn ↗",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "Instagram ↗",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "prakhar1532006@gmail.com",
+          "width": 0,
+          "height": 0,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "ALL",
+          "width": 60,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEB",
+          "width": 60,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "AI",
+          "width": 51,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "HARDWARE",
+          "width": 107,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "CLIENT",
+          "width": 88,
+          "height": 28,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LIVE\n↗",
+          "width": 75,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CODE",
+          "width": 77,
+          "height": 36,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEBSITE",
+          "width": 89,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WEB APP",
+          "width": 89,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "AI PRODUCT",
+          "width": 112,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "WORKSHOP",
+          "width": 96,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "SOMETHING ELSE",
+          "width": 143,
+          "height": 34,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "ABOUT",
+          "width": 47,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "WORK",
+          "width": 37,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "PROJECTS",
+          "width": 75,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "SERVICES",
+          "width": 75,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "CONTACT",
+          "width": 66,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "GITHUB ↗",
+          "width": 76,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "LINKEDIN ↗",
+          "width": 95,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "a",
+          "text": "INSTAGRAM ↗",
+          "width": 105,
+          "height": 16,
+          "isSmall": true
+        },
+        {
+          "tag": "button",
+          "text": "BACK TO TOP\n↑",
+          "width": 148,
+          "height": 30,
+          "isSmall": true
+        }
+      ]
+    }
+  },
+  "typography": {
+    "fontSizes": [
+      "9px",
+      "10px",
+      "11px",
+      "12px",
+      "14px",
+      "16px",
+      "17px",
+      "17.6px",
+      "18px",
+      "20px",
+      "21.6px",
+      "22px",
+      "23.04px",
+      "24px",
+      "25.08px",
+      "30px",
+      "31.68px",
+      "34.56px",
+      "36px",
+      "38.7072px",
+      "46.08px",
+      "48px",
+      "50.4px",
+      "54.72px",
+      "56px",
+      "57.6px",
+      "64.8px",
+      "72px",
+      "115.2px",
+      "122.4px",
+      "158.4px",
+      "165.6px",
+      "230.4px",
+      "256px"
+    ],
+    "fontFamilies": [
+      "Manrope, -apple-system, BlinkMacSystemFont, sans-serif",
+      "Manrope, sans-serif",
+      "\"JetBrains Mono\", monospace",
+      "\"Fraunces Variable\", Fraunces, serif",
+      "\"Instrument Serif\", serif"
+    ],
+    "lineHeights": [
+      "24px",
+      "15px",
+      "33px",
+      "37.62px",
+      "16.5px",
+      "16px",
+      "72px",
+      "14.08px",
+      "145.728px",
+      "57.024px",
+      "37.44px",
+      "84px",
+      "69.12px",
+      "230.4px",
+      "43.2px",
+      "48.384px",
+      "28.9px",
+      "48px",
+      "36px",
+      "35.1px",
+      "60.48px",
+      "47.52px",
+      "40px",
+      "13.5px",
+      "97.2px",
+      "384px",
+      "60.192px",
+      "29.92px",
+      "28px",
+      "32px",
+      "20px",
+      "115.2px",
+      "41.184px",
+      "122.4px"
+    ]
+  }
+}

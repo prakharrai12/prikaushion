@@ -1,0 +1,206 @@
+{
+  "images": [
+    {
+      "path": "public/favicon-32.png",
+      "size_kb": 0.28,
+      "ext": ".png",
+      "flag": false
+    },
+    {
+      "path": "public/favicon.svg",
+      "size_kb": 0.51,
+      "ext": ".svg",
+      "flag": false
+    },
+    {
+      "path": "public/robots.txt",
+      "size_kb": 0.07,
+      "ext": ".txt",
+      "flag": true
+    },
+    {
+      "path": "public/sitemap.xml",
+      "size_kb": 0.83,
+      "ext": ".xml",
+      "flag": true
+    },
+    {
+      "path": "public/assets/brand/logo-bone-on-transparent.png",
+      "size_kb": 181.32,
+      "ext": ".png",
+      "flag": true
+    },
+    {
+      "path": "public/assets/brand/logo-mark-k.svg",
+      "size_kb": 0.72,
+      "ext": ".svg",
+      "flag": false
+    },
+    {
+      "path": "public/assets/brand/logo-original.png",
+      "size_kb": 699.38,
+      "ext": ".png",
+      "flag": true
+    },
+    {
+      "path": "public/assets/brand/og-image.png",
+      "size_kb": 121.75,
+      "ext": ".png",
+      "flag": false
+    },
+    {
+      "path": "public/assets/brand/sparkle-bone.svg",
+      "size_kb": 0.18,
+      "ext": ".svg",
+      "flag": false
+    },
+    {
+      "path": "public/assets/brand/sparkle-crimson.svg",
+      "size_kb": 0.18,
+      "ext": ".svg",
+      "flag": false
+    },
+    {
+      "path": "public/assets/brand/sparkle.svg",
+      "size_kb": 0.24,
+      "ext": ".svg",
+      "flag": false
+    },
+    {
+      "path": "public/assets/images/portrait-blur.txt",
+      "size_kb": 1.09,
+      "ext": ".txt",
+      "flag": true
+    },
+    {
+      "path": "public/assets/images/prakhar-portrait-700.webp",
+      "size_kb": 51.37,
+      "ext": ".webp",
+      "flag": false
+    },
+    {
+      "path": "public/assets/images/prakhar-portrait-original.jpg",
+      "size_kb": 142.5,
+      "ext": ".jpg",
+      "flag": true
+    },
+    {
+      "path": "public/assets/images/prakhar-portrait.webp",
+      "size_kb": 42.93,
+      "ext": ".webp",
+      "flag": false
+    },
+    {
+      "path": "public/assets/projects/access-control.webp",
+      "size_kb": 10.35,
+      "ext": ".webp",
+      "flag": false
+    },
+    {
+      "path": "public/assets/projects/akansha-demo.webp",
+      "size_kb": 10.49,
+      "ext": ".webp",
+      "flag": false
+    },
+    {
+      "path": "public/assets/projects/amisphere.webp",
+      "size_kb": 42.11,
+      "ext": ".webp",
+      "flag": false
+    },
+    {
+      "path": "public/assets/projects/desical.webp",
+      "size_kb": 10.25,
+      "ext": ".webp",
+      "flag": false
+    },
+    {
+      "path": "public/assets/projects/finculator.webp",
+      "size_kb": 80.31,
+      "ext": ".webp",
+      "flag": false
+    },
+    {
+      "path": "public/assets/projects/hacks-2026.webp",
+      "size_kb": 46.29,
+      "ext": ".webp",
+      "flag": false
+    },
+    {
+      "path": "public/assets/projects/joyra.webp",
+      "size_kb": 9.5,
+      "ext": ".webp",
+      "flag": false
+    },
+    {
+      "path": "public/assets/projects/nooq.webp",
+      "size_kb": 9.46,
+      "ext": ".webp",
+      "flag": false
+    },
+    {
+      "path": "public/assets/projects/nova.webp",
+      "size_kb": 10.14,
+      "ext": ".webp",
+      "flag": false
+    },
+    {
+      "path": "public/assets/projects/radix-aroma.webp",
+      "size_kb": 57.79,
+      "ext": ".webp",
+      "flag": false
+    },
+    {
+      "path": "public/assets/projects/vipra-pulse.webp",
+      "size_kb": 36.59,
+      "ext": ".webp",
+      "flag": false
+    }
+  ],
+  "secrets_scan": [],
+  "npm_audit": {
+    "message": "request to https://registry.npmjs.org/-/npm/v1/security/advisories/bulk failed, reason: connect EACCES 127.0.0.1:56571",
+    "error": {
+      "summary": "",
+      "detail": ""
+    }
+  },
+  "blank_links": [
+    {
+      "file": "src/components/Nav.tsx",
+      "tag": "<a href={site.socials.github.url} target=\"_blank\" rel=\"noopener noreferrer\" className=\"hover:text-crimson\">",
+      "safe": true
+    },
+    {
+      "file": "src/components/Nav.tsx",
+      "tag": "<a href={site.socials.linkedin.url} target=\"_blank\" rel=\"noopener noreferrer\" className=\"hover:text-crimson\">",
+      "safe": true
+    },
+    {
+      "file": "src/components/Nav.tsx",
+      "tag": "<a href={site.socials.instagram.url} target=\"_blank\" rel=\"noopener noreferrer\" className=\"hover:text-crimson\">",
+      "safe": true
+    },
+    {
+      "file": "src/sections/Footer.tsx",
+      "tag": "<a href={site.socials.github.url} target=\"_blank\" rel=\"noopener noreferrer\" className=\"hover:text-crimson\">",
+      "safe": true
+    },
+    {
+      "file": "src/sections/Footer.tsx",
+      "tag": "<a href={site.socials.linkedin.url} target=\"_blank\" rel=\"noopener noreferrer\" className=\"hover:text-crimson\">",
+      "safe": true
+    },
+    {
+      "file": "src/sections/Footer.tsx",
+      "tag": "<a href={site.socials.instagram.url} target=\"_blank\" rel=\"noopener noreferrer\" className=\"hover:text-crimson\">",
+      "safe": true
+    },
+    {
+      "file": "src/sections/Projects.tsx",
+      "tag": "<a\n          href={site.socials.github.url}\n          target=\"_blank\"\n          rel=\"noopener noreferrer\"\n          data-cursor=\"open\"\n          className=\"group block font-display font-extrabold text-[clamp(2rem,4.5vw,4.5rem)] text-bone tracking-tight hover:text-crimson transition-colors duration-300\"\n        >",
+      "safe": true
+    }
+  ],
+  "dangerouslySetInnerHTML": []
+}
