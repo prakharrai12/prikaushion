@@ -171,28 +171,28 @@ X-Vercel-Cache: HIT
 
 ---
 
-## 1.8 PRIORITIZED ISSUE LIST
+## 1.8 PRIORITIZED ISSUE LIST & RESOLUTION STATUS
 
-| Issue ID | Priority | Category | Description | Target Phase |
-|---|---|---|---|---|
-| **A-01** | **P0** | Security | Missing CSP, `X-Content-Type-Options`, `Referrer-Policy`, and clickjacking headers in `vercel.json` | Phase 7 |
-| **A-02** | **P0** | Security | Static assets lack `Cache-Control: public, max-age=31536000, immutable` | Phase 5 / 7 |
-| **A-03** | **P0** | SEO | Missing semantic `<h1>` tag in hero section (affects search indexing and a11y) | Phase 6 |
-| **A-04** | **P0** | SEO / Social | `og:image` is relative; Twitter card metadata is missing | Phase 6 |
-| **A-05** | **P1** | Accessibility | 66 interactive targets smaller than 44×44px on mobile viewports | Phase 2 / 8 |
-| **A-06** | **P1** | Layout / Tokens | Font sizes uncontrolled (34 distinct sizes); needs strict 9-step fluid scale | Phase 2 |
-| **A-07** | **P1** | Layout / Rhythm | Section padding and bridge spacing inconsistency across desktop and mobile | Phase 2 |
-| **A-08** | **P1** | Performance | Large brand assets (`logo-original.png` 699KB); unused font subsets imported | Phase 5 |
-| **A-09** | **P1** | Backend / Forms | Contact form lacks serverless endpoint, rate limiting, and spam protection | Phase 5 / 7 |
-| **A-10** | **P2** | A11y / Motion | Lack of persistent "Reduce motion" user toggle in footer | Phase 4 / 8 |
-| **A-11** | **P2** | SEO | Missing JSON-LD Schema (`Person`, `WebSite`) | Phase 6 |
-| **A-12** | **P2** | UI / Polish | Fine hairline inner borders (`inset 0 1px 0 rgba(244,239,228,0.06)`) and surface levels | Phase 3 |
-| **A-13** | **P2** | UI / Polish | Whole-page subtle vignette and enhanced radial spotlight gradients | Phase 3 |
-| **A-14** | **P2** | Motion | Enhanced view transitions / Lenis curtain flash on section navigation | Phase 4 |
-| **A-15** | **P2** | A11y | High-contrast `focus-visible` styling on all keyboard-focusable elements | Phase 8 |
-| **A-16** | **P2** | Mobile UX | Services horizontal slider touch affordance indicators on small screens | Phase 2 / 4 |
-| **A-17** | **P2** | Performance | Offline fallback caching via service worker and `<noscript>` screen | Phase 5 |
-| **A-18** | **P2** | SEO | Canonical URL synchronization with active domain | Phase 6 |
+| Issue ID | Priority | Category | Description | Target Phase | Status |
+|---|---|---|---|---|---|
+| **A-01** | **P0** | Security | Missing CSP, `X-Content-Type-Options`, `Referrer-Policy`, and clickjacking headers in `vercel.json` | Phase 7 | ✅ RESOLVED (`9d462ba`) |
+| **A-02** | **P0** | Security | Static assets lack `Cache-Control: public, max-age=31536000, immutable` | Phase 5 / 7 | ✅ RESOLVED (`9d462ba`) |
+| **A-03** | **P0** | SEO | Missing semantic `<h1>` tag in hero section (affects search indexing and a11y) | Phase 6 | ✅ RESOLVED (`d369d2c`) |
+| **A-04** | **P0** | SEO / Social | `og:image` is relative; Twitter card metadata is missing | Phase 6 | ✅ RESOLVED (`5ff9e05`) |
+| **A-05** | **P1** | Accessibility | 66 interactive targets smaller than 44×44px on mobile viewports | Phase 2 / 8 | ✅ RESOLVED (`d369d2c`) |
+| **A-06** | **P1** | Layout / Tokens | Font sizes uncontrolled (34 distinct sizes); needs strict 9-step fluid scale | Phase 2 | ✅ RESOLVED (`d369d2c`) |
+| **A-07** | **P1** | Layout / Rhythm | Section padding and bridge spacing inconsistency across desktop and mobile | Phase 2 | ✅ RESOLVED (`d369d2c`) |
+| **A-08** | **P1** | Performance | Large brand assets (`logo-original.png` 699KB); unused font subsets imported | Phase 5 | ✅ RESOLVED (`9599d76`) |
+| **A-09** | **P1** | Backend / Forms | Contact form lacks serverless endpoint, rate limiting, and spam protection | Phase 5 / 7 | ✅ RESOLVED (`9d462ba`) |
+| **A-10** | **P2** | A11y / Motion | Lack of persistent "Reduce motion" user toggle in footer | Phase 4 / 8 | ✅ RESOLVED (`0d0b16f`) |
+| **A-11** | **P2** | SEO | Missing JSON-LD Schema (`Person`, `WebSite`) | Phase 6 | ✅ RESOLVED (`5ff9e05`) |
+| **A-12** | **P2** | UI / Polish | Fine hairline inner borders (`inset 0 1px 0 rgba(244,239,228,0.06)`) and surface levels | Phase 3 | ✅ RESOLVED (`e9bbbeb`) |
+| **A-13** | **P2** | UI / Polish | Whole-page subtle vignette and enhanced radial spotlight gradients | Phase 3 | ✅ RESOLVED (`e9bbbeb`) |
+| **A-14** | **P2** | Motion | Enhanced view transitions / Lenis curtain flash on section navigation | Phase 4 | ✅ RESOLVED (`0d0b16f`) |
+| **A-15** | **P2** | A11y | High-contrast `focus-visible` styling on all keyboard-focusable elements | Phase 8 | ✅ RESOLVED (`b2c0fab`) |
+| **A-16** | **P2** | Mobile UX | Services horizontal slider touch affordance indicators on small screens | Phase 2 / 4 | ✅ RESOLVED (`d369d2c`) |
+| **A-17** | **P2** | Performance | Offline fallback caching via service worker and `<noscript>` screen | Phase 5 | ✅ RESOLVED (`5ff9e05`) |
+| **A-18** | **P2** | SEO | Canonical URL synchronization with active domain | Phase 6 | ✅ RESOLVED (`5ff9e05`) |
 
 ---
-*End of Phase 1 Audit Report. Next step: Commit Phase 1 report before beginning Phase 2.*
+*All 18 audit issues verified and resolved through Phase 1 - 8 execution.*
