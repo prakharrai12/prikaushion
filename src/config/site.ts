@@ -4,14 +4,14 @@ export const site = {
   brand: "prikaushion",
   role: "Frontend Developer · Builder · Educator",
   location: "New Delhi, India",
-  email: "prakhar1532006@gmail.com",
+  email: "prikaushionv@gmail.com",
   brandEmail: "prikaushionv@gmail.com",
   // phone intentionally NOT displayed publicly. Do not render a phone number anywhere.
   socials: {
     github: { label: "GitHub", handle: "@prakharrai12", url: "https://github.com/prakharrai12" },
     linkedin: { label: "LinkedIn", handle: "Prakhar Kaushik", url: "https://www.linkedin.com/in/prakhar-kaushik-38731828b/" },
     instagram: { label: "Instagram", handle: "@prakhareverie", url: "https://www.instagram.com/prakhareverie/" },
-    email: { label: "Email", handle: "prakhar1532006@gmail.com", url: "mailto:prakhar1532006@gmail.com" },
+    email: { label: "Email", handle: "prikaushionv@gmail.com", url: "mailto:prikaushionv@gmail.com" },
   },
   resumeUrl: "TODO_RESUME_PDF",
   stats: [

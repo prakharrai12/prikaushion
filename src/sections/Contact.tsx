@@ -113,13 +113,13 @@ export const Contact: React.FC = () => {
 
             {/* Mono Details List with Copy-to-Clipboard */}
             <div className="flex flex-col gap-4 font-mono text-xs uppercase tracking-widest text-[#0A0A0B]/80 pt-6 border-t border-[#0A0A0B]/15">
-              {/* Primary Email */}
+              {/* Official Email */}
               <div
                 onClick={() => copyToClipboard(site.email)}
                 className="flex items-baseline justify-between group cursor-pointer hover:text-crimson transition-colors"
-                title="Click to copy email"
+                title="Click to copy official email"
               >
-                <span className="font-semibold">EMAIL</span>
+                <span className="font-semibold">OFFICIAL EMAIL</span>
                 <span className="mx-2 grow border-b border-dotted border-[#0A0A0B]/25 group-hover:border-crimson" />
                 <span className="flex items-center gap-1.5 lowercase font-mono">
                   {copiedEmail === site.email ? (
@@ -129,28 +129,6 @@ export const Contact: React.FC = () => {
                   ) : (
                     <>
                       <span>{site.email}</span>
-                      <Copy className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
-                    </>
-                  )}
-                </span>
-              </div>
-
-              {/* Brand Studio Email */}
-              <div
-                onClick={() => copyToClipboard(site.brandEmail)}
-                className="flex items-baseline justify-between group cursor-pointer hover:text-crimson transition-colors"
-                title="Click to copy studio email"
-              >
-                <span className="font-semibold">STUDIO</span>
-                <span className="mx-2 grow border-b border-dotted border-[#0A0A0B]/25 group-hover:border-crimson" />
-                <span className="flex items-center gap-1.5 lowercase font-mono">
-                  {copiedEmail === site.brandEmail ? (
-                    <span className="text-crimson font-bold uppercase tracking-wider flex items-center gap-1">
-                      <Check className="w-3 h-3" /> COPIED ✓
-                    </span>
-                  ) : (
-                    <>
-                      <span>{site.brandEmail}</span>
                       <Copy className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity" />
                     </>
                   )}
