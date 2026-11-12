@@ -49,6 +49,9 @@ export const App: React.FC = () => {
       {/* Global Grain Overlay (Mandatory) */}
       <Grain />
 
+      {/* Whole-page Vignette for Cinematic Depth */}
+      <div className="page-vignette" aria-hidden="true" />
+
       {/* Custom Desktop Cursor */}
       <CustomCursor />
 

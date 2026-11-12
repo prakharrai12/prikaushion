@@ -137,7 +137,7 @@ export const Services: React.FC = () => {
           {SERVICES.map((srv) => (
             <div
               key={srv.id}
-              className="group relative w-full lg:w-[70vw] lg:max-w-[880px] min-h-[380px] sm:min-h-[440px] lg:h-[62vh] rounded-lg border border-bone-faint bg-obsidian p-6 sm:p-8 md:p-14 shadow-2xl flex flex-col justify-between overflow-hidden shrink-0 transition-transform duration-300 hover:border-bone/30"
+              className="group relative surface-card w-full lg:w-[70vw] lg:max-w-[880px] min-h-[380px] sm:min-h-[440px] lg:h-[62vh] rounded-lg border border-bone-faint bg-obsidian p-6 sm:p-8 md:p-14 shadow-2xl flex flex-col justify-between overflow-hidden shrink-0 transition-transform duration-300 hover:border-bone/30"
             >
               {/* Crimson L-Shaped Corner Brackets expanding on hover */}
               <div

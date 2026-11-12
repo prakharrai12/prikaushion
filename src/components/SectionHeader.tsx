@@ -1,5 +1,5 @@
-import React, { useEffect, useRef } from 'react';
-import { gsap } from '../lib/gsap';
+import React, { useEffect, useRef, useState } from 'react';
+import { gsap, ScrollTrigger } from '../lib/gsap';
 
 interface SectionHeaderProps {
   index: string; // e.g. "01"
@@ -9,6 +9,7 @@ interface SectionHeaderProps {
   line2: string; // e.g. "behind the *pixels*"
   intro?: string;
   theme?: 'dark' | 'paper';
+  stickyMini?: boolean;
 }
 
 export const SectionHeader: React.FC<SectionHeaderProps> = ({
@@ -19,6 +20,7 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
   line2,
   intro,
   theme = 'dark',
+  stickyMini = false,
 }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const hairlineFillRef = useRef<HTMLDivElement>(null);
@@ -26,6 +28,9 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
   const ghostRef = useRef<HTMLDivElement>(null);
   const titleRef = useRef<HTMLHeadingElement>(null);
   const introRef = useRef<HTMLParagraphElement>(null);
+  const digitRollRef = useRef<HTMLSpanElement>(null);
+
+  const [showStickyMini, setShowStickyMini] = useState(false);
 
   // Helper to parse line2 for *asterisks* (whisper italic word)
   const parseLineWithWhisper = (text: string) => {
@@ -163,19 +168,60 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
           0.5
         );
       }
+
+      // Digit-roll animation on index entry
+      if (digitRollRef.current) {
+        tl.fromTo(
+          digitRollRef.current,
+          { yPercent: 100, opacity: 0 },
+          { yPercent: 0, opacity: 1, duration: 0.8, ease: 'back.out(2)' },
+          0.1
+        );
+      }
+
+      // Sticky mini header tracking for long sections
+      if (stickyMini && containerRef.current) {
+        ScrollTrigger.create({
+          trigger: containerRef.current,
+          start: 'bottom top+=100',
+          endTrigger: containerRef.current.closest('section') || undefined,
+          end: 'bottom top+=160',
+          onToggle: (self) => setShowStickyMini(self.isActive),
+        });
+      }
     }, containerRef);
 
     return () => ctx.revert();
-  }, [line1, line2]);
+  }, [line1, line2, stickyMini]);
 
   const isPaper = theme === 'paper';
 
   return (
     <div ref={containerRef} className="relative w-full mb-16 md:mb-24 select-none">
+      {/* Sticky Mini Header for long sections */}
+      {stickyMini && (
+        <div
+          className={`fixed top-[92px] left-[clamp(20px,5vw,80px)] z-30 flex items-center gap-2.5 px-3.5 py-1.5 rounded-pill bg-obsidian/90 backdrop-blur-md border border-bone-faint font-mono text-[11px] uppercase tracking-widest text-bone shadow-2xl transition-all duration-300 pointer-events-none ${
+            showStickyMini ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
+          }`}
+          aria-hidden="true"
+        >
+          <span className="w-1.5 h-1.5 rounded-full bg-crimson animate-pulse" />
+          <span className="text-crimson font-medium">({index})</span>
+          <span className="text-bone-dim">{metaName}</span>
+        </div>
+      )}
+
       {/* 1. Meta Row */}
       <div className="flex items-center justify-between w-full font-mono text-xs uppercase tracking-widest pb-3.5">
         <div className="flex items-center gap-3">
-          <span className="text-crimson font-medium">({index})</span>
+          <span className="text-crimson font-medium inline-flex items-center overflow-hidden h-4">
+            <span>(</span>
+            <span ref={digitRollRef} className="inline-block will-change-transform">
+              {index}
+            </span>
+            <span>)</span>
+          </span>
           <span className={isPaper ? 'text-ink/70' : 'text-bone/70'}>{metaName}</span>
         </div>
         <div className={`flex items-center gap-1.5 ${isPaper ? 'text-ink/60' : 'text-bone/60'}`}>

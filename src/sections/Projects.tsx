@@ -127,6 +127,7 @@ export const Projects: React.FC = () => {
           line1="Selected"
           line2="*work*, shipped"
           intro="Every project below is live. Open it, click around, break it — then tell me what you'd improve."
+          stickyMini={true}
         />
 
       {/* TIER A: Featured Projects (Sticky Stack on Desktop) */}
@@ -138,7 +139,7 @@ export const Projects: React.FC = () => {
           return (
             <div
               key={p.slug}
-              className="sticky-project-card lg:sticky lg:top-[12vh] w-full min-h-[70vh] rounded-lg border border-bone-faint bg-obsidian p-6 md:p-12 shadow-2xl flex flex-col lg:flex-row gap-8 lg:gap-12 items-center justify-between overflow-hidden"
+              className="sticky-project-card surface-card lg:sticky lg:top-[12vh] w-full min-h-[70vh] rounded-lg border border-bone-faint bg-obsidian p-6 md:p-12 shadow-2xl flex flex-col lg:flex-row gap-8 lg:gap-12 items-center justify-between overflow-hidden"
               style={{ zIndex: 10 + idx }}
             >
               {/* Left Column (40%): Project Information */}

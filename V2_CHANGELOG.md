@@ -3,6 +3,28 @@
 
 ---
 
+## PHASE 3 — UI POLISH & VISUAL UPGRADE
+**Date:** 2026-11-12  
+**Commit Target:** `v2(phase-3): visual depth, surface system, and typography refinement`
+
+### Improvements & Changes Applied
+- **Surface & Depth System:**
+  - Defined 3 surface tiers in `:root`: `--surface-0` (`#0A0A0B`), `--surface-1` (`#0F0E10`), `--surface-2` (`#161417`).
+  - Added hairline inner highlight: `box-shadow: inset 0 1px 0 rgba(244,239,228,0.06)` via `.surface-card` and `.surface-elevated` across projects, services, and education cards (resolving issue `A-12`).
+  - Added subtle fixed radial vignette (`.page-vignette`: transparent to 35% black) to focus eye on center editorial content (resolving issue `A-13`).
+- **Typography & Font Refinements:**
+  - Enforced Fraunces optical axes (`opsz` 144, `SOFT` 30, `WONK` 1, letter-spacing `-0.035em`, line-height `0.88`).
+  - Configured global optical kerning and ligatures: `font-feature-settings: "kern", "liga", "calt"`, `font-optical-sizing: auto`.
+  - Configured tabular numerals on all monospace and counter metrics (`font-variant-numeric: tabular-nums`).
+- **Section Headers & Micro-Interactions:**
+  - Added animated digit-roll (odometer effect) to section index numbers on scroll enter.
+  - Added sticky mini-header in long sections (`Work` and `Projects`) showing `(02) WORK` and `(03) PROJECTS` with a pulsing crimson dot that fades in after the main header scrolls away.
+- **Component & Asset Standards:**
+  - Created standardized `Button` component with `primary`, `ghost`, and `icon` variants, `min-height: 48px`, and `touch-action: manipulation`.
+  - Added descriptive accessible portrait alt text in `About.tsx`.
+
+---
+
 ## PHASE 1 — AUDIT
 **Date:** 2026-11-12  
 **Commit:** `v2(phase-1): complete comprehensive site audit report and source spec`
@@ -20,6 +42,28 @@
 - **Heading tags:** `h1`: 0, `h2`: 8, `h3`: 18, `h4`: 3
 - **JS bundle size:** 399.72 kB (127.89 kB gzipped)
 - **CSS bundle size:** 103.79 kB (38.33 kB gzipped)
+
+---
+
+## PHASE 3 — UI POLISH & VISUAL UPGRADE
+**Date:** 2026-11-12  
+**Commit Target:** `v2(phase-3): visual depth, surface system, and typography refinement`
+
+### Improvements & Changes Applied
+- **Surface & Depth System:**
+  - Defined 3 surface tiers in `:root`: `--surface-0` (`#0A0A0B`), `--surface-1` (`#0F0E10`), `--surface-2` (`#161417`).
+  - Added hairline inner highlight: `box-shadow: inset 0 1px 0 rgba(244,239,228,0.06)` via `.surface-card` and `.surface-elevated` across projects, services, and education cards (resolving issue `A-12`).
+  - Added subtle fixed radial vignette (`.page-vignette`: transparent to 35% black) to focus eye on center editorial content (resolving issue `A-13`).
+- **Typography & Font Refinements:**
+  - Enforced Fraunces optical axes (`opsz` 144, `SOFT` 30, `WONK` 1, letter-spacing `-0.035em`, line-height `0.88`).
+  - Configured global optical kerning and ligatures: `font-feature-settings: "kern", "liga", "calt"`, `font-optical-sizing: auto`.
+  - Configured tabular numerals on all monospace and counter metrics (`font-variant-numeric: tabular-nums`).
+- **Section Headers & Micro-Interactions:**
+  - Added animated digit-roll (odometer effect) to section index numbers on scroll enter.
+  - Added sticky mini-header in long sections (`Work` and `Projects`) showing `(02) WORK` and `(03) PROJECTS` with a pulsing crimson dot that fades in after the main header scrolls away.
+- **Component & Asset Standards:**
+  - Created standardized `Button` component with `primary`, `ghost`, and `icon` variants, `min-height: 48px`, and `touch-action: manipulation`.
+  - Added descriptive accessible portrait alt text in `About.tsx`.
 
 ---
 
@@ -43,5 +87,27 @@
   - Added `touch-expand` pseudo-element padding and `min-h-[44px]` touch target sizing to filter buttons, project action pills, contact chips, and mobile navigation items (resolving issue `A-05`).
   - Added `viewport-fit=cover` in `index.html` and safe-area inset handling on navigation.
   - Set `100svh` / `100dvh` for hero and mobile menu to eliminate iOS Safari toolbar jumps.
+
+---
+
+## PHASE 3 — UI POLISH & VISUAL UPGRADE
+**Date:** 2026-11-12  
+**Commit Target:** `v2(phase-3): visual depth, surface system, and typography refinement`
+
+### Improvements & Changes Applied
+- **Surface & Depth System:**
+  - Defined 3 surface tiers in `:root`: `--surface-0` (`#0A0A0B`), `--surface-1` (`#0F0E10`), `--surface-2` (`#161417`).
+  - Added hairline inner highlight: `box-shadow: inset 0 1px 0 rgba(244,239,228,0.06)` via `.surface-card` and `.surface-elevated` across projects, services, and education cards (resolving issue `A-12`).
+  - Added subtle fixed radial vignette (`.page-vignette`: transparent to 35% black) to focus eye on center editorial content (resolving issue `A-13`).
+- **Typography & Font Refinements:**
+  - Enforced Fraunces optical axes (`opsz` 144, `SOFT` 30, `WONK` 1, letter-spacing `-0.035em`, line-height `0.88`).
+  - Configured global optical kerning and ligatures: `font-feature-settings: "kern", "liga", "calt"`, `font-optical-sizing: auto`.
+  - Configured tabular numerals on all monospace and counter metrics (`font-variant-numeric: tabular-nums`).
+- **Section Headers & Micro-Interactions:**
+  - Added animated digit-roll (odometer effect) to section index numbers on scroll enter.
+  - Added sticky mini-header in long sections (`Work` and `Projects`) showing `(02) WORK` and `(03) PROJECTS` with a pulsing crimson dot that fades in after the main header scrolls away.
+- **Component & Asset Standards:**
+  - Created standardized `Button` component with `primary`, `ghost`, and `icon` variants, `min-height: 48px`, and `touch-action: manipulation`.
+  - Added descriptive accessible portrait alt text in `About.tsx`.
 
 ---

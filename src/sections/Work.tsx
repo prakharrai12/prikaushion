@@ -96,6 +96,7 @@ export const Work: React.FC = () => {
           ghostWord="WORK"
           line1="Where I've"
           line2="put in the *hours*"
+          stickyMini={true}
         />
 
         {/* Vertical Interactive Timeline */}
@@ -121,7 +122,7 @@ export const Work: React.FC = () => {
               onMouseMove={handleMouseMove}
               className={`timeline-row relative grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-10 p-6 md:p-8 rounded-md transition-all duration-400 group overflow-hidden border border-transparent ${
                 isOtherHovered ? 'opacity-35' : 'opacity-100'
-              } ${isHovered ? 'border-bone/20 bg-charcoal/40 shadow-2xl' : ''}`}
+              } ${isHovered ? 'border-bone/20 bg-charcoal/40 shadow-2xl surface-elevated' : ''}`}
               style={{
                 background: isHovered
                   ? `radial-gradient(400px circle at var(--spotlight-x, 50%) var(--spotlight-y, 50%), rgba(224, 27, 36, 0.12), transparent 70%)`

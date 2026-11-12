@@ -110,7 +110,7 @@ export const Toolkit: React.FC = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mt-8">
         {/* Left Column: Interactive Constellation Star-Map (Desktop >= 900px) */}
-        <div className="hidden lg:flex lg:col-span-5 sticky top-[14vh] flex-col items-center justify-center p-6 border border-bone-faint rounded-lg bg-obsidian/60 shadow-2xl">
+        <div className="hidden lg:flex lg:col-span-5 surface-card sticky top-[14vh] flex-col items-center justify-center p-6 border border-bone-faint rounded-lg bg-obsidian/60 shadow-2xl">
           <div className="w-full flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-bone-dim mb-4">
             <span>SKILL CONSTELLATION</span>
             <span className="text-crimson">INTERACTIVE NODES</span>

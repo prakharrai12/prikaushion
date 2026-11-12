@@ -170,7 +170,7 @@ export const About: React.FC = () => {
                 src="./assets/images/prakhar-portrait.webp"
                 srcSet="./assets/images/prakhar-portrait-700.webp 700w, ./assets/images/prakhar-portrait.webp 1400w"
                 sizes="(max-width: 900px) 100vw, 420px"
-                alt="Prakhar Kaushik at Faraway International Hackathon"
+                alt="Prakhar Kaushik smiling with both thumbs up in front of the Faraway International Hackathon Round 2 banner"
                 loading="lazy"
                 className="w-full h-full object-cover grayscale-[0.15] contrast-[1.08] saturate-[0.9] transition-transform duration-500 ease-out group-hover:scale-110"
               />
