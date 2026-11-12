@@ -20,6 +20,8 @@ export const BackgroundJourney: React.FC = () => {
     const isReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     if (isReduced) return;
 
+    const triggers: ScrollTrigger[] = [];
+
     // Wait for DOM to render sections
     const timeout = setTimeout(() => {
       const sections = document.querySelectorAll<HTMLElement>('[data-bg]');
@@ -40,10 +42,10 @@ export const BackgroundJourney: React.FC = () => {
         const glowY = section.getAttribute('data-accent-y') || '50%';
         const isPaper = bgName === 'grad-paper';
 
-        ScrollTrigger.create({
+        const st = ScrollTrigger.create({
           trigger: section,
-          start: 'top 70%',
-          end: 'top 20%',
+          start: 'top 60%',
+          end: 'top 10%',
           scrub: 1.2,
           onEnter: () => {
             if (layerBRef.current) {
@@ -96,12 +98,13 @@ export const BackgroundJourney: React.FC = () => {
             }
           },
         });
+        triggers.push(st);
       });
     }, 400);
 
     return () => {
       clearTimeout(timeout);
-      ScrollTrigger.getAll().forEach(t => t.kill());
+      triggers.forEach(t => t.kill());
     };
   }, []);
 

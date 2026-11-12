@@ -8,8 +8,39 @@ import { site } from '../config/site';
 export const Footer: React.FC = () => {
   const [istTime, setIstTime] = useState('');
   const [showToast, setShowToast] = useState(false);
+  const [isReducedMotion, setIsReducedMotion] = useState(false);
   const wordmarkRef = useRef<HTMLDivElement>(null);
   const burstContainerRef = useRef<HTMLDivElement>(null);
+
+  // Initialize and track reduced motion preference
+  useEffect(() => {
+    try {
+      const saved = localStorage.getItem('prikaushion_reduced_motion');
+      const prefers = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      if (saved === '1' || (saved === null && prefers)) {
+        setIsReducedMotion(true);
+        document.documentElement.classList.add('reduce-motion');
+      }
+    } catch {
+      // LocalStorage unavailable fallback
+    }
+  }, []);
+
+  const toggleReducedMotion = () => {
+    const next = !isReducedMotion;
+    setIsReducedMotion(next);
+    try {
+      if (next) {
+        document.documentElement.classList.add('reduce-motion');
+        localStorage.setItem('prikaushion_reduced_motion', '1');
+      } else {
+        document.documentElement.classList.remove('reduce-motion');
+        localStorage.setItem('prikaushion_reduced_motion', '0');
+      }
+    } catch {
+      // ignore
+    }
+  };
 
   // Live IST Clock
   useEffect(() => {
@@ -181,9 +212,21 @@ export const Footer: React.FC = () => {
           <div>
             <span>DESIGNED &amp; BUILT IN NEW DELHI</span>
           </div>
-          <div className="flex items-center gap-2">
-            <span className="w-2 h-2 rounded-full bg-crimson animate-pulse" />
-            <span className="tabular-nums">LOCAL TIME — {istTime || '10:30:00 PM IST'}</span>
+          <div className="flex items-center gap-4">
+            <button
+              type="button"
+              onClick={toggleReducedMotion}
+              className="px-3 py-1.5 rounded-pill border border-bone-faint hover:border-crimson text-bone-dim hover:text-bone transition-colors flex items-center gap-2 min-h-[36px] touch-expand"
+              aria-pressed={isReducedMotion}
+              title="Toggle animations and motion"
+            >
+              <span className={`w-2 h-2 rounded-full ${isReducedMotion ? 'bg-crimson' : 'bg-bone/30'}`} />
+              <span>MOTION: {isReducedMotion ? 'REDUCED' : 'NORMAL'}</span>
+            </button>
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 rounded-full bg-crimson animate-pulse" />
+              <span className="tabular-nums">LOCAL TIME — {istTime || '10:30:00 PM IST'}</span>
+            </div>
           </div>
         </div>
       </Container>

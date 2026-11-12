@@ -11,7 +11,7 @@ export const CustomCursor: React.FC = () => {
   const [isTouch, setIsTouch] = useState(false);
 
   useEffect(() => {
-    if (isTouchDevice()) {
+    if (isTouchDevice() || (typeof window !== 'undefined' && window.matchMedia('(pointer: coarse)').matches)) {
       setIsTouch(true);
       return;
     }
@@ -20,6 +20,8 @@ export const CustomCursor: React.FC = () => {
     let mouseY = -100;
     let ringX = -100;
     let ringY = -100;
+    let targetSnapX: number | null = null;
+    let targetSnapY: number | null = null;
     let animationFrameId: number;
 
     const onMouseMove = (e: MouseEvent) => {
@@ -27,9 +29,27 @@ export const CustomCursor: React.FC = () => {
       mouseY = e.clientY;
       if (!isVisible) setIsVisible(true);
 
-      // Inspect target to determine cursor state
+      // Inspect target to determine cursor state and check magnetic snap within 24px
       const target = e.target as HTMLElement | null;
       if (!target) return;
+
+      const magneticEl = target.closest<HTMLElement>('.magnetic-snap, [data-magnetic="true"]');
+      if (magneticEl) {
+        const rect = magneticEl.getBoundingClientRect();
+        const centerX = rect.left + rect.width / 2;
+        const centerY = rect.top + rect.height / 2;
+        const dist = Math.hypot(e.clientX - centerX, e.clientY - centerY);
+        if (dist < 28) {
+          targetSnapX = centerX;
+          targetSnapY = centerY;
+        } else {
+          targetSnapX = null;
+          targetSnapY = null;
+        }
+      } else {
+        targetSnapX = null;
+        targetSnapY = null;
+      }
 
       const cursorAttr = target.closest('[data-cursor]')?.getAttribute('data-cursor');
       if (cursorAttr) {
@@ -71,9 +91,13 @@ export const CustomCursor: React.FC = () => {
     document.addEventListener('mouseenter', onMouseEnter);
 
     const render = () => {
-      // Lerp ring position with factor 0.16
-      ringX += (mouseX - ringX) * 0.16;
-      ringY += (mouseY - ringY) * 0.16;
+      const aimX = targetSnapX !== null ? targetSnapX : mouseX;
+      const aimY = targetSnapY !== null ? targetSnapY : mouseY;
+
+      // Lerp ring position with factor 0.16 (or snappier 0.28 if snapping)
+      const factor = targetSnapX !== null ? 0.28 : 0.16;
+      ringX += (aimX - ringX) * factor;
+      ringY += (aimY - ringY) * factor;
 
       if (dotRef.current) {
         dotRef.current.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0) translate(-50%, -50%)`;

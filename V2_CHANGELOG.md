@@ -3,6 +3,29 @@
 
 ---
 
+## PHASE 4 — INTERACTIVITY & MOTION SYSTEM
+**Date:** 2026-11-12  
+**Commit Target:** `v2(phase-4): view transitions, scroll choreography, and motion accessibility`
+
+### Improvements & Changes Applied
+- **Custom Cursor & Precision Magnetics:**
+  - Added magnetic snapping to interactive element centers within a 28px proximity zone.
+  - Enforced strict touch device suppression (`@media (pointer: coarse)`) to prevent phantom desktop cursors on touch screens.
+  - Dedicated cursor states: `view`, `link`, `open`, `text`, `none`.
+- **View Transitions & Curtain Flash:**
+  - Integrated `triggerCurtainFlash()`: a 2px crimson bar sweeping across the top of the viewport on route / state transitions.
+  - Seamlessly bound to native `document.startViewTransition()` with fallback for unsupported browsers.
+- **Scroll Choreography & Background Journey:**
+  - Fine-tuned Lenis smooth scrolling (`lerp: 0.085`, `wheelMultiplier: 0.9`, `touchMultiplier: 1.5`).
+  - Isolated `BackgroundJourney.tsx` cleanup to its own array of triggers, eliminating a critical bug where `ScrollTrigger.getAll().forEach(t => t.kill())` prematurely wiped triggers in other components.
+  - Calibrated background color shifts (`start: 'top 60%'`, `end: 'top 10%'`, `scrub: 1.2`).
+- **Motion Accessibility (`prefers-reduced-motion`):**
+  - Added interactive, persistent **"Reduce motion" toggle** button in the footer.
+  - Persisted user preference in `localStorage['prikaushion_reduced_motion']`.
+  - Configured global `.reduce-motion` CSS rules that force `transition-duration: 0.01ms !important`, `animation-duration: 0.01ms !important`, and disable continuous decorative transforms while preserving site layout.
+
+---
+
 ## PHASE 3 — UI POLISH & VISUAL UPGRADE
 **Date:** 2026-11-12  
 **Commit Target:** `v2(phase-3): visual depth, surface system, and typography refinement`
