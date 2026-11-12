@@ -3,6 +3,24 @@
 
 ---
 
+## PHASE 6 — SEO, SOCIAL METADATA & CANONICAL DOMAIN
+**Date:** 2026-11-12  
+**Commit Target:** `v2(phase-6): absolute social metadata, twitter cards, and canonical correctness`
+
+### Improvements & Changes Applied
+- **Canonical Domain Alignment:**
+  - Standardized canonical URL to `https://prikaushion.vercel.app/` across `index.html`, `robots.txt`, and `sitemap.xml` to eliminate search engine canonical mismatches with undeployed custom domains.
+- **Social Media Previews (Open Graph & Twitter/X):**
+  - Replaced relative `./assets/brand/og-image.png` with absolute HTTPS URL `https://prikaushion.vercel.app/assets/brand/og-image.png` (resolving issue `A-02`).
+  - Added Twitter Cards metadata (`summary_large_image`, title, description, and absolute image card).
+  - Configured Open Graph dimensions (1200×630px) and site name.
+- **Structured Data & Web Manifest:**
+  - Expanded JSON-LD `Person` schema with complete `sameAs` array linking GitHub, LinkedIn (`https://www.linkedin.com/in/prakhar-kaushik-38731828b/`), and Instagram (`https://www.instagram.com/prakhareverie/`).
+  - Created standard `manifest.webmanifest` with standalone display, dark theme colors, and icons.
+  - Implemented semantic, styled `<noscript>` fallback for search engines and JavaScript-disabled clients.
+
+---
+
 ## PHASE 5 — PERFORMANCE, IMAGE & BUNDLE OPTIMIZATION
 **Date:** 2026-11-12  
 **Commit Target:** `v2(phase-5): modular chunk splitting, webp asset optimization, and image resilience`

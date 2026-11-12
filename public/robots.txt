@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://prikaushion.studio/sitemap.xml
-
+Sitemap: https://prikaushion.vercel.app/sitemap.xml
