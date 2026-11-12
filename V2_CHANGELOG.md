@@ -3,6 +3,29 @@
 
 ---
 
+## PHASE 7 — SECURITY HARDENING & EDGE CACHING
+**Date:** 2026-11-12  
+**Commit Target:** `v2(phase-7): security headers, serverless contact api, and edge caching`
+
+### Improvements & Changes Applied
+- **Vercel Edge Security Headers (`vercel.json`):**
+  - Configured `Content-Security-Policy` with restrictive directives (`default-src 'self'`, `frame-ancestors 'none'`, `form-action 'self' mailto:`).
+  - Configured `Strict-Transport-Security: max-age=63072000; includeSubDomains; preload` (A+ SSL Labs rating).
+  - Configured `X-Content-Type-Options: nosniff`.
+  - Configured `Referrer-Policy: strict-origin-when-cross-origin`.
+  - Configured `Permissions-Policy: camera=(), microphone=(), geolocation=(), payment=(), usb=()`.
+  - Configured `X-Frame-Options: DENY`.
+  - Configured `Cross-Origin-Opener-Policy: same-origin`.
+- **Edge Cache Optimization:**
+  - Configured immutable caching for hashed production assets: `/assets/(.*)` -> `public, max-age=31536000, immutable`.
+  - Configured 1-day caching with stale-while-revalidate for favicons and web manifest.
+  - Enforced instant revalidation for HTML entrypoints (`public, max-age=0, must-revalidate`).
+- **Serverless Contact Endpoint & Spam Defense (`api/contact.ts`):**
+  - Created serverless endpoint with input validation, payload length bounding, and bot honeypot trap.
+  - Implemented dual-layer submission in `Contact.tsx` (submits to `/api/contact` with seamless graceful fallback to `mailto:`).
+
+---
+
 ## PHASE 6 — SEO, SOCIAL METADATA & CANONICAL DOMAIN
 **Date:** 2026-11-12  
 **Commit Target:** `v2(phase-6): absolute social metadata, twitter cards, and canonical correctness`

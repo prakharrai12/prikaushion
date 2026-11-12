@@ -38,7 +38,9 @@ export const Contact: React.FC = () => {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSending, setIsSending] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const newErrors: { [key: string]: boolean } = {};
     if (!name.trim()) newErrors.name = true;
@@ -51,15 +53,36 @@ export const Contact: React.FC = () => {
     }
 
     setErrors({});
+    setIsSending(true);
 
-    // Mailto fallback composition
-    const subject = encodeURIComponent(`Project Inquiry: ${selectedChips.join(', ')} — from ${name}`);
-    const body = encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\nInterested in: ${selectedChips.join(', ')}\n\nMessage:\n${message}`
-    );
-    window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: name.trim(),
+          email: email.trim(),
+          projectTypes: selectedChips,
+          message: message.trim(),
+        }),
+      });
 
-    setSubmitted(true);
+      if (res.ok) {
+        setSubmitted(true);
+      } else {
+        throw new Error('API submission failed');
+      }
+    } catch {
+      // Graceful fallback to mailto
+      const subject = encodeURIComponent(`Project Inquiry: ${selectedChips.join(', ')} — from ${name}`);
+      const body = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\nInterested in: ${selectedChips.join(', ')}\n\nMessage:\n${message}`
+      );
+      window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
+      setSubmitted(true);
+    } finally {
+      setIsSending(false);
+    }
   };
 
   return (
@@ -295,10 +318,15 @@ export const Contact: React.FC = () => {
               <div className="pt-4">
                 <button
                   type="submit"
-                  className="h-14 min-h-[44px] px-8 rounded-pill bg-[#0A0A0B] text-[#F4EFE4] font-mono text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-2 hover:bg-crimson hover:text-[#0A0A0B] transition-all duration-300 shadow-xl group"
+                  disabled={isSending}
+                  className={`h-14 min-h-[44px] px-8 rounded-pill font-mono text-xs uppercase tracking-widest font-semibold flex items-center justify-center gap-2 transition-all duration-300 shadow-xl group ${
+                    isSending
+                      ? 'bg-[#0A0A0B]/60 text-[#F4EFE4]/60 cursor-wait'
+                      : 'bg-[#0A0A0B] text-[#F4EFE4] hover:bg-crimson hover:text-[#0A0A0B]'
+                  }`}
                 >
-                  <span>Send it</span>
-                  <ArrowUpRight className="w-4 h-4 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                  <span>{isSending ? 'Sending...' : 'Send it'}</span>
+                  <ArrowUpRight className={`w-4 h-4 transition-transform ${isSending ? 'animate-pulse' : 'group-hover:translate-x-1 group-hover:-translate-y-1'}`} />
                 </button>
               </div>
             </form>
