@@ -58,6 +58,14 @@ export const App: React.FC = () => {
       {/* Atmospheric Tactile Ink Trail (Section 10.7) */}
       <InkTrail />
 
+      {/* Skip to Main Content Link for Keyboard / Screen Reader Accessibility */}
+      <a
+        href="#main-content"
+        className="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-[9999] px-5 py-2.5 bg-crimson text-ink font-mono text-xs uppercase tracking-widest font-bold rounded-pill shadow-2xl focus:outline-none focus:ring-2 focus:ring-bone"
+      >
+        Skip to content ↵
+      </a>
+
       {/* Fixed Progress Top Bar & Right Edge Indicator */}
       <ScrollProgress />
 

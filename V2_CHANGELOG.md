@@ -3,6 +3,23 @@
 
 ---
 
+## PHASE 8 — ACCESSIBILITY & DEVICE HARDENING
+**Date:** 2026-11-12  
+**Commit Target:** `v2(phase-8): keyboard accessibility, skip links, and high-contrast focus rings`
+
+### Improvements & Changes Applied
+- **Keyboard Navigation & Skip Link:**
+  - Added dedicated accessible "Skip to content" link (`#main-content`) that appears on first keyboard tab.
+  - Linked skip anchor directly to `<main id="main-content">` so screen readers and keyboard users bypass repeated navigation elements.
+- **Focus Rings & Visual Affordance:**
+  - Implemented high-contrast keyboard `:focus-visible` ring in `globals.css` with 2px crimson outline, 3px offset, and rounded corners.
+  - Retained clean cursor-based aesthetics without default browser focus halos on mouse click.
+- **Screen Reader Semantics:**
+  - Verified `aria-expanded`, `aria-label`, and `role` attributes on mobile hamburger drawer and interactive modal overlays.
+  - Added `aria-hidden="true"` on decorative background grain, vignette, and ambient particles.
+
+---
+
 ## PHASE 7 — SECURITY HARDENING & EDGE CACHING
 **Date:** 2026-11-12  
 **Commit Target:** `v2(phase-7): security headers, serverless contact api, and edge caching`

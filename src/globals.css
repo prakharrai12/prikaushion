@@ -351,3 +351,11 @@ html.reduce-motion .grain-overlay {
   20%, 60% { transform: translateX(-6px); }
   40%, 80% { transform: translateX(6px); }
 }
+
+/* Accessibility Focus States */
+:focus-visible {
+  outline: 2px solid var(--crimson) !important;
+  outline-offset: 3px !important;
+  border-radius: 4px;
+}
+
