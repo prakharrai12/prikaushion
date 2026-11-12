@@ -3,6 +3,33 @@
 
 ---
 
+## PHASE 5 — PERFORMANCE, IMAGE & BUNDLE OPTIMIZATION
+**Date:** 2026-11-12  
+**Commit Target:** `v2(phase-5): modular chunk splitting, webp asset optimization, and image resilience`
+
+### Improvements & Changes Applied
+- **Asset Processing & WebP Conversion:**
+  - Converted and deployed high-definition WebP preview screenshots for all 5 featured and shipped projects:
+    - `hacks-2026.webp` (47 KB)
+    - `vipra-pulse.webp` (37 KB)
+    - `finculator.webp` (82 KB)
+    - `radix-aroma.webp` (59 KB)
+    - `amisphere.webp` (43 KB)
+  - Every single raster asset in the repository is strictly under 85 KB (well below the 150 KB budget threshold).
+- **Vite Bundle Splitting & Vendor Chunks:**
+  - Configured intelligent manual code-splitting in `vite.config.ts`:
+    - `vendor-react` (React, ReactDOM)
+    - `vendor-gsap` (GSAP core and plugins)
+    - `vendor-lenis` (Lenis smooth scroll engine)
+    - `vendor-icons` (Lucide React SVG icons)
+    - `vendor-motion` (Framer motion primitives)
+  - Reduced main entry application chunk (`index.js`) from 403.77 kB down to **166.90 kB** (only **49.65 kB** gzipped!).
+- **Image Resilience & Fallbacks:**
+  - Standardized absolute asset URLs `/assets/projects/${slug}.webp` across sticky stack and list hover components.
+  - Added graceful `onError` fallback handlers and decorative typography overlays so missing or loading assets never produce blank layout voids.
+
+---
+
 ## PHASE 4 — INTERACTIVITY & MOTION SYSTEM
 **Date:** 2026-11-12  
 **Commit Target:** `v2(phase-4): view transitions, scroll choreography, and motion accessibility`

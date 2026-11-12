@@ -271,9 +271,13 @@ export const Projects: React.FC = () => {
                 {/* Screenshot with Vertical Auto-Scroll on Hover */}
                 <div className="relative w-full grow overflow-hidden bg-ink">
                   <img
-                    src={`./assets/projects/${p.slug}.webp`}
+                    src={`/assets/projects/${p.slug}.webp`}
                     alt={`${p.title} Preview`}
                     loading="lazy"
+                    onError={(e) => {
+                      // Fallback if image fails
+                      (e.target as HTMLElement).style.display = 'none';
+                    }}
                     className="w-full h-full object-cover object-top transition-[object-position] duration-[6000ms] ease-linear group-hover:object-bottom"
                   />
                   {/* Subtle inner spotlight */}
@@ -439,10 +443,17 @@ export const Projects: React.FC = () => {
             {/* Project Cover Image */}
             <div className="relative w-full grow overflow-hidden bg-ink">
               <img
-                src={`./assets/projects/${hoveredTierB.slug}.webp`}
+                src={`/assets/projects/${hoveredTierB.slug}.webp`}
                 alt={hoveredTierB.title}
+                onError={(e) => {
+                  (e.target as HTMLElement).style.display = 'none';
+                }}
                 className="w-full h-full object-cover object-top"
               />
+              <div className="absolute inset-0 flex flex-col items-center justify-center p-4 text-center pointer-events-none -z-0">
+                <span className="font-display text-lg text-bone font-bold">{hoveredTierB.title}</span>
+                <span className="font-mono text-[10px] text-crimson uppercase tracking-widest mt-1">{hoveredTierB.category}</span>
+              </div>
             </div>
           </div>
         )}
