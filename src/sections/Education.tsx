@@ -96,7 +96,7 @@ export const Education: React.FC = () => {
     >
       <Container>
         <SectionHeader
-          index="06"
+          index="07"
           metaName="EDUCATION"
           ghostWord="LEARN"
           line1="Always"

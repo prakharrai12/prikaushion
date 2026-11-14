@@ -13,6 +13,7 @@ const SECTIONS: SectionIndicator[] = [
   { id: 'projects', name: 'PROJECTS' },
   { id: 'services', name: 'SERVICES' },
   { id: 'toolkit', name: 'TOOLKIT' },
+  { id: 'go-to', name: "THE CODER'S GO-TO" },
   { id: 'education', name: 'EDUCATION' },
   { id: 'socials', name: 'SOCIALS' },
   { id: 'contact', name: 'CONTACT' },

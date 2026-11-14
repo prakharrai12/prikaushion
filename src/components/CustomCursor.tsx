@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { isTouchDevice } from '../lib/utils';
 
-export type CursorMode = 'default' | 'link' | 'view' | 'drag' | 'open' | 'text' | 'hidden';
+export type CursorMode = 'default' | 'link' | 'view' | 'drag' | 'open' | 'text' | 'play' | 'pause' | 'jump' | 'hidden';
 
 export const CustomCursor: React.FC = () => {
   const dotRef = useRef<HTMLDivElement>(null);
@@ -153,6 +153,12 @@ export const CustomCursor: React.FC = () => {
             ? 'w-24 h-24 rounded-full bg-crimson text-ink font-mono font-medium text-xs tracking-widest'
             : cursorMode === 'open'
             ? 'w-28 h-28 rounded-full bg-bone text-ink font-mono font-medium text-xs tracking-widest'
+            : cursorMode === 'play'
+            ? 'w-24 h-24 rounded-full bg-crimson text-ink font-mono font-bold text-xs tracking-widest'
+            : cursorMode === 'pause'
+            ? 'w-24 h-24 rounded-full bg-crimson text-ink font-mono font-bold text-xs tracking-widest'
+            : cursorMode === 'jump'
+            ? 'w-20 h-20 rounded-full bg-bone text-ink font-mono font-bold text-xs tracking-widest'
             : cursorMode === 'text'
             ? 'w-[2px] h-7 bg-crimson rounded-none mix-blend-difference'
             : 'w-10 h-10 rounded-full border border-bone/50 opacity-0'
@@ -161,6 +167,9 @@ export const CustomCursor: React.FC = () => {
         {cursorMode === 'view' && <span>VIEW</span>}
         {cursorMode === 'drag' && <span>DRAG</span>}
         {cursorMode === 'open' && <span>OPEN ↗</span>}
+        {cursorMode === 'play' && <span>PLAY</span>}
+        {cursorMode === 'pause' && <span>PAUSE</span>}
+        {cursorMode === 'jump' && <span>JUMP</span>}
       </div>
     </div>
   );

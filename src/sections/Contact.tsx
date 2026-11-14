@@ -94,7 +94,7 @@ export const Contact: React.FC = () => {
     >
       <Container>
         <SectionHeader
-          index="08"
+          index="09"
           metaName="CONTACT"
           ghostWord="HELLO"
           line1="Let's make"

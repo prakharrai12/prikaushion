@@ -21,6 +21,8 @@ import { Socials } from './sections/Socials';
 import { Contact } from './sections/Contact';
 import { Footer } from './sections/Footer';
 
+const CodersGoTo = React.lazy(() => import('./features/codersGoTo'));
+
 export const App: React.FC = () => {
   const [preloaderActive, setPreloaderActive] = useState(true);
 
@@ -110,13 +112,21 @@ export const App: React.FC = () => {
         {/* Section Bridge: Services -> Toolkit */}
         <SectionBridge nextSection="TOOLKIT" />
 
-        {/* Section 07: Toolkit / Skills */}
+        {/* Section 05: Toolkit / Skills */}
         <Toolkit />
 
-        {/* Section Bridge: Toolkit -> Education */}
+        {/* Section Bridge: Toolkit -> The Coder's Go-To */}
+        <SectionBridge nextSection="THE CODER'S GO-TO" />
+
+        {/* Section 06: The Coder's Go-To */}
+        <React.Suspense fallback={<div className="min-h-[60vh]" />}>
+          <CodersGoTo />
+        </React.Suspense>
+
+        {/* Section Bridge: The Coder's Go-To -> Education */}
         <SectionBridge nextSection="EDUCATION & CLUBS" />
 
-        {/* Section 08: Education */}
+        {/* Section 07: Education */}
         <Education />
 
         {/* Section Bridge: Education -> Socials */}

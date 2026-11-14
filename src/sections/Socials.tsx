@@ -171,7 +171,7 @@ export const Socials: React.FC = () => {
     >
       <Container>
         <SectionHeader
-          index="07"
+          index="08"
           metaName="SOCIALS"
           ghostWord="SOCIAL"
           line1="Find me"

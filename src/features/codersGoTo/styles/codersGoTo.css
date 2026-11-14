@@ -1,0 +1,197 @@
+/* THE CODER'S GO-TO — SCOPED STYLES
+   All styles scoped strictly under .cgt-root or reusable .cgt-* utilities
+   Zero global pollution. Reuses brand tokens: ink (#0A0A0B), bone (#F4EFE4), crimson (#E01B24).
+*/
+
+.cgt-root {
+  --cgt-ink: #0A0A0B;
+  --cgt-bone: #F4EFE4;
+  --cgt-crimson: #E01B24;
+  --cgt-charcoal: #141416;
+  --cgt-graphite: #1C1B1F;
+  --track-accent: #E01B24;
+  color-scheme: dark;
+}
+
+/* Glassmorphism panel recipe (§10.1) */
+.cgt-glass {
+  background: linear-gradient(
+    135deg,
+    rgba(244, 239, 228, 0.10) 0%,
+    rgba(244, 239, 228, 0.03) 55%,
+    rgba(244, 239, 228, 0.06) 100%
+  );
+  backdrop-filter: blur(28px) saturate(150%);
+  -webkit-backdrop-filter: blur(28px) saturate(150%);
+  border: 1px solid rgba(244, 239, 228, 0.14);
+  border-radius: 28px;
+  box-shadow:
+    inset 0 1px 0 rgba(244, 239, 228, 0.18),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.25),
+    0 40px 120px -40px rgba(0, 0, 0, 0.80);
+  position: relative;
+  overflow: hidden;
+}
+
+.cgt-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+  background-image: var(--grain-svg, url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E"));
+}
+
+.cgt-glass::after {
+  content: "";
+  position: absolute;
+  inset: -40%;
+  pointer-events: none;
+  opacity: 0.5;
+  background: radial-gradient(
+    40% 30% at var(--sheen-x, 30%) var(--sheen-y, 0%),
+    rgba(244, 239, 228, 0.10),
+    transparent 70%
+  );
+}
+
+@supports not (backdrop-filter: blur(1px)) {
+  .cgt-glass {
+    background: rgba(15, 14, 16, 0.86);
+  }
+}
+
+/* Compact dock / launcher glass variant */
+.cgt-dock-glass {
+  background: rgba(10, 10, 11, 0.76);
+  backdrop-filter: blur(16px) saturate(130%);
+  -webkit-backdrop-filter: blur(16px) saturate(130%);
+  border: 1px solid rgba(244, 239, 228, 0.14);
+  box-shadow:
+    inset 0 1px 0 rgba(244, 239, 228, 0.16),
+    0 20px 50px -15px rgba(0, 0, 0, 0.9);
+}
+
+@supports not (backdrop-filter: blur(1px)) {
+  .cgt-dock-glass {
+    background: rgba(18, 17, 20, 0.95);
+  }
+}
+
+/* Animations */
+@keyframes cgt-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes cgt-reverse-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes cgt-drift {
+  0% {
+    transform: scale(1.6) translate(-2%, -2%) rotate(-1deg);
+  }
+  100% {
+    transform: scale(1.6) translate(2%, 2%) rotate(1deg);
+  }
+}
+
+@keyframes cgt-eq-pulse-1 {
+  0%, 100% { height: 3px; }
+  50% { height: 11px; }
+}
+
+@keyframes cgt-eq-pulse-2 {
+  0%, 100% { height: 9px; }
+  50% { height: 4px; }
+}
+
+@keyframes cgt-eq-pulse-3 {
+  0%, 100% { height: 4px; }
+  50% { height: 12px; }
+}
+
+@keyframes cgt-interlude-bounce {
+  0%, 80%, 100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  40% {
+    opacity: 1;
+    transform: scale(1.3);
+  }
+}
+
+.cgt-animate-spin {
+  animation: cgt-spin 6s linear infinite;
+}
+
+.cgt-animate-reverse-spin {
+  animation: cgt-reverse-spin 12s linear infinite;
+}
+
+.cgt-animate-drift {
+  animation: cgt-drift 30s ease-in-out infinite alternate;
+}
+
+.cgt-eq-bar-1 { animation: cgt-eq-pulse-1 0.75s ease-in-out infinite; }
+.cgt-eq-bar-2 { animation: cgt-eq-pulse-2 0.85s ease-in-out infinite; }
+.cgt-eq-bar-3 { animation: cgt-eq-pulse-3 0.65s ease-in-out infinite; }
+
+.cgt-interlude-dot-1 { animation: cgt-interlude-bounce 1.4s infinite ease-in-out 0s; }
+.cgt-interlude-dot-2 { animation: cgt-interlude-bounce 1.4s infinite ease-in-out 0.2s; }
+.cgt-interlude-dot-3 { animation: cgt-interlude-bounce 1.4s infinite ease-in-out 0.4s; }
+
+/* Custom scrollbars inside player */
+.cgt-scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.cgt-scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+.cgt-custom-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(244, 239, 228, 0.2) transparent;
+}
+.cgt-custom-scroll::-webkit-scrollbar {
+  width: 5px;
+}
+.cgt-custom-scroll::-webkit-scrollbar-track {
+  background: transparent;
+}
+.cgt-custom-scroll::-webkit-scrollbar-thumb {
+  background: rgba(244, 239, 228, 0.2);
+  border-radius: 9999px;
+}
+.cgt-custom-scroll::-webkit-scrollbar-thumb:hover {
+  background: rgba(244, 239, 228, 0.4);
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .cgt-animate-spin,
+  .cgt-animate-reverse-spin,
+  .cgt-animate-drift,
+  .cgt-eq-bar-1,
+  .cgt-eq-bar-2,
+  .cgt-eq-bar-3,
+  .cgt-interlude-dot-1,
+  .cgt-interlude-dot-2,
+  .cgt-interlude-dot-3 {
+    animation: none !important;
+  }
+}
+
