@@ -108,3 +108,4 @@ The feature was engineered to be completely isolated and cleanly removable:
 - **Performance**:
   - Lazy-loaded bundle: ~18.6 kB gzipped JS, ~1.3 kB gzipped CSS.
   - Web Audio Analyser (FFT 256) calculates real-time bass, mid, and high energy for equalizers and glows.
+

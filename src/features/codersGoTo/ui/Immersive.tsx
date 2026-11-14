@@ -411,7 +411,7 @@ export const Immersive: React.FC = () => {
           {activeTab === 'player' && (
             <div className="max-w-md mx-auto w-full flex flex-col items-center">
               {/* Album Art */}
-              <div className="w-full aspect-square max-w-[320px] rounded-2xl overflow-hidden border border-[#F4EFE4]/20 shadow-2xl mb-6">
+              <div className="w-full aspect-square max-w-[250px] sm:max-w-[320px] rounded-2xl overflow-hidden border border-[#F4EFE4]/20 shadow-2xl mb-4 sm:mb-6">
                 {currentTrack.cover?.src640 ? (
                   <img
                     src={currentTrack.cover.src640}
@@ -428,7 +428,7 @@ export const Immersive: React.FC = () => {
               </div>
 
               {/* Title & Artist */}
-              <div className="w-full text-left mb-6">
+              <div className="w-full text-left mb-4 sm:mb-6">
                 <span className="inline-block px-2 py-0.5 mb-1.5 rounded-full border border-[#F4EFE4]/20 bg-[#F4EFE4]/5 font-mono text-[9px] uppercase tracking-widest text-[#F4EFE4]/70">
                   {currentTrack.mood}
                 </span>
@@ -461,7 +461,7 @@ export const Immersive: React.FC = () => {
                 onPrev={prev}
                 onToggleShuffle={toggleShuffle}
                 onCycleRepeat={cycleRepeat}
-                className="w-full mb-6"
+                className="w-full mb-4 sm:mb-6"
               />
 
               {/* Credit Line */}

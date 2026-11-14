@@ -9,19 +9,34 @@ export const playlistMeta: PlaylistMeta = {
 export const playlist: Track[] = [
   {
     id: "track-01",
-    title: "TODO — Warm-up track",
-    artist: "Artist Name",
-    album: "Session Warm-Up",
-    year: 2026,
-    durationSec: 184,
-    mood: "warm-up",
-    note: "TODO: the one that starts every session",
-    accent: "#E01B24",
-    lyrics: { kind: "none" },
-    credit: {
-      license: "Owned",
-      attribution: "Prakhar Kaushik",
+    title: "Lover Girl",
+    artist: "Laufey",
+    album: "A Matter of Time",
+    year: 2025,
+    durationSec: 165,
+    mood: "focus",
+    note: "Playful bossa nova rhythm, acoustic chords, and smooth jazz vocals for late-night focus sessions.",
+    audio: {
+      mp3: "/audio/lover-girl.mp3",
     },
+    cover: {
+      src640: "/covers/lover-girl.webp",
+      src160: "/covers/lover-girl.webp",
+      blur32: "/covers/lover-girl.webp",
+    },
+    accent: "#D96B7A",
+    lyrics: {
+      kind: "plain",
+      textUrl: "/lyrics/lover-girl.txt",
+      source: "Laufey",
+      license: "Licensed",
+    },
+    credit: {
+      license: "Licensed",
+      attribution: "Laufey — Lover Girl (A Matter of Time)",
+      sourceUrl: "https://open.spotify.com/search/Laufey%20Lover%20Girl",
+    },
+    externalUrl: "https://open.spotify.com/search/Laufey%20Lover%20Girl",
   },
   {
     id: "track-02",

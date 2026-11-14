@@ -109,7 +109,7 @@ export const Services: React.FC = () => {
           {/* Mobile Swipe Cue */}
           <div className="lg:hidden flex items-center justify-between font-mono text-[11px] uppercase tracking-widest text-bone-dim mb-4 px-1">
             <span className="text-crimson font-medium">0{currentPanelIdx} / 04 PANELS</span>
-            <span>SWIPE TO EXPLORE →</span>
+            <span>SCROLL TO EXPLORE ↓</span>
           </div>
 
           {/* Track Progress Indicator Bar (Desktop) */}

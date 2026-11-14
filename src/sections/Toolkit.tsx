@@ -108,7 +108,7 @@ export const Toolkit: React.FC = () => {
           line2="of the *trade*"
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start mt-8">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-16 items-start mt-8">
         {/* Left Column: Interactive Constellation Star-Map (Desktop >= 900px) */}
         <div className="hidden lg:flex lg:col-span-5 surface-card sticky top-[14vh] flex-col items-center justify-center p-6 border border-bone-faint rounded-lg bg-obsidian/60 shadow-2xl">
           <div className="w-full flex items-center justify-between font-mono text-[10px] uppercase tracking-widest text-bone-dim mb-4">

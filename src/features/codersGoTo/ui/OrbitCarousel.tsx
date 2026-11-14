@@ -46,10 +46,11 @@ export const OrbitCarousel: React.FC<OrbitCarouselProps> = ({
     if (typeof window === 'undefined') return;
     const w = window.innerWidth;
     const isMobile = w < 768;
+    const isSmall = w < 480;
     setDimensions({
-      cardSize: Math.max(140, Math.min(220, w * 0.16)),
-      Rx: isMobile ? Math.min(w * 0.38, 190) : Math.min(w * 0.36, 480),
-      Ry: isMobile ? 24 : 44,
+      cardSize: isSmall ? 124 : isMobile ? 140 : Math.max(150, Math.min(220, w * 0.16)),
+      Rx: isSmall ? Math.min(w * 0.32, 120) : isMobile ? Math.min(w * 0.36, 170) : Math.min(w * 0.36, 480),
+      Ry: isSmall ? 20 : isMobile ? 26 : 44,
     });
   }, []);
 
@@ -178,7 +179,7 @@ export const OrbitCarousel: React.FC<OrbitCarouselProps> = ({
       data-cursor="drag"
       aria-label="The Coder's Go-To playlist carousel"
       role="region"
-      className="relative w-full h-[54vh] md:h-[62vh] min-h-[380px] max-h-[640px] flex items-center justify-center overflow-visible select-none focus:outline-none cursor-grab active:cursor-grabbing"
+      className="relative w-full h-[45vh] sm:h-[54vh] md:h-[62vh] min-h-[300px] sm:min-h-[380px] max-h-[640px] flex items-center justify-center overflow-visible select-none focus:outline-none cursor-grab active:cursor-grabbing"
       style={{ perspective: '1600px', touchAction: 'pan-y' }}
     >
       {/* SVG Orbit Line & Progress Arc */}

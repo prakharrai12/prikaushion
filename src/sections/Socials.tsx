@@ -195,7 +195,7 @@ export const Socials: React.FC = () => {
               onPointerLeave={handlePointerLeave}
               data-cursor="open"
               aria-disabled={!valid}
-              className={`social-row-link group relative min-h-[140px] md:h-[22vh] flex items-center justify-between px-6 md:px-12 border-b border-bone-faint overflow-hidden transition-all duration-300 focus:outline-none ${
+              className={`social-row-link group relative min-h-[100px] sm:min-h-[140px] md:h-[22vh] flex items-center justify-between px-4 sm:px-6 md:px-12 border-b border-bone-faint overflow-hidden transition-all duration-300 focus:outline-none ${
                 valid ? 'cursor-pointer' : 'cursor-not-allowed opacity-60'
               }`}
             >

@@ -65,7 +65,7 @@ export const Section: React.FC = () => {
     <section
       id="go-to"
       data-bg="grad-void"
-      className="relative min-h-screen py-24 md:py-32 overflow-hidden select-none cgt-root"
+      className="relative min-h-screen py-16 md:py-32 overflow-hidden select-none cgt-root"
     >
       {/* Section-Scoped Backdrop Layer (§10.5) */}
       {currentTrack && (
@@ -131,9 +131,9 @@ export const Section: React.FC = () => {
         </div>
 
         {/* 2. Transport & Meta Control Bar (12-column grid) */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center p-6 md:p-8 rounded-[28px] cgt-glass border border-[#F4EFE4]/15 mb-16 shadow-2xl">
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-center p-5 sm:p-6 md:p-8 rounded-2xl md:rounded-[28px] cgt-glass border border-[#F4EFE4]/15 mb-10 md:mb-16 shadow-2xl">
           {/* COLS 1–4: Now Playing Meta */}
-          <div className="md:col-span-4 min-w-0">
+          <div className="md:col-span-4 min-w-0 text-center md:text-left flex flex-col items-center md:items-start">
             <div className="flex items-center gap-2 mb-2">
               <span className="px-2.5 py-0.5 rounded-full border border-[#F4EFE4]/20 bg-[#F4EFE4]/5 font-mono text-[10px] uppercase tracking-widest text-[#F4EFE4]/70">
                 {activeTrack.mood}
@@ -149,21 +149,21 @@ export const Section: React.FC = () => {
               )}
             </div>
 
-            <h3 className="font-display font-bold text-xl lg:text-2xl text-[#F4EFE4] tracking-tight truncate">
+            <h3 className="font-display font-bold text-xl lg:text-2xl text-[#F4EFE4] tracking-tight truncate max-w-full">
               {activeTrack.title}
             </h3>
-            <p className="font-mono text-xs uppercase tracking-widest text-[#F4EFE4]/60 mt-0.5 truncate">
+            <p className="font-mono text-xs uppercase tracking-widest text-[#F4EFE4]/60 mt-0.5 truncate max-w-full">
               {activeTrack.artist}
             </p>
             {activeTrack.note && (
-              <p className="font-serif italic text-xs lg:text-sm text-[#F4EFE4]/70 mt-2 line-clamp-2">
+              <p className="font-serif italic text-xs lg:text-sm text-[#F4EFE4]/70 mt-2 line-clamp-2 max-w-[38ch]">
                 "{activeTrack.note}"
               </p>
             )}
           </div>
 
           {/* COLS 5–8: Transport Controls & Progress Bar */}
-          <div className="md:col-span-4 flex flex-col items-center justify-center">
+          <div className="md:col-span-4 flex flex-col items-center justify-center w-full">
             <Controls
               isPlaying={isPlayingActive}
               isBuffering={isBuffering && playingIndex === carouselIndex}
@@ -187,15 +187,17 @@ export const Section: React.FC = () => {
           </div>
 
           {/* COLS 9–12: Extras (Volume, Like, Open Lyrics) */}
-          <div className="md:col-span-4 flex flex-col items-center md:items-end justify-center gap-3">
+          <div className="md:col-span-4 flex flex-col items-center md:items-end justify-center gap-3 w-full">
             <div className="flex items-center gap-3">
-              {/* Volume */}
-              <VolumeSlider
-                volume={volume}
-                muted={muted}
-                onVolumeChange={setVolume}
-                onToggleMute={toggleMute}
-              />
+              {/* Volume (hidden on small mobile where screen space is tight and hardware buttons are used) */}
+              <div className="hidden sm:flex">
+                <VolumeSlider
+                  volume={volume}
+                  muted={muted}
+                  onVolumeChange={setVolume}
+                  onToggleMute={toggleMute}
+                />
+              </div>
 
               {/* Like Button */}
               <button
@@ -220,7 +222,7 @@ export const Section: React.FC = () => {
                 setUiState('IMMERSIVE');
               }}
               data-cursor="view"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-[#F4EFE4]/20 bg-[#F4EFE4]/5 hover:bg-[#F4EFE4]/15 hover:border-[#E01B24]/50 transition-all font-mono text-[11px] uppercase tracking-wider text-[#F4EFE4] group"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full border border-[#F4EFE4]/20 bg-[#F4EFE4]/5 hover:bg-[#F4EFE4]/15 hover:border-[#E01B24]/50 transition-all font-mono text-[11px] uppercase tracking-wider text-[#F4EFE4] group"
             >
               <Maximize2 className="w-3.5 h-3.5 text-[#E01B24] group-hover:scale-110 transition-transform" />
               <span>Open Lyrics &amp; Now Playing</span>

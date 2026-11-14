@@ -61,7 +61,7 @@ export const VinylSleeve: React.FC<VinylSleeveProps> = ({
             transform: `translate3d(${discOffset}px, 0, 0)`,
             transition: 'transform 0.7s cubic-bezier(0.16, 1, 0.3, 1)',
           }}
-          className="absolute rounded-full shadow-[0_15px_35px_rgba(0,0,0,0.85)] flex items-center justify-center overflow-hidden z-0 pointer-events-none"
+          className="hidden min-[480px]:flex absolute rounded-full shadow-[0_15px_35px_rgba(0,0,0,0.85)] items-center justify-center overflow-hidden z-0 pointer-events-none"
         >
           {/* Rotating Vinyl Grooves */}
           <div

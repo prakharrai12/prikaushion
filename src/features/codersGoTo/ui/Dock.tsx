@@ -138,11 +138,11 @@ export const Dock: React.FC<DockProps> = ({ className = '' }) => {
       onTouchEnd={handleTouchEnd}
       className={`fixed z-[85] transition-all duration-300 pointer-events-auto select-none ${className}`}
       style={{
-        bottom: `calc(max(16px, env(safe-area-inset-bottom)) + ${liftOffset}px)`,
-        left: 'max(16px, env(safe-area-inset-left))',
+        bottom: `calc(max(12px, env(safe-area-inset-bottom)) + ${liftOffset}px)`,
+        left: 'max(12px, env(safe-area-inset-left))',
       }}
     >
-      <div className="relative w-[calc(100vw-32px)] sm:w-[390px] h-[72px] sm:h-[76px] rounded-[22px] cgt-dock-glass flex items-center justify-between px-3 sm:px-4 shadow-[0_20px_50px_rgba(0,0,0,0.85)] border border-[#F4EFE4]/15 overflow-hidden group">
+      <div className="relative w-[calc(100vw-24px)] sm:w-[390px] h-[68px] sm:h-[76px] rounded-[20px] sm:rounded-[22px] cgt-dock-glass flex items-center justify-between px-2.5 sm:px-4 shadow-[0_20px_50px_rgba(0,0,0,0.85)] border border-[#F4EFE4]/15 overflow-hidden group">
         {/* Left: Cover Art + Vinyl Peek */}
         <div
           onClick={handleCoverOrTitleClick}
