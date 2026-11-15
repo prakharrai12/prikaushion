@@ -151,7 +151,7 @@ export const Launcher: React.FC<LauncherProps> = ({ className = '' }) => {
           {isPlaying && currentTrack && (
             <div className="relative w-full h-full flex items-center justify-center">
               {/* Spinning mini record cover */}
-              <div className="w-11 h-11 rounded-full overflow-hidden cgt-animate-spin shadow-inner">
+              <div className="shrink-0 aspect-square w-[42px] h-[42px] rounded-full overflow-hidden cgt-animate-spin shadow-inner">
                 {currentTrack.cover?.src160 ? (
                   <img
                     src={currentTrack.cover.src160}

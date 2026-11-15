@@ -152,15 +152,15 @@ export const Dock: React.FC<DockProps> = ({ className = '' }) => {
         >
           {/* Peeking spinning vinyl when playing */}
           <div
-            className={`absolute -right-2 w-10 h-10 rounded-full bg-[#050506] border border-[#F4EFE4]/20 flex items-center justify-center transition-transform duration-500 pointer-events-none ${
-              isPlaying ? 'translate-x-3.5 cgt-animate-spin opacity-90' : 'translate-x-0 opacity-0'
+            className={`absolute -right-1 w-[36px] h-[36px] rounded-full bg-[#050506] border border-[#F4EFE4]/20 flex items-center justify-center transition-transform duration-500 pointer-events-none ${
+              isPlaying ? 'translate-x-3 cgt-animate-spin opacity-90' : 'translate-x-0 opacity-0'
             }`}
           >
-            <div className="w-4 h-4 rounded-full border border-[#F4EFE4]/10 bg-[#0A0A0B]" />
+            <div className="w-3.5 h-3.5 rounded-full border border-[#F4EFE4]/10 bg-[#0A0A0B]" />
           </div>
 
           {/* Album Cover */}
-          <div className="relative z-10 w-[48px] h-[48px] sm:w-[52px] sm:h-[52px] rounded-[10px] overflow-hidden border border-[#F4EFE4]/20 bg-[#141416] shadow-md">
+          <div className="relative z-10 w-[44px] h-[44px] sm:w-[48px] sm:h-[48px] shrink-0 aspect-square rounded-[10px] overflow-hidden border border-[#F4EFE4]/20 bg-[#141416] shadow-md">
             {currentTrack?.cover?.src160 ? (
               <img
                 src={currentTrack.cover.src160}
@@ -182,24 +182,24 @@ export const Dock: React.FC<DockProps> = ({ className = '' }) => {
           onClick={handleCoverOrTitleClick}
           className="flex-1 min-w-0 pr-2 cursor-pointer"
         >
-          <div className="truncate font-sans font-bold text-[14px] sm:text-[15px] text-[#F4EFE4] tracking-tight group-hover:text-[#E01B24] transition-colors">
+          <div className="truncate font-sans font-bold text-[13px] sm:text-[14px] text-[#F4EFE4] tracking-tight group-hover:text-[#E01B24] transition-colors">
             {title}
           </div>
-          <div className="truncate font-mono text-[10px] sm:text-[11px] uppercase tracking-wider text-[#F4EFE4]/60">
+          <div className="truncate font-mono text-[10px] uppercase tracking-wider text-[#F4EFE4]/60">
             {artist}
           </div>
         </div>
 
         {/* Center-Right: Transport Controls */}
-        <div className="flex items-center gap-1 sm:gap-2 shrink-0">
+        <div className="flex items-center gap-1 sm:gap-1.5 shrink-0">
           {/* Prev */}
           <button
             type="button"
             onClick={prev}
             aria-label="Previous track"
-            className="p-1.5 sm:p-2 rounded-full text-[#F4EFE4]/60 hover:text-[#F4EFE4] hover:bg-[#F4EFE4]/10 transition-colors focus:outline-none"
+            className="p-1.5 rounded-full text-[#F4EFE4]/60 hover:text-[#F4EFE4] hover:bg-[#F4EFE4]/10 transition-colors focus:outline-none"
           >
-            <SkipBack className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+            <SkipBack className="w-3.5 h-3.5" />
           </button>
 
           {/* Play/Pause */}
@@ -208,7 +208,7 @@ export const Dock: React.FC<DockProps> = ({ className = '' }) => {
             onClick={toggle}
             aria-label={isPlaying ? 'Pause' : 'Play'}
             disabled={!hasAudio}
-            className={`w-10 h-10 sm:w-11 sm:h-11 rounded-full flex items-center justify-center transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#E01B24] ${
+            className={`shrink-0 aspect-square w-[36px] h-[36px] sm:w-[40px] sm:h-[40px] rounded-full flex items-center justify-center transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#E01B24] ${
               !hasAudio
                 ? 'opacity-35 cursor-not-allowed bg-[#F4EFE4]/40 text-[#0A0A0B]'
                 : 'bg-[#F4EFE4] text-[#0A0A0B] hover:bg-[#E01B24] hover:text-[#F4EFE4] hover:scale-105 active:scale-95 shadow-md'
@@ -228,9 +228,9 @@ export const Dock: React.FC<DockProps> = ({ className = '' }) => {
             type="button"
             onClick={next}
             aria-label="Next track"
-            className="p-1.5 sm:p-2 rounded-full text-[#F4EFE4]/60 hover:text-[#F4EFE4] hover:bg-[#F4EFE4]/10 transition-colors focus:outline-none"
+            className="p-1.5 rounded-full text-[#F4EFE4]/60 hover:text-[#F4EFE4] hover:bg-[#F4EFE4]/10 transition-colors focus:outline-none"
           >
-            <SkipForward className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
+            <SkipForward className="w-3.5 h-3.5" />
           </button>
         </div>
 

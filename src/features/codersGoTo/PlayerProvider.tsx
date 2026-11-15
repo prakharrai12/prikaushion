@@ -228,7 +228,6 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
       } catch {}
 
       if (!track.audio || (!track.audio.mp3 && !track.audio.m4a && !track.audio.ogg)) {
-        setErrorToast(`AUDIO COMING SOON FOR "${track.title}"`);
         return;
       }
 
