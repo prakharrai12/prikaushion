@@ -1,0 +1,80 @@
+[
+  {
+    "id": "Case-1",
+    "name": "Deadband threshold (< 8px)",
+    "passed": true,
+    "note": "No drag locked on 4px delta"
+  },
+  {
+    "id": "Case-2",
+    "name": "Vertical scroll pass-through",
+    "passed": true,
+    "note": "Vertical gesture released to document scroll"
+  },
+  {
+    "id": "Case-3",
+    "name": "Horizontal drag activation",
+    "passed": true,
+    "note": "Smooth horizontal orbit rotation"
+  },
+  {
+    "id": "Case-4",
+    "name": "Momentum velocity throw",
+    "passed": true,
+    "note": "Inertia velocity threw carousel past nearest track"
+  },
+  {
+    "id": "Case-5",
+    "name": "Snap to nearest station",
+    "passed": true,
+    "note": "Settled cleanly onto station index"
+  },
+  {
+    "id": "Case-6",
+    "name": "Mobile touch drag emulation",
+    "passed": true,
+    "note": "Touch drag responsive on iPhone 14 viewport"
+  },
+  {
+    "id": "Case-7",
+    "name": "Click vs drag distinction",
+    "passed": true,
+    "note": "Zero-travel tap treated as click, drag ignored"
+  },
+  {
+    "id": "Case-8",
+    "name": "Keyboard Arrow navigation",
+    "passed": true,
+    "note": "ArrowRight & ArrowLeft cycle active tracks"
+  },
+  {
+    "id": "Case-9",
+    "name": "Keyboard Home / End navigation",
+    "passed": true,
+    "note": "Home jumps to track 0, End to track 11"
+  },
+  {
+    "id": "Case-10",
+    "name": "Keyboard Space play toggle",
+    "passed": true,
+    "note": "Spacebar toggles play/pause on focused track"
+  },
+  {
+    "id": "Case-11",
+    "name": "Horizontal wheel navigation",
+    "passed": true,
+    "note": "Wheel deltaX steps carousel angle"
+  },
+  {
+    "id": "Case-12",
+    "name": "Circular modulo wrap-around",
+    "passed": true,
+    "note": "Infinite wrap-around at array boundaries"
+  },
+  {
+    "id": "Case-13",
+    "name": "Pointer cancel recovery",
+    "passed": true,
+    "note": "State smoothly recovered on pointercancel event"
+  }
+]

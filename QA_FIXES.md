@@ -73,3 +73,29 @@
 - **File:** `src/features/codersGoTo/ui/Dock.tsx`
 - **Fix:** Replaced `w-[calc(100vw-24px)]` with `w-[calc(100dvw-24px)] max-w-[420px]`.
 - **Impact:** Ensures mobile browser dynamic scrollbars never cause sub-pixel horizontal shifting.
+
+---
+
+## Phase C: Music Section Drag Physics & Interaction Hardening
+
+### 1. Pointer Event Axis Locking & Deadband Threshold
+- **File:** `src/features/codersGoTo/ui/OrbitCarousel.tsx`
+- **Fix:** Added an 8px deadband filter and directional angle discriminator.
+  - If vertical movement $|\Delta y| > |\Delta x|$, pointer capture is immediately released so native mobile page scrolling operates without resistance or jank.
+  - If horizontal movement $|\Delta x| > |\Delta y|$ and exceeds 8px, the carousel locks horizontal drag, captures the pointer, and updates rotation angle.
+- **Impact:** Eliminates mobile vertical scroll stutter when scrolling past the music carousel.
+
+### 2. Velocity Tracking & Momentum Throw
+- **File:** `src/features/codersGoTo/ui/OrbitCarousel.tsx`
+- **Fix:** Added a 5-sample ring buffer tracking the last 100ms of pointer motion (`{ t, x }`). On pointer release, calculates instant release velocity ($v = \Delta x / \Delta t$) and projects momentum throw before snapping to the nearest track station.
+- **Impact:** Flicks feel tactile and weighted, matching physical vinyl turntable inertia.
+
+### 3. Click vs. Drag Decoupling
+- **File:** `src/features/codersGoTo/ui/OrbitCarousel.tsx`
+- **Fix:** Added `hasDraggedRef` tracking overall pointer displacement. If displacement $\ge 6\text{px}$, vinyl sleeve click events are blocked during release.
+- **Impact:** Prevents accidental track selection or pause toggles while dragging.
+
+### 4. Automated Verification Suite
+- **Files:** `tests/music-drag.spec.ts`, `tests/run_drag_tests.cjs`, `qa/reports/drag-tests-report.json`
+- **Result:** **13 / 13 tests passed (100% pass rate)** covering deadband threshold, vertical scroll pass-through, horizontal drag, momentum throw, snapping, mobile touch, click vs drag, keyboard controls (ArrowLeft/Right, Home/End, Space), wheel deltaX, circular modulo wrap-around, and pointercancel recovery.
+

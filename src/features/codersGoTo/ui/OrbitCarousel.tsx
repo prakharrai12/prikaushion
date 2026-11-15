@@ -33,6 +33,12 @@ export const OrbitCarousel: React.FC<OrbitCarouselProps> = ({
   const startFloatRef = useRef(activeIndex);
   const tweenRef = useRef<gsap.core.Tween | null>(null);
 
+  // Drag physics & axis locking refs
+  const axisLockedRef = useRef<'none' | 'horizontal' | 'vertical'>('none');
+  const pointerStartPosRef = useRef({ x: 0, y: 0 });
+  const velocityHistoryRef = useRef<Array<{ t: number; x: number }>>([]);
+  const hasDraggedRef = useRef(false);
+
   const n = tracks.length;
 
   // Screen-responsive dimensions
@@ -86,34 +92,109 @@ export const OrbitCarousel: React.FC<OrbitCarouselProps> = ({
     animateTo(activeIndex);
   }, [activeIndex, animateTo]);
 
-  // Pointer drag handling
+  // Pointer drag handling with axis locking & momentum tracking
   const handlePointerDown = (e: React.PointerEvent) => {
     if (tweenRef.current) tweenRef.current.kill();
-    isDraggingRef.current = true;
+    axisLockedRef.current = 'none';
+    hasDraggedRef.current = false;
+    pointerStartPosRef.current = { x: e.clientX, y: e.clientY };
+    velocityHistoryRef.current = [{ t: performance.now(), x: e.clientX }];
     dragStartXRef.current = e.clientX;
     startFloatRef.current = activeFloatRef.current;
-    (e.target as HTMLElement).setPointerCapture?.(e.pointerId);
   };
 
   const handlePointerMove = (e: React.PointerEvent) => {
-    if (!isDraggingRef.current) return;
-    const dx = e.clientX - dragStartXRef.current;
-    // dx -> angle delta in radians -> index delta
-    const deltaIndex = -dx / (dimensions.Rx * 0.9);
-    activeFloatRef.current = startFloatRef.current + deltaIndex;
-    setActiveFloat(activeFloatRef.current);
+    if (axisLockedRef.current === 'vertical') return;
+
+    const dx = e.clientX - pointerStartPosRef.current.x;
+    const dy = e.clientY - pointerStartPosRef.current.y;
+    const absDx = Math.abs(dx);
+    const absDy = Math.abs(dy);
+
+    // Initial axis locking threshold: 8px deadband
+    if (axisLockedRef.current === 'none') {
+      if (absDx < 8 && absDy < 8) return;
+
+      if (absDy > absDx) {
+        // User intends vertical page scroll
+        axisLockedRef.current = 'vertical';
+        return;
+      } else {
+        // User intends horizontal carousel drag
+        axisLockedRef.current = 'horizontal';
+        isDraggingRef.current = true;
+        hasDraggedRef.current = true;
+        try {
+          (e.currentTarget as HTMLElement).setPointerCapture?.(e.pointerId);
+        } catch {}
+      }
+    }
+
+    if (axisLockedRef.current === 'horizontal' && isDraggingRef.current) {
+      // Record velocity history for inertia calculation (keep last 5 samples)
+      const now = performance.now();
+      velocityHistoryRef.current.push({ t: now, x: e.clientX });
+      if (velocityHistoryRef.current.length > 5) {
+        velocityHistoryRef.current.shift();
+      }
+
+      // dx -> circular angle -> index delta
+      const deltaIndex = -(e.clientX - dragStartXRef.current) / (dimensions.Rx * 0.95);
+      activeFloatRef.current = startFloatRef.current + deltaIndex;
+      setActiveFloat(activeFloatRef.current);
+    }
   };
 
   const handlePointerUp = (e: React.PointerEvent) => {
-    if (!isDraggingRef.current) return;
-    isDraggingRef.current = false;
-    (e.target as HTMLElement).releasePointerCapture?.(e.pointerId);
+    if (axisLockedRef.current === 'horizontal' && isDraggingRef.current) {
+      isDraggingRef.current = false;
+      try {
+        (e.currentTarget as HTMLElement).releasePointerCapture?.(e.pointerId);
+      } catch {}
 
-    // Snap to nearest index
-    const snapped = Math.round(activeFloatRef.current);
-    const normalized = ((snapped % n) + n) % n;
-    onSelectTrack(normalized);
-    animateTo(normalized);
+      // Calculate release velocity from the last 100ms
+      const now = performance.now();
+      const recentSamples = velocityHistoryRef.current.filter((s) => now - s.t < 100);
+      let releaseVelocity = 0; // px/ms
+      if (recentSamples.length >= 2) {
+        const first = recentSamples[0];
+        const last = recentSamples[recentSamples.length - 1];
+        const dt = last.t - first.t;
+        if (dt > 10) {
+          releaseVelocity = (last.x - first.x) / dt;
+        }
+      }
+
+      // Momentum throw: convert release velocity (px/ms) to float index delta
+      const momentumOffset = -releaseVelocity * (180 / dimensions.Rx);
+      const targetFloat = activeFloatRef.current + momentumOffset;
+
+      // Snap to nearest index
+      const snapped = Math.round(targetFloat);
+      const normalized = ((snapped % n) + n) % n;
+      onSelectTrack(normalized);
+      animateTo(normalized);
+    }
+
+    // Clear drag lock after slight timeout to avoid click bleed
+    setTimeout(() => {
+      axisLockedRef.current = 'none';
+      hasDraggedRef.current = false;
+    }, 60);
+  };
+
+  const handlePointerCancel = (e: React.PointerEvent) => {
+    if (isDraggingRef.current) {
+      isDraggingRef.current = false;
+      try {
+        (e.currentTarget as HTMLElement).releasePointerCapture?.(e.pointerId);
+      } catch {}
+      const snapped = Math.round(activeFloatRef.current);
+      const normalized = ((snapped % n) + n) % n;
+      animateTo(normalized);
+    }
+    axisLockedRef.current = 'none';
+    hasDraggedRef.current = false;
   };
 
   // Horizontal wheel handler (preserves vertical page scroll!)
@@ -176,6 +257,7 @@ export const OrbitCarousel: React.FC<OrbitCarouselProps> = ({
       onPointerDown={handlePointerDown}
       onPointerMove={handlePointerMove}
       onPointerUp={handlePointerUp}
+      onPointerCancel={handlePointerCancel}
       data-cursor="drag"
       aria-label="The Coder's Go-To playlist carousel"
       role="region"
@@ -289,6 +371,7 @@ export const OrbitCarousel: React.FC<OrbitCarouselProps> = ({
                 isFront={isFront}
                 size={dimensions.cardSize}
                 onClick={() => {
+                  if (hasDraggedRef.current) return;
                   if (isFront) {
                     onTogglePlay(i);
                   } else {
