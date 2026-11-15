@@ -154,6 +154,24 @@
 - **Files:** `src/components/Grain.tsx`, `src/globals.css`
 - **Audit Result:** Verified global fixed `feTurbulence` noise overlay (`mix-blend-mode: overlay`, `opacity: 0.07`, 6-step jitter every 0.9s), preventing gradient banding on 8-bit displays while automatically bypassing under `prefers-reduced-motion: reduce`.
 
+---
+
+## Phase G: SEO, Security & Performance Hardening
+
+### 1. Enhanced `<noscript>` Crawler Architecture
+- **File:** `index.html`
+- **Fix:** Expanded fallback with complete semantic hierarchy: Name, verified title, role statements, shipped project directory (`Hacks 2026`, `VipraPulse`, `Finculator`, `Amisphere`), official email (`prikaushionv@gmail.com`), GitHub, LinkedIn, and Instagram.
+- **Impact:** Ensures search engine web spiders and link scrapers index rich, keyword-complete content without executing client-side JavaScript.
+
+### 2. Production Security Headers & Cache-Control
+- **File:** `vercel.json`
+- **Audit Result:** Verified strict Content-Security-Policy (CSP) matching media/audio needs (`blob:`, `'self'`), Strict-Transport-Security (HSTS 2-year preload), X-Content-Type-Options (`nosniff`), X-Frame-Options (`DENY`), and 1-year immutable caching on bundled assets.
+
+### 3. OpenGraph & Social Cards
+- **Files:** `index.html`, `public/assets/brand/og-image.png`
+- **Audit Result:** Verified 1200x630 high-resolution OpenGraph preview banner exists on disk (`124,674` bytes) and absolute URLs are declared in `og:image` and `twitter:image`.
+
+
 
 
 
