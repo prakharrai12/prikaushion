@@ -55,7 +55,7 @@ export const Controls: React.FC<ControlsProps> = ({
           onClick={onToggleShuffle}
           aria-label="Toggle shuffle"
           aria-pressed={shuffle}
-          className={`relative p-2.5 rounded-full transition-colors focus:outline-none ${
+          className={`relative min-w-[44px] min-h-[44px] flex items-center justify-center p-2.5 rounded-full transition-colors focus:outline-none ${
             shuffle ? 'text-[#F4EFE4]' : 'text-[rgba(244,239,228,0.4)] hover:text-[#F4EFE4]'
           }`}
         >
@@ -71,7 +71,7 @@ export const Controls: React.FC<ControlsProps> = ({
         type="button"
         onClick={onPrev}
         aria-label="Previous track"
-        className="p-2.5 rounded-full text-[rgba(244,239,228,0.7)] hover:text-[#F4EFE4] hover:-translate-x-0.5 active:translate-x-0 transition-all focus:outline-none"
+        className="min-w-[44px] min-h-[44px] flex items-center justify-center p-2.5 rounded-full text-[rgba(244,239,228,0.7)] hover:text-[#F4EFE4] hover:-translate-x-0.5 active:translate-x-0 transition-all focus:outline-none"
       >
         <SkipBack className="w-5 h-5" />
       </button>
@@ -101,7 +101,7 @@ export const Controls: React.FC<ControlsProps> = ({
         type="button"
         onClick={onNext}
         aria-label="Next track"
-        className="p-2.5 rounded-full text-[rgba(244,239,228,0.7)] hover:text-[#F4EFE4] hover:translate-x-0.5 active:translate-x-0 transition-all focus:outline-none"
+        className="min-w-[44px] min-h-[44px] flex items-center justify-center p-2.5 rounded-full text-[rgba(244,239,228,0.7)] hover:text-[#F4EFE4] hover:translate-x-0.5 active:translate-x-0 transition-all focus:outline-none"
       >
         <SkipForward className="w-5 h-5" />
       </button>
@@ -112,7 +112,7 @@ export const Controls: React.FC<ControlsProps> = ({
           type="button"
           onClick={onCycleRepeat}
           aria-label={`Cycle repeat (current: ${repeat})`}
-          className={`relative p-2.5 rounded-full transition-colors focus:outline-none ${
+          className={`relative min-w-[44px] min-h-[44px] flex items-center justify-center p-2.5 rounded-full transition-colors focus:outline-none ${
             repeat !== 'off' ? 'text-[#F4EFE4]' : 'text-[rgba(244,239,228,0.4)] hover:text-[#F4EFE4]'
           }`}
         >
@@ -134,7 +134,7 @@ export const Controls: React.FC<ControlsProps> = ({
           type="button"
           onClick={onToggleLike}
           aria-label={isLiked ? 'Unlike track' : 'Like track'}
-          className="p-2.5 rounded-full transition-transform hover:scale-110 active:scale-95 focus:outline-none"
+          className="min-w-[44px] min-h-[44px] flex items-center justify-center p-2.5 rounded-full transition-transform hover:scale-110 active:scale-95 focus:outline-none"
         >
           <Heart
             className={`w-4 h-4 transition-colors ${

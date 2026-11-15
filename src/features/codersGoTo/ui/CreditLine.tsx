@@ -29,7 +29,7 @@ export const CreditLine: React.FC<CreditLineProps> = ({ track, className = '' })
           href={track.credit.sourceUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#E01B24] hover:underline flex items-center gap-1 font-semibold"
+          className="text-[#E01B24] hover:underline inline-flex items-center gap-1 font-semibold py-2 px-1 min-h-[44px]"
         >
           <span>SOURCE</span>
           <ExternalLink className="w-2.5 h-2.5" />
@@ -41,7 +41,7 @@ export const CreditLine: React.FC<CreditLineProps> = ({ track, className = '' })
           href={track.externalUrl}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-[#F4EFE4] hover:text-[#E01B24] transition-colors flex items-center gap-1 ml-1"
+          className="text-[#F4EFE4] hover:text-[#E01B24] transition-colors inline-flex items-center gap-1 ml-1 py-2 px-1 min-h-[44px]"
         >
           <span>OPEN IN SPOTIFY</span>
           <ExternalLink className="w-2.5 h-2.5" />

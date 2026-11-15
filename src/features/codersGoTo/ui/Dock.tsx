@@ -197,7 +197,7 @@ export const Dock: React.FC<DockProps> = ({ className = '' }) => {
             type="button"
             onClick={prev}
             aria-label="Previous track"
-            className="p-1.5 rounded-full text-[#F4EFE4]/60 hover:text-[#F4EFE4] hover:bg-[#F4EFE4]/10 transition-colors focus:outline-none"
+            className="w-10 h-10 min-w-[40px] min-h-[40px] flex items-center justify-center rounded-full text-[#F4EFE4]/60 hover:text-[#F4EFE4] hover:bg-[#F4EFE4]/10 transition-colors focus:outline-none"
           >
             <SkipBack className="w-3.5 h-3.5" />
           </button>
@@ -208,7 +208,7 @@ export const Dock: React.FC<DockProps> = ({ className = '' }) => {
             onClick={toggle}
             aria-label={isPlaying ? 'Pause' : 'Play'}
             disabled={!hasAudio}
-            className={`shrink-0 aspect-square w-[36px] h-[36px] sm:w-[40px] sm:h-[40px] rounded-full flex items-center justify-center transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#E01B24] ${
+            className={`shrink-0 aspect-square w-[38px] h-[38px] sm:w-[42px] sm:h-[42px] rounded-full flex items-center justify-center transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-[#E01B24] ${
               !hasAudio
                 ? 'opacity-35 cursor-not-allowed bg-[#F4EFE4]/40 text-[#0A0A0B]'
                 : 'bg-[#F4EFE4] text-[#0A0A0B] hover:bg-[#E01B24] hover:text-[#F4EFE4] hover:scale-105 active:scale-95 shadow-md'
@@ -228,7 +228,7 @@ export const Dock: React.FC<DockProps> = ({ className = '' }) => {
             type="button"
             onClick={next}
             aria-label="Next track"
-            className="p-1.5 rounded-full text-[#F4EFE4]/60 hover:text-[#F4EFE4] hover:bg-[#F4EFE4]/10 transition-colors focus:outline-none"
+            className="w-10 h-10 min-w-[40px] min-h-[40px] flex items-center justify-center rounded-full text-[#F4EFE4]/60 hover:text-[#F4EFE4] hover:bg-[#F4EFE4]/10 transition-colors focus:outline-none"
           >
             <SkipForward className="w-3.5 h-3.5" />
           </button>
@@ -242,7 +242,7 @@ export const Dock: React.FC<DockProps> = ({ className = '' }) => {
             onClick={() => setUiState('IMMERSIVE')}
             aria-label="Open immersive now-playing view"
             title="Expand to immersive view"
-            className="p-1.5 sm:p-2 rounded-full text-[#F4EFE4]/60 hover:text-[#F4EFE4] hover:bg-[#F4EFE4]/10 transition-colors focus:outline-none"
+            className="w-10 h-10 min-w-[40px] min-h-[40px] flex items-center justify-center rounded-full text-[#F4EFE4]/60 hover:text-[#F4EFE4] hover:bg-[#F4EFE4]/10 transition-colors focus:outline-none"
           >
             <Maximize2 className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
           </button>
@@ -253,7 +253,7 @@ export const Dock: React.FC<DockProps> = ({ className = '' }) => {
             onClick={() => setUiState('HIDDEN')}
             aria-label="Hide dock to disc"
             title="Minimize to launcher"
-            className="p-1.5 sm:p-2 rounded-full text-[#F4EFE4]/60 hover:text-[#F4EFE4] hover:bg-[#F4EFE4]/10 transition-colors focus:outline-none"
+            className="w-10 h-10 min-w-[40px] min-h-[40px] flex items-center justify-center rounded-full text-[#F4EFE4]/60 hover:text-[#F4EFE4] hover:bg-[#F4EFE4]/10 transition-colors focus:outline-none"
           >
             <ChevronDown className="w-4 h-4 sm:w-4.5 sm:h-4.5" />
           </button>

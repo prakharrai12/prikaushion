@@ -204,7 +204,7 @@ export const Section: React.FC = () => {
                 type="button"
                 onClick={() => toggleLike(activeTrack.id)}
                 aria-label={isLiked ? 'Unlike track' : 'Like track'}
-                className={`p-2.5 rounded-full border border-[#F4EFE4]/15 bg-[#F4EFE4]/5 hover:bg-[#F4EFE4]/10 transition-colors focus:outline-none ${
+                className={`min-w-[44px] min-h-[44px] flex items-center justify-center p-2.5 rounded-full border border-[#F4EFE4]/15 bg-[#F4EFE4]/5 hover:bg-[#F4EFE4]/10 transition-colors focus:outline-none ${
                   isLiked ? 'text-[#E01B24]' : 'text-[#F4EFE4]/60'
                 }`}
               >
@@ -222,7 +222,7 @@ export const Section: React.FC = () => {
                 setUiState('IMMERSIVE');
               }}
               data-cursor="view"
-              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-full border border-[#F4EFE4]/20 bg-[#F4EFE4]/5 hover:bg-[#F4EFE4]/15 hover:border-[#E01B24]/50 transition-all font-mono text-[11px] uppercase tracking-wider text-[#F4EFE4] group"
+              className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-3 min-h-[44px] rounded-full border border-[#F4EFE4]/20 bg-[#F4EFE4]/5 hover:bg-[#F4EFE4]/15 hover:border-[#E01B24]/50 transition-all font-mono text-[11px] uppercase tracking-wider text-[#F4EFE4] group"
             >
               <Maximize2 className="w-3.5 h-3.5 text-[#E01B24] group-hover:scale-110 transition-transform" />
               <span>Open Lyrics &amp; Now Playing</span>

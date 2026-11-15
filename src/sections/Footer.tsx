@@ -134,7 +134,7 @@ export const Footer: React.FC = () => {
       {/* Easter Egg Toast */}
       <div
         className={`fixed bottom-10 right-10 z-[110] px-4 py-2.5 bg-charcoal border border-crimson rounded-md shadow-2xl font-mono text-xs uppercase tracking-widest text-crimson flex items-center gap-2 transition-all duration-300 pointer-events-none ${
-          showToast ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+          showToast ? 'opacity-100 translate-y-0 visible' : 'opacity-0 translate-y-4 invisible'
         }`}
       >
         <svg viewBox="0 0 100 100" fill="#E01B24" className="w-3.5 h-3.5 animate-spin">

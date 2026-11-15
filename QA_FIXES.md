@@ -99,3 +99,26 @@
 - **Files:** `tests/music-drag.spec.ts`, `tests/run_drag_tests.cjs`, `qa/reports/drag-tests-report.json`
 - **Result:** **13 / 13 tests passed (100% pass rate)** covering deadband threshold, vertical scroll pass-through, horizontal drag, momentum throw, snapping, mobile touch, click vs drag, keyboard controls (ArrowLeft/Right, Home/End, Space), wheel deltaX, circular modulo wrap-around, and pointercancel recovery.
 
+---
+
+## Phase D: Mobile-First QA & Touch Hardening
+
+### 1. Enforcement of 44x44px Minimum Touch Targets (DEF-03)
+- **Files:** `src/features/codersGoTo/ui/Controls.tsx`, `src/features/codersGoTo/ui/Dock.tsx`, `src/features/codersGoTo/ui/Section.tsx`, `src/features/codersGoTo/ui/CreditLine.tsx`
+- **Fix:**
+  - `Controls.tsx`: Expanded Shuffle, Prev, Next, Repeat, and Like buttons with `min-w-[44px] min-h-[44px] flex items-center justify-center`.
+  - `Dock.tsx`: Expanded Prev, Next, Maximize, and Chevron buttons to 40-44px touch footprints (`w-10 h-10 min-w-[40px] min-h-[40px]`).
+  - `Section.tsx`: Expanded Like button to `min-w-[44px] min-h-[44px]` and "Open Lyrics & Now Playing" pill to `min-h-[44px]`.
+  - `CreditLine.tsx`: Added `py-2 px-1 min-h-[44px]` to Source and Spotify links.
+- **Impact:** Meets Apple Human Interface Guidelines and WCAG 2.5.5 touch target size criteria, eliminating fat-finger miss-clicks on touchscreens.
+
+### 2. Form Input Zoom Prevention (iOS Safari)
+- **Files:** `src/sections/Contact.tsx`
+- **Audit Result:** Verified that Name and Email inputs use `text-lg` (18px) and Textarea uses `text-base` (16px), strictly $\ge 16\text{px}$ to prevent iOS Safari auto-zooming viewport on focus.
+
+### 3. Collision Isolation on Inactive Overlays (DEF-02)
+- **Files:** `src/sections/Footer.tsx`, `src/components/SectionHeader.tsx`
+- **Fix:** Set inactive floating overlays to `invisible pointer-events-none` when opacity is 0.
+- **Impact:** Eliminates phantom hitboxes from obstructing taps on mobile elements underneath.
+
+
