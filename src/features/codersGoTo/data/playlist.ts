@@ -13,11 +13,12 @@ export const playlist: Track[] = [
     artist: "Laufey",
     album: "A Matter of Time",
     year: 2025,
-    durationSec: 165,
+    durationSec: 30,
     mood: "focus",
     note: "Playful bossa nova rhythm, acoustic chords, and smooth jazz vocals for late-night focus sessions.",
     audio: {
       mp3: "/audio/lover-girl.mp3",
+      m4a: "/audio/lover-girl.m4a",
     },
     cover: {
       src640: "/covers/lover-girl.webp",

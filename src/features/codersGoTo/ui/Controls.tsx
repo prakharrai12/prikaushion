@@ -39,12 +39,12 @@ export const Controls: React.FC<ControlsProps> = ({
 }) => {
   const playButtonSize =
     size === 'lg'
-      ? 'w-16 h-16 md:w-20 md:h-20'
+      ? 'w-[72px] h-[72px] md:w-[80px] md:h-[80px]'
       : size === 'sm'
-      ? 'w-11 h-11'
-      : 'w-14 h-14 md:w-16 md:h-16';
+      ? 'w-[40px] h-[40px]'
+      : 'w-[56px] h-[56px] md:w-[64px] md:h-[64px]';
 
-  const playIconSize = size === 'lg' ? 'w-7 h-7' : size === 'sm' ? 'w-4 h-4' : 'w-6 h-6';
+  const playIconSize = size === 'lg' ? 'w-6 h-6 md:w-7 md:h-7' : size === 'sm' ? 'w-4 h-4' : 'w-5 h-5 md:w-6 md:h-6';
 
   return (
     <div className={`flex items-center justify-center gap-3 md:gap-5 select-none ${className}`}>
@@ -83,7 +83,7 @@ export const Controls: React.FC<ControlsProps> = ({
         disabled={!hasAudio}
         aria-label={isPlaying ? 'Pause' : 'Play'}
         title={!hasAudio ? 'Audio coming soon' : undefined}
-        className={`relative ${playButtonSize} rounded-full bg-[#F4EFE4] text-[#0A0A0B] flex items-center justify-center shadow-xl hover:bg-[#E01B24] hover:text-[#F4EFE4] hover:scale-105 active:scale-95 transition-all duration-300 focus:outline-none ${
+        className={`relative shrink-0 aspect-square ${playButtonSize} rounded-full bg-[#F4EFE4] text-[#0A0A0B] flex items-center justify-center shadow-xl hover:bg-[#E01B24] hover:text-[#F4EFE4] hover:scale-105 active:scale-95 transition-all duration-300 focus:outline-none ${
           !hasAudio ? 'opacity-35 cursor-not-allowed hover:bg-[#F4EFE4] hover:text-[#0A0A0B]' : ''
         }`}
       >

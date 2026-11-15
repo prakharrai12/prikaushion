@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { createPortal } from 'react-dom';
 import { PlayerProvider, usePlayer } from './PlayerProvider';
 import { Section } from './ui/Section';
 import { Launcher } from './ui/Launcher';
@@ -9,14 +10,22 @@ import './styles/codersGoTo.css';
 
 const FloatingPlayerLayers: React.FC = () => {
   const { errorToast, dismissToast } = usePlayer();
+  const [mounted, setMounted] = useState(false);
 
-  return (
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  if (!mounted || typeof document === 'undefined') return null;
+
+  return createPortal(
     <>
       <Launcher />
       <Dock />
       <Immersive />
       <Toast message={errorToast} onDismiss={dismissToast} />
-    </>
+    </>,
+    document.body
   );
 };
 

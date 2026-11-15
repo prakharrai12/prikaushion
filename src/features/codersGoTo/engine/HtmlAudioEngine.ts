@@ -38,14 +38,16 @@ export class HtmlAudioEngine implements PlayerEngine {
 
   async load(track: Track): Promise<void> {
     this.currentTrack = track;
-    if (!track.audio || (!track.audio.mp3 && !track.audio.ogg)) {
+    if (!track.audio || (!track.audio.mp3 && !track.audio.m4a && !track.audio.ogg)) {
       this.audio.src = '';
       return;
     }
 
-    let src = track.audio.mp3;
+    let src = track.audio.mp3 || track.audio.m4a || '';
     if (track.audio.ogg && this.audio.canPlayType('audio/ogg; codecs="vorbis,opus"')) {
       src = track.audio.ogg;
+    } else if (track.audio.m4a && this.audio.canPlayType('audio/mp4')) {
+      src = track.audio.m4a;
     }
 
     this.audio.src = src;

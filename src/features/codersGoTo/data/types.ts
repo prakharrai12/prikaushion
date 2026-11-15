@@ -15,7 +15,7 @@ export type Track = {
   durationSec?: number;
   mood: Mood;
   note?: string;
-  audio?: { mp3: string; ogg?: string };
+  audio?: { mp3?: string; m4a?: string; ogg?: string };
   cover?: { src640: string; src160: string; blur32: string };
   accent?: string;
   lyrics: LyricsMeta;

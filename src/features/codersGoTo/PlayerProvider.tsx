@@ -147,8 +147,8 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         hasPreloadedNextRef.current = true;
         const nextIdx = (playingIndex + 1) % tracks.length;
         const nextTrk = tracks[nextIdx];
-        if (nextTrk?.audio?.mp3) {
-          engine.preloadNextTrack(nextTrk.audio.mp3);
+        if (nextTrk?.audio && (nextTrk.audio.mp3 || nextTrk.audio.m4a || nextTrk.audio.ogg)) {
+          engine.preloadNextTrack((nextTrk.audio.mp3 || nextTrk.audio.m4a || nextTrk.audio.ogg)!);
         }
       }
     });
@@ -198,7 +198,10 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
   }, [isPlaying]);
 
   const currentTrack = tracks[playingIndex] || null;
-  const hasAudio = Boolean(currentTrack?.audio && (currentTrack.audio.mp3 || currentTrack.audio.ogg));
+  const hasAudio = Boolean(
+    currentTrack?.audio &&
+      (currentTrack.audio.mp3 || currentTrack.audio.m4a || currentTrack.audio.ogg)
+  );
   const progress = duration > 0 ? Math.min(1, Math.max(0, currentTime / duration)) : 0;
 
   // MediaSession setup
@@ -224,7 +227,7 @@ export const PlayerProvider: React.FC<{ children: React.ReactNode }> = ({ childr
         localStorage.setItem(STORAGE_KEYS.lastTrackId, track.id);
       } catch {}
 
-      if (!track.audio || (!track.audio.mp3 && !track.audio.ogg)) {
+      if (!track.audio || (!track.audio.mp3 && !track.audio.m4a && !track.audio.ogg)) {
         setErrorToast(`AUDIO COMING SOON FOR "${track.title}"`);
         return;
       }
