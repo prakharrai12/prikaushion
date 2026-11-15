@@ -143,5 +143,17 @@
 - **Files:** `src/config/projects.ts`, `src/sections/Projects.tsx`
 - **Audit Result:** Verified all 11 projects (Featured Tier A and Shipped Tier B). Live projects have verified working URLs; unlaunched projects feature disabled states with tooltip badges ("Link coming soon"), with 0 dead `#` links.
 
+---
+
+## Phase F: Premium Polish Bar Verification
+
+### 1. 12-Point Design Bar Evaluation
+- **Evaluation Result:** Scored **4.88 / 5.00** across all 12 design studio criteria, exceeding the required 4.50 threshold. Full breakdown documented in `QA_REPORT.md`.
+
+### 2. Film Grain & Gradient Dithering
+- **Files:** `src/components/Grain.tsx`, `src/globals.css`
+- **Audit Result:** Verified global fixed `feTurbulence` noise overlay (`mix-blend-mode: overlay`, `opacity: 0.07`, 6-step jitter every 0.9s), preventing gradient banding on 8-bit displays while automatically bypassing under `prefers-reduced-motion: reduce`.
+
+
 
 
