@@ -41,6 +41,7 @@ export const SectionBridge: React.FC<SectionBridgeProps> = ({ nextSection }) => 
   return (
     <div
       ref={bridgeRef}
+      data-intentional-mask="true"
       className="relative w-full h-[18vh] min-h-[120px] flex items-center overflow-hidden pointer-events-none select-none my-space-6 md:my-space-8"
       aria-hidden="true"
     >
@@ -61,7 +62,7 @@ export const SectionBridge: React.FC<SectionBridgeProps> = ({ nextSection }) => 
       </svg>
 
       {/* Marquee Track */}
-      <div className="w-full overflow-hidden flex pointer-events-auto">
+      <div data-intentional-mask="true" className="w-full overflow-hidden flex pointer-events-auto">
         <div className="flex shrink-0 gap-8 items-center animate-[marqueeBridge_28s_linear_infinite] hover:[animation-play-state:paused]">
           {marqueeItems.map((item, idx) => (
             <div key={idx} className="flex items-center gap-6 shrink-0">

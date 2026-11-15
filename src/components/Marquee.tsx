@@ -127,11 +127,12 @@ export const Marquee: React.FC = () => {
 
   return (
     <section
+      data-intentional-mask="true"
       className="relative w-full py-8 md:py-10 border-y border-bone-faint bg-ink/40 backdrop-blur-sm overflow-hidden select-none z-10"
       aria-label="Marquee highlighting frontend development and studio focus"
     >
       {/* Row 1 -> Left */}
-      <div className="w-full overflow-hidden flex items-center mb-3">
+      <div data-intentional-mask="true" className="w-full overflow-hidden flex items-center mb-3">
         <div ref={row1Ref} className="flex items-center gap-8 md:gap-14 will-change-transform">
           {renderRow1Chunk('r1-a')}
           {renderRow1Chunk('r1-b')}
@@ -140,7 +141,7 @@ export const Marquee: React.FC = () => {
       </div>
 
       {/* Row 2 -> Right */}
-      <div className="w-full overflow-hidden flex items-center">
+      <div data-intentional-mask="true" className="w-full overflow-hidden flex items-center">
         <div ref={row2Ref} className="flex items-center gap-8 md:gap-14 will-change-transform">
           {renderRow2Chunk('r2-a')}
           {renderRow2Chunk('r2-b')}

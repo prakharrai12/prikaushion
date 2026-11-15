@@ -201,8 +201,8 @@ export const SectionHeader: React.FC<SectionHeaderProps> = ({
       {/* Sticky Mini Header for long sections */}
       {stickyMini && (
         <div
-          className={`fixed top-[92px] left-[clamp(20px,5vw,80px)] z-30 flex items-center gap-2.5 px-3.5 py-1.5 rounded-pill bg-obsidian/90 backdrop-blur-md border border-bone-faint font-mono text-[11px] uppercase tracking-widest text-bone shadow-2xl transition-all duration-300 pointer-events-none ${
-            showStickyMini ? 'opacity-100 translate-y-0' : 'opacity-0 -translate-y-2'
+          className={`fixed top-[92px] left-[clamp(20px,5vw,80px)] z-30 flex items-center gap-2.5 px-3.5 py-1.5 rounded-pill bg-obsidian/90 backdrop-blur-md border border-bone-faint font-mono text-[11px] uppercase tracking-widest text-bone shadow-2xl transition-all duration-300 ${
+            showStickyMini ? 'opacity-100 translate-y-0 visible pointer-events-auto' : 'opacity-0 -translate-y-2 invisible pointer-events-none'
           }`}
           aria-hidden="true"
         >

@@ -235,6 +235,7 @@ export const Hero: React.FC = () => {
       data-bg="grad-void"
       data-accent-x="70%"
       data-accent-y="10%"
+      data-intentional-mask="true"
       className="relative min-h-[100svh] w-full flex flex-col justify-end pt-32 pb-16 md:pb-24 overflow-hidden select-none"
       aria-label="Introduction and Hero"
     >

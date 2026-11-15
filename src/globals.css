@@ -308,10 +308,14 @@ html.reduce-motion .grain-overlay {
   -webkit-text-stroke: 1px rgba(10, 10, 11, 0.07);
 }
 
-/* Prevent text overflow jitter in masked headers */
+/* Prevent text overflow jitter in masked headers while preserving font descenders */
 .title-line-mask {
   overflow: hidden;
   display: block;
+  padding-bottom: 0.18em;
+  margin-bottom: -0.18em;
+  padding-top: 0.05em;
+  margin-top: -0.05em;
 }
 
 /* Marquee pause on hover */
