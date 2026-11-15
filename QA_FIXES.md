@@ -121,4 +121,27 @@
 - **Fix:** Set inactive floating overlays to `invisible pointer-events-none` when opacity is 0.
 - **Impact:** Eliminates phantom hitboxes from obstructing taps on mobile elements underneath.
 
+---
+
+## Phase E: Full Functional Sweep & Interactive Polishing
+
+### 1. Navigation Escape Key & Body Scroll Lock
+- **File:** `src/components/Nav.tsx`
+- **Fix:** Added `keydown` listener for `Escape` to close mobile navigation and locked `document.body.style.overflow = 'hidden'` when the menu is active.
+- **Impact:** Prevents background page scrolling beneath the mobile menu overlay and enables keyboard dismissal.
+
+### 2. Preloader Keyboard Skip
+- **File:** `src/components/Preloader.tsx`
+- **Fix:** Added `Escape` key listener to trigger `handleSkip()`.
+- **Impact:** Allows keyboard users to dismiss introductory curtain animation instantly.
+
+### 3. Contact Form Action Hardening
+- **File:** `src/sections/Contact.tsx`
+- **Fix:** Added `min-h-[44px]` touch target to "Send another message" reset button. Verified fallback mailto correctly addresses `prikaushionv@gmail.com` with encoded form fields.
+
+### 4. Project Links & Fallback Verification
+- **Files:** `src/config/projects.ts`, `src/sections/Projects.tsx`
+- **Audit Result:** Verified all 11 projects (Featured Tier A and Shipped Tier B). Live projects have verified working URLs; unlaunched projects feature disabled states with tooltip badges ("Link coming soon"), with 0 dead `#` links.
+
+
 

@@ -68,6 +68,21 @@ export const Nav: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, [isMobileMenuOpen]);
 
+  useEffect(() => {
+    if (!isMobileMenuOpen) return;
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        setIsMobileMenuOpen(false);
+      }
+    };
+    document.body.style.overflow = 'hidden';
+    window.addEventListener('keydown', handleKeyDown);
+    return () => {
+      document.body.style.overflow = '';
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [isMobileMenuOpen]);
+
   const handleNavClick = (e: React.MouseEvent, href: string) => {
     e.preventDefault();
     setIsMobileMenuOpen(false);

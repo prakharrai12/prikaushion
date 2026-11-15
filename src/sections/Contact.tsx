@@ -196,7 +196,7 @@ export const Contact: React.FC = () => {
               <button
                 type="button"
                 onClick={() => setSubmitted(false)}
-                className="mt-6 px-6 py-2.5 rounded-pill border border-[#0A0A0B]/30 font-mono text-xs uppercase tracking-widest hover:border-crimson hover:text-crimson transition-colors"
+                className="mt-6 px-6 py-2.5 min-h-[44px] rounded-pill border border-[#0A0A0B]/30 font-mono text-xs uppercase tracking-widest hover:border-crimson hover:text-crimson transition-colors"
               >
                 Send another message
               </button>

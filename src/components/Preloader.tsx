@@ -126,8 +126,16 @@ export const Preloader: React.FC<PreloaderProps> = ({ onComplete }) => {
       );
     }
 
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') {
+        handleSkip();
+      }
+    };
+    window.addEventListener('keydown', handleKeyDown);
+
     return () => {
       clearTimeout(skipTimer);
+      window.removeEventListener('keydown', handleKeyDown);
       tl.kill();
     };
   }, [onComplete]);
