@@ -171,6 +171,23 @@
 - **Files:** `index.html`, `public/assets/brand/og-image.png`
 - **Audit Result:** Verified 1200x630 high-resolution OpenGraph preview banner exists on disk (`124,674` bytes) and absolute URLs are declared in `og:image` and `twitter:image`.
 
+---
+
+## Phase H: Regression Safety Net & Continuous Integration
+
+### 1. GitHub Actions CI Pipeline
+- **File:** `.github/workflows/ci.yml`
+- **Setup:** Configured automated checkout, Node.js 20 caching, dependency installation, production bundle build, Playwright browser setup, and automated execution of the 13-case drag physics test suite on every push to `main`.
+
+### 2. Regression Suites
+- **Files:** `tests/layout.spec.ts`, `tests/mobile.spec.ts`, `tests/music-drag.spec.ts`
+- **Coverage:** Multi-viewport layout integrity (zero horizontal overflow across iPhone SE, iPhone 14, and Desktop), mobile hamburger navigation toggle, focus management, Escape key dismiss, and circular music drag physics.
+
+### 3. QA Documentation
+- **File:** `QA.md`
+- **Output:** Developer and contributor reference documentation detailing commands to run local and CI verification passes.
+
+
 
 
 
